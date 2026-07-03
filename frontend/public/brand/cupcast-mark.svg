@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">CupCast AI app mark</title>
+  <desc id="desc">Compact original CupCast AI mark combining a football grid, signal waves, and an upward probability line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="30" y1="24" x2="224" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10172A"/>
+      <stop offset=".56" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#06202A"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="35" y1="32" x2="221" y2="224" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset=".55" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A3E635"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="18" width="220" height="220" rx="48" fill="url(#bg)" stroke="url(#edge)" stroke-width="6"/>
+  <circle cx="118" cy="124" r="62" fill="#0B1020" stroke="#38BDF8" stroke-width="5"/>
+  <path d="M63 124h110M118 64c-18 19-28 39-28 60s10 41 28 60M118 64c18 19 28 39 28 60s-10 41-28 60" fill="none" stroke="#38BDF8" stroke-opacity=".34" stroke-width="3" stroke-linecap="round"/>
+  <path d="M78 143l24-25 22 13 35-47" fill="none" stroke="#A3E635" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="78" cy="143" r="7" fill="#A3E635"/>
+  <circle cx="102" cy="118" r="7" fill="#A3E635"/>
+  <circle cx="124" cy="131" r="7" fill="#A3E635"/>
+  <circle cx="159" cy="84" r="7" fill="#A3E635"/>
+  <path d="M80 84l21 13-8 25H67l-9-25 22-13ZM144 145l20 16-7 25h-29l-8-25 24-16Z" fill="#10172A" stroke="#22D3EE" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M178 82c16 4 28 14 36 29M184 55c29 8 49 27 61 56M178 166c16-4 28-14 36-29M184 193c29-8 49-27 61-56" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" opacity=".78"/>
+</svg>

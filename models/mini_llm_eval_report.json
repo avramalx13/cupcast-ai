@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "validation_loss": 1.848814845085144,
+  "perplexity": 6.352286615949416,
+  "average_generation_length": 36.0,
+  "average_repetition_rate": 0.045454545454545456,
+  "unknown_token_rate": 0.0,
+  "average_format_compliance": 0.625,
+  "generations": [
+    {
+      "prompt": "### Context:\nTeam A: France\nTeam B: Brazil\nFrance win probability: 42%\nDraw probability: 25%\nBrazil win probability: 33%\n\n### Analysis:\n",
+      "generated": "### Context:\nTeam A: France\nTeam B: Brazil\nFrance win probability: 42%\nDraw probability: 25%\nBrazil win probability: 33%\n\n### Analysis:\nSpain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.\n\n#",
+      "analysis": "Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.\n\n#",
+      "generation_length": 39,
+      "repetition_rate": 0.0,
+      "format_compliance": {
+        "score": 0.5,
+        "checks": {
+          "non_empty_analysis": true,
+          "avoids_false_certainty": false,
+          "mentions_uncertainty_when_probabilities_present": true,
+          "avoids_unrelated_teams": false
+        },
+        "unrelated_teams": [
+          "Spain"
+        ]
+      }
+    },
+    {
+      "prompt": "### Context:\nTeam A: Germany\nTeam B: Paraguay\nGermany title probability before: 13%\nGermany title probability after: 0%\nParaguay title probability before: 3%\nParaguay title probability after: 11%\n\n### Analysis:\n",
+      "generated": "### Context:\nTeam A: Germany\nTeam B: Paraguay\nGermany title probability before: 13%\nGermany title probability after: 0%\nParaguay title probability before: 3%\nParaguay title probability after: 11%\n\n### Analysis:\nCroatia.0%\nParaguay title probability probability after:\nJapan title probability after:\nCroatia 0.9%\n\n### Analysis:\nCroatia Analysis:\nGermany is favored because the bracket removed a stronger opponent. falls zero title title probability probability before: ",
+      "analysis": "Croatia.0%\nParaguay title probability probability after:\nJapan title probability after:\nCroatia 0.9%\n\n### Analysis:\nCroatia Analysis:\nGermany is favored because the bracket removed a stronger opponent. falls zero title title probability probability before:",
+      "generation_length": 33,
+      "repetition_rate": 0.09090909090909091,
+      "format_compliance": {
+        "score": 0.75,
+        "checks": {
+          "non_empty_analysis": true,
+          "avoids_false_certainty": true,
+          "mentions_uncertainty_when_probabilities_present": true,
+          "avoids_unrelated_teams": false
+        },
+        "unrelated_teams": [
+          "Japan",
+          "Croatia"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2357 @@
+{
+  "source": "real",
+  "teams": [
+    {
+      "name": "Abkhazia",
+      "confederation": "UNKNOWN",
+      "match_count": 33,
+      "first_match_date": "2012-09-25",
+      "last_match_date": "2019-06-08"
+    },
+    {
+      "name": "Afghanistan",
+      "confederation": "UNKNOWN",
+      "match_count": 147,
+      "first_match_date": "1941-08-10",
+      "last_match_date": "2026-06-10"
+    },
+    {
+      "name": "Albania",
+      "confederation": "UNKNOWN",
+      "match_count": 398,
+      "first_match_date": "1946-08-22",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Alderney",
+      "confederation": "UNKNOWN",
+      "match_count": 135,
+      "first_match_date": "1905-04-17",
+      "last_match_date": "2022-04-23"
+    },
+    {
+      "name": "Algeria",
+      "confederation": "UNKNOWN",
+      "match_count": 620,
+      "first_match_date": "1963-01-06",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Ambazonia",
+      "confederation": "UNKNOWN",
+      "match_count": 6,
+      "first_match_date": "2005-06-23",
+      "last_match_date": "2007-06-07"
+    },
+    {
+      "name": "American Samoa",
+      "confederation": "UNKNOWN",
+      "match_count": 55,
+      "first_match_date": "1983-08-20",
+      "last_match_date": "2026-03-28"
+    },
+    {
+      "name": "Andalusia",
+      "confederation": "UNKNOWN",
+      "match_count": 13,
+      "first_match_date": "1923-01-14",
+      "last_match_date": "2013-06-07"
+    },
+    {
+      "name": "Andorra",
+      "confederation": "UNKNOWN",
+      "match_count": 229,
+      "first_match_date": "1996-11-13",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Angola",
+      "confederation": "UNKNOWN",
+      "match_count": 415,
+      "first_match_date": "1976-02-08",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Anguilla",
+      "confederation": "UNKNOWN",
+      "match_count": 91,
+      "first_match_date": "1985-11-05",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "confederation": "UNKNOWN",
+      "match_count": 231,
+      "first_match_date": "1972-11-10",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Arameans Suryoye",
+      "confederation": "UNKNOWN",
+      "match_count": 10,
+      "first_match_date": "2008-07-09",
+      "last_match_date": "2014-06-08"
+    },
+    {
+      "name": "Argentina",
+      "confederation": "UNKNOWN",
+      "match_count": 1072,
+      "first_match_date": "1902-07-20",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Armenia",
+      "confederation": "UNKNOWN",
+      "match_count": 272,
+      "first_match_date": "1979-07-21",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Artsakh",
+      "confederation": "UNKNOWN",
+      "match_count": 11,
+      "first_match_date": "2012-09-25",
+      "last_match_date": "2019-06-08"
+    },
+    {
+      "name": "Aruba",
+      "confederation": "UNKNOWN",
+      "match_count": 152,
+      "first_match_date": "1924-04-06",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Asturias",
+      "confederation": "UNKNOWN",
+      "match_count": 1,
+      "first_match_date": "1923-02-25",
+      "last_match_date": "1923-02-25"
+    },
+    {
+      "name": "Australia",
+      "confederation": "UNKNOWN",
+      "match_count": 584,
+      "first_match_date": "1922-06-17",
+      "last_match_date": "2026-06-25"
+    },
+    {
+      "name": "Austria",
+      "confederation": "UNKNOWN",
+      "match_count": 863,
+      "first_match_date": "1902-10-12",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Aymara",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2022-06-18",
+      "last_match_date": "2022-06-19"
+    },
+    {
+      "name": "Azerbaijan",
+      "confederation": "UNKNOWN",
+      "match_count": 310,
+      "first_match_date": "1979-07-24",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Bahamas",
+      "confederation": "UNKNOWN",
+      "match_count": 67,
+      "first_match_date": "1971-04-14",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Bahrain",
+      "confederation": "UNKNOWN",
+      "match_count": 584,
+      "first_match_date": "1966-04-02",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Bangladesh",
+      "confederation": "UNKNOWN",
+      "match_count": 305,
+      "first_match_date": "1973-07-27",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Barawa",
+      "confederation": "UNKNOWN",
+      "match_count": 12,
+      "first_match_date": "2016-08-25",
+      "last_match_date": "2019-05-25"
+    },
+    {
+      "name": "Barbados",
+      "confederation": "UNKNOWN",
+      "match_count": 302,
+      "first_match_date": "1929-04-20",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Basque Country",
+      "confederation": "UNKNOWN",
+      "match_count": 64,
+      "first_match_date": "1915-01-03",
+      "last_match_date": "2025-11-15"
+    },
+    {
+      "name": "Belarus",
+      "confederation": "UNKNOWN",
+      "match_count": 315,
+      "first_match_date": "1928-08-17",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Belgium",
+      "confederation": "UNKNOWN",
+      "match_count": 856,
+      "first_match_date": "1904-05-01",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Belize",
+      "confederation": "UNKNOWN",
+      "match_count": 121,
+      "first_match_date": "1983-12-08",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "Benin",
+      "confederation": "UNKNOWN",
+      "match_count": 325,
+      "first_match_date": "1959-11-08",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Bermuda",
+      "confederation": "UNKNOWN",
+      "match_count": 198,
+      "first_match_date": "1964-08-10",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Bhutan",
+      "confederation": "UNKNOWN",
+      "match_count": 110,
+      "first_match_date": "1982-04-01",
+      "last_match_date": "2026-06-04"
+    },
+    {
+      "name": "Biafra",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "2022-05-22",
+      "last_match_date": "2022-05-25"
+    },
+    {
+      "name": "Bolivia",
+      "confederation": "UNKNOWN",
+      "match_count": 534,
+      "first_match_date": "1926-10-12",
+      "last_match_date": "2026-06-10"
+    },
+    {
+      "name": "Bonaire",
+      "confederation": "UNKNOWN",
+      "match_count": 44,
+      "first_match_date": "2010-10-29",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "confederation": "UNKNOWN",
+      "match_count": 286,
+      "first_match_date": "1995-11-30",
+      "last_match_date": "2026-06-24"
+    },
+    {
+      "name": "Botswana",
+      "confederation": "UNKNOWN",
+      "match_count": 332,
+      "first_match_date": "1968-07-13",
+      "last_match_date": "2026-03-31"
+    },
+    {
+      "name": "Brazil",
+      "confederation": "UNKNOWN",
+      "match_count": 1063,
+      "first_match_date": "1914-09-20",
+      "last_match_date": "2026-06-29"
+    },
+    {
+      "name": "British Virgin Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 123,
+      "first_match_date": "1985-11-05",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Brittany",
+      "confederation": "UNKNOWN",
+      "match_count": 12,
+      "first_match_date": "1922-03-12",
+      "last_match_date": "2013-05-28"
+    },
+    {
+      "name": "Brunei",
+      "confederation": "UNKNOWN",
+      "match_count": 137,
+      "first_match_date": "1971-05-22",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Bulgaria",
+      "confederation": "UNKNOWN",
+      "match_count": 736,
+      "first_match_date": "1924-05-21",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Burkina Faso",
+      "confederation": "UNKNOWN",
+      "match_count": 464,
+      "first_match_date": "1960-04-14",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Burundi",
+      "confederation": "UNKNOWN",
+      "match_count": 218,
+      "first_match_date": "1953-09-19",
+      "last_match_date": "2026-05-26"
+    },
+    {
+      "name": "Cambodia",
+      "confederation": "UNKNOWN",
+      "match_count": 295,
+      "first_match_date": "1954-11-01",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Cameroon",
+      "confederation": "UNKNOWN",
+      "match_count": 616,
+      "first_match_date": "1953-09-24",
+      "last_match_date": "2026-03-31"
+    },
+    {
+      "name": "Canada",
+      "confederation": "UNKNOWN",
+      "match_count": 473,
+      "first_match_date": "1885-11-28",
+      "last_match_date": "2026-06-28"
+    },
+    {
+      "name": "Canary Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 4,
+      "first_match_date": "1996-02-06",
+      "last_match_date": "2007-12-29"
+    },
+    {
+      "name": "Cape Verde",
+      "confederation": "UNKNOWN",
+      "match_count": 238,
+      "first_match_date": "1959-12-20",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Cascadia",
+      "confederation": "UNKNOWN",
+      "match_count": 7,
+      "first_match_date": "2018-05-31",
+      "last_match_date": "2019-05-25"
+    },
+    {
+      "name": "Catalonia",
+      "confederation": "UNKNOWN",
+      "match_count": 48,
+      "first_match_date": "1912-02-10",
+      "last_match_date": "2019-03-25"
+    },
+    {
+      "name": "Cayman Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 120,
+      "first_match_date": "1985-03-03",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Central African Republic",
+      "confederation": "UNKNOWN",
+      "match_count": 138,
+      "first_match_date": "1960-04-14",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Central Spain",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "1922-11-19",
+      "last_match_date": "1923-11-25"
+    },
+    {
+      "name": "Chad",
+      "confederation": "UNKNOWN",
+      "match_count": 138,
+      "first_match_date": "1961-12-25",
+      "last_match_date": "2025-11-17"
+    },
+    {
+      "name": "Chagos Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 16,
+      "first_match_date": "2011-12-04",
+      "last_match_date": "2019-12-29"
+    },
+    {
+      "name": "Chameria",
+      "confederation": "UNKNOWN",
+      "match_count": 7,
+      "first_match_date": "2019-06-02",
+      "last_match_date": "2023-07-01"
+    },
+    {
+      "name": "Chechnya",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "2005-05-03",
+      "last_match_date": "2006-02-18"
+    },
+    {
+      "name": "Chile",
+      "confederation": "UNKNOWN",
+      "match_count": 835,
+      "first_match_date": "1910-05-27",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "China",
+      "confederation": "UNKNOWN",
+      "match_count": 702,
+      "first_match_date": "1913-02-04",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Cilento",
+      "confederation": "UNKNOWN",
+      "match_count": 1,
+      "first_match_date": "2011-12-29",
+      "last_match_date": "2011-12-29"
+    },
+    {
+      "name": "Colombia",
+      "confederation": "UNKNOWN",
+      "match_count": 641,
+      "first_match_date": "1938-02-10",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Comoros",
+      "confederation": "UNKNOWN",
+      "match_count": 151,
+      "first_match_date": "1979-08-26",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Congo",
+      "confederation": "UNKNOWN",
+      "match_count": 406,
+      "first_match_date": "1960-04-14",
+      "last_match_date": "2025-10-14"
+    },
+    {
+      "name": "Cook Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 53,
+      "first_match_date": "1971-09-11",
+      "last_match_date": "2024-09-06"
+    },
+    {
+      "name": "Corsica",
+      "confederation": "UNKNOWN",
+      "match_count": 9,
+      "first_match_date": "1967-02-28",
+      "last_match_date": "2017-05-26"
+    },
+    {
+      "name": "Costa Rica",
+      "confederation": "UNKNOWN",
+      "match_count": 724,
+      "first_match_date": "1921-09-14",
+      "last_match_date": "2026-06-10"
+    },
+    {
+      "name": "County of Nice",
+      "confederation": "UNKNOWN",
+      "match_count": 9,
+      "first_match_date": "2014-06-02",
+      "last_match_date": "2015-06-21"
+    },
+    {
+      "name": "Crimea",
+      "confederation": "UNKNOWN",
+      "match_count": 5,
+      "first_match_date": "2006-11-19",
+      "last_match_date": "2006-11-25"
+    },
+    {
+      "name": "Croatia",
+      "confederation": "UNKNOWN",
+      "match_count": 399,
+      "first_match_date": "1940-04-02",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Cuba",
+      "confederation": "UNKNOWN",
+      "match_count": 397,
+      "first_match_date": "1930-03-16",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Cura\u00e7ao",
+      "confederation": "UNKNOWN",
+      "match_count": 388,
+      "first_match_date": "1924-04-06",
+      "last_match_date": "2026-06-25"
+    },
+    {
+      "name": "Cyprus",
+      "confederation": "UNKNOWN",
+      "match_count": 426,
+      "first_match_date": "1949-07-30",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Czech Republic",
+      "confederation": "UNKNOWN",
+      "match_count": 363,
+      "first_match_date": "1994-02-23",
+      "last_match_date": "2026-06-24"
+    },
+    {
+      "name": "Czechoslovakia",
+      "confederation": "UNKNOWN",
+      "match_count": 520,
+      "first_match_date": "1903-04-05",
+      "last_match_date": "1993-11-17"
+    },
+    {
+      "name": "DR Congo",
+      "confederation": "UNKNOWN",
+      "match_count": 527,
+      "first_match_date": "1948-05-25",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Darfur",
+      "confederation": "UNKNOWN",
+      "match_count": 7,
+      "first_match_date": "2012-06-04",
+      "last_match_date": "2014-06-07"
+    },
+    {
+      "name": "Denmark",
+      "confederation": "UNKNOWN",
+      "match_count": 874,
+      "first_match_date": "1908-10-22",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Djibouti",
+      "confederation": "UNKNOWN",
+      "match_count": 111,
+      "first_match_date": "1947-12-05",
+      "last_match_date": "2025-11-26"
+    },
+    {
+      "name": "Dominica",
+      "confederation": "UNKNOWN",
+      "match_count": 215,
+      "first_match_date": "1932-03-23",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "Dominican Republic",
+      "confederation": "UNKNOWN",
+      "match_count": 159,
+      "first_match_date": "1949-05-14",
+      "last_match_date": "2026-06-03"
+    },
+    {
+      "name": "Donetsk PR",
+      "confederation": "UNKNOWN",
+      "match_count": 6,
+      "first_match_date": "2015-05-14",
+      "last_match_date": "2017-08-31"
+    },
+    {
+      "name": "D\u00e9lvid\u00e9k",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2016-08-01",
+      "last_match_date": "2016-08-03"
+    },
+    {
+      "name": "East Turkestan",
+      "confederation": "UNKNOWN",
+      "match_count": 5,
+      "first_match_date": "2019-10-19",
+      "last_match_date": "2025-07-04"
+    },
+    {
+      "name": "Ecuador",
+      "confederation": "UNKNOWN",
+      "match_count": 595,
+      "first_match_date": "1938-08-08",
+      "last_match_date": "2026-06-30"
+    },
+    {
+      "name": "Egypt",
+      "confederation": "UNKNOWN",
+      "match_count": 759,
+      "first_match_date": "1920-08-28",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "El Salvador",
+      "confederation": "UNKNOWN",
+      "match_count": 614,
+      "first_match_date": "1921-09-14",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Elba Island",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2022-04-22",
+      "last_match_date": "2022-07-16"
+    },
+    {
+      "name": "Ellan Vannin",
+      "confederation": "UNKNOWN",
+      "match_count": 22,
+      "first_match_date": "2014-04-06",
+      "last_match_date": "2018-06-03"
+    },
+    {
+      "name": "England",
+      "confederation": "UNKNOWN",
+      "match_count": 1093,
+      "first_match_date": "1872-11-30",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "confederation": "UNKNOWN",
+      "match_count": 179,
+      "first_match_date": "1975-05-23",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Eritrea",
+      "confederation": "UNKNOWN",
+      "match_count": 71,
+      "first_match_date": "1992-06-26",
+      "last_match_date": "2019-09-10"
+    },
+    {
+      "name": "Estonia",
+      "confederation": "UNKNOWN",
+      "match_count": 550,
+      "first_match_date": "1920-10-17",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Eswatini",
+      "confederation": "UNKNOWN",
+      "match_count": 274,
+      "first_match_date": "1968-05-01",
+      "last_match_date": "2025-10-13"
+    },
+    {
+      "name": "Ethiopia",
+      "confederation": "UNKNOWN",
+      "match_count": 409,
+      "first_match_date": "1947-12-05",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Falkland Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 33,
+      "first_match_date": "2001-07-08",
+      "last_match_date": "2023-07-13"
+    },
+    {
+      "name": "Faroe Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 287,
+      "first_match_date": "1972-07-12",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Felvid\u00e9k",
+      "confederation": "UNKNOWN",
+      "match_count": 12,
+      "first_match_date": "2015-05-30",
+      "last_match_date": "2017-06-09"
+    },
+    {
+      "name": "Fiji",
+      "confederation": "UNKNOWN",
+      "match_count": 268,
+      "first_match_date": "1951-10-07",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Finland",
+      "confederation": "UNKNOWN",
+      "match_count": 818,
+      "first_match_date": "1911-10-22",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "France",
+      "confederation": "UNKNOWN",
+      "match_count": 939,
+      "first_match_date": "1904-05-01",
+      "last_match_date": "2026-06-30"
+    },
+    {
+      "name": "Franconia",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "2014-05-29",
+      "last_match_date": "2019-06-25"
+    },
+    {
+      "name": "French Guiana",
+      "confederation": "UNKNOWN",
+      "match_count": 179,
+      "first_match_date": "1936-01-01",
+      "last_match_date": "2024-11-19"
+    },
+    {
+      "name": "Fr\u00f8ya",
+      "confederation": "UNKNOWN",
+      "match_count": 37,
+      "first_match_date": "1997-06-29",
+      "last_match_date": "2025-07-17"
+    },
+    {
+      "name": "Gabon",
+      "confederation": "UNKNOWN",
+      "match_count": 405,
+      "first_match_date": "1960-04-14",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "Galicia",
+      "confederation": "UNKNOWN",
+      "match_count": 12,
+      "first_match_date": "1922-11-19",
+      "last_match_date": "2024-05-21"
+    },
+    {
+      "name": "Gambia",
+      "confederation": "UNKNOWN",
+      "match_count": 266,
+      "first_match_date": "1953-02-09",
+      "last_match_date": "2026-05-29"
+    },
+    {
+      "name": "Georgia",
+      "confederation": "UNKNOWN",
+      "match_count": 307,
+      "first_match_date": "1979-07-22",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "German DR",
+      "confederation": "UNKNOWN",
+      "match_count": 298,
+      "first_match_date": "1952-05-18",
+      "last_match_date": "1990-09-12"
+    },
+    {
+      "name": "Germany",
+      "confederation": "UNKNOWN",
+      "match_count": 1035,
+      "first_match_date": "1908-04-05",
+      "last_match_date": "2026-06-29"
+    },
+    {
+      "name": "Ghana",
+      "confederation": "UNKNOWN",
+      "match_count": 674,
+      "first_match_date": "1950-05-28",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Gibraltar",
+      "confederation": "UNKNOWN",
+      "match_count": 160,
+      "first_match_date": "1993-07-04",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Gotland",
+      "confederation": "UNKNOWN",
+      "match_count": 30,
+      "first_match_date": "1999-06-27",
+      "last_match_date": "2017-06-29"
+    },
+    {
+      "name": "Gozo",
+      "confederation": "UNKNOWN",
+      "match_count": 14,
+      "first_match_date": "2009-06-22",
+      "last_match_date": "2025-07-17"
+    },
+    {
+      "name": "Greece",
+      "confederation": "UNKNOWN",
+      "match_count": 633,
+      "first_match_date": "1919-06-25",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Greenland",
+      "confederation": "UNKNOWN",
+      "match_count": 77,
+      "first_match_date": "1980-07-02",
+      "last_match_date": "2024-06-01"
+    },
+    {
+      "name": "Grenada",
+      "confederation": "UNKNOWN",
+      "match_count": 260,
+      "first_match_date": "1938-08-17",
+      "last_match_date": "2026-05-16"
+    },
+    {
+      "name": "Guadeloupe",
+      "confederation": "UNKNOWN",
+      "match_count": 271,
+      "first_match_date": "1934-03-13",
+      "last_match_date": "2025-06-24"
+    },
+    {
+      "name": "Guam",
+      "confederation": "UNKNOWN",
+      "match_count": 123,
+      "first_match_date": "1975-08-02",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Guatemala",
+      "confederation": "UNKNOWN",
+      "match_count": 554,
+      "first_match_date": "1921-09-18",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Guernsey",
+      "confederation": "UNKNOWN",
+      "match_count": 240,
+      "first_match_date": "1905-04-17",
+      "last_match_date": "2023-07-13"
+    },
+    {
+      "name": "Guinea",
+      "confederation": "UNKNOWN",
+      "match_count": 539,
+      "first_match_date": "1962-05-09",
+      "last_match_date": "2026-06-04"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "confederation": "UNKNOWN",
+      "match_count": 190,
+      "first_match_date": "1953-06-02",
+      "last_match_date": "2026-03-31"
+    },
+    {
+      "name": "Guyana",
+      "confederation": "UNKNOWN",
+      "match_count": 313,
+      "first_match_date": "1905-07-21",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "G\u0103g\u0103uzia",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "2006-11-19",
+      "last_match_date": "2006-11-21"
+    },
+    {
+      "name": "Haiti",
+      "confederation": "UNKNOWN",
+      "match_count": 513,
+      "first_match_date": "1925-03-22",
+      "last_match_date": "2026-06-24"
+    },
+    {
+      "name": "Hitra",
+      "confederation": "UNKNOWN",
+      "match_count": 23,
+      "first_match_date": "1997-06-29",
+      "last_match_date": "2025-07-17"
+    },
+    {
+      "name": "Hmong",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "2023-08-04",
+      "last_match_date": "2023-08-08"
+    },
+    {
+      "name": "Honduras",
+      "confederation": "UNKNOWN",
+      "match_count": 620,
+      "first_match_date": "1927-11-07",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Hong Kong",
+      "confederation": "UNKNOWN",
+      "match_count": 447,
+      "first_match_date": "1953-04-05",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Hungary",
+      "confederation": "UNKNOWN",
+      "match_count": 1006,
+      "first_match_date": "1902-10-12",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Iceland",
+      "confederation": "UNKNOWN",
+      "match_count": 522,
+      "first_match_date": "1946-07-17",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "India",
+      "confederation": "UNKNOWN",
+      "match_count": 534,
+      "first_match_date": "1938-09-03",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Indonesia",
+      "confederation": "UNKNOWN",
+      "match_count": 728,
+      "first_match_date": "1934-05-13",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Iran",
+      "confederation": "UNKNOWN",
+      "match_count": 615,
+      "first_match_date": "1941-08-23",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Iraq",
+      "confederation": "UNKNOWN",
+      "match_count": 658,
+      "first_match_date": "1960-06-05",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Iraqi Kurdistan",
+      "confederation": "UNKNOWN",
+      "match_count": 27,
+      "first_match_date": "2008-07-07",
+      "last_match_date": "2016-06-04"
+    },
+    {
+      "name": "Isle of Man",
+      "confederation": "UNKNOWN",
+      "match_count": 58,
+      "first_match_date": "1993-07-04",
+      "last_match_date": "2025-07-18"
+    },
+    {
+      "name": "Isle of Wight",
+      "confederation": "UNKNOWN",
+      "match_count": 48,
+      "first_match_date": "1991-06-24",
+      "last_match_date": "2023-07-13"
+    },
+    {
+      "name": "Israel",
+      "confederation": "UNKNOWN",
+      "match_count": 498,
+      "first_match_date": "1934-03-16",
+      "last_match_date": "2026-06-03"
+    },
+    {
+      "name": "Italy",
+      "confederation": "UNKNOWN",
+      "match_count": 893,
+      "first_match_date": "1910-05-15",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Ivory Coast",
+      "confederation": "UNKNOWN",
+      "match_count": 640,
+      "first_match_date": "1960-04-14",
+      "last_match_date": "2026-06-30"
+    },
+    {
+      "name": "Jamaica",
+      "confederation": "UNKNOWN",
+      "match_count": 663,
+      "first_match_date": "1925-03-22",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Japan",
+      "confederation": "UNKNOWN",
+      "match_count": 794,
+      "first_match_date": "1917-05-07",
+      "last_match_date": "2026-06-29"
+    },
+    {
+      "name": "Jersey",
+      "confederation": "UNKNOWN",
+      "match_count": 235,
+      "first_match_date": "1905-04-27",
+      "last_match_date": "2025-07-18"
+    },
+    {
+      "name": "Jordan",
+      "confederation": "UNKNOWN",
+      "match_count": 488,
+      "first_match_date": "1963-01-06",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Kabylia",
+      "confederation": "UNKNOWN",
+      "match_count": 6,
+      "first_match_date": "2018-05-31",
+      "last_match_date": "2018-06-09"
+    },
+    {
+      "name": "Kazakhstan",
+      "confederation": "UNKNOWN",
+      "match_count": 269,
+      "first_match_date": "1979-08-04",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Kenya",
+      "confederation": "UNKNOWN",
+      "match_count": 706,
+      "first_match_date": "1926-05-01",
+      "last_match_date": "2026-06-04"
+    },
+    {
+      "name": "Kernow",
+      "confederation": "UNKNOWN",
+      "match_count": 12,
+      "first_match_date": "1953-09-26",
+      "last_match_date": "2023-07-16"
+    },
+    {
+      "name": "Kiribati",
+      "confederation": "UNKNOWN",
+      "match_count": 11,
+      "first_match_date": "1979-08-30",
+      "last_match_date": "2011-09-05"
+    },
+    {
+      "name": "Kosovo",
+      "confederation": "UNKNOWN",
+      "match_count": 104,
+      "first_match_date": "2006-04-22",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Kurdistan",
+      "confederation": "UNKNOWN",
+      "match_count": 5,
+      "first_match_date": "2012-05-15",
+      "last_match_date": "2013-06-28"
+    },
+    {
+      "name": "Kuwait",
+      "confederation": "UNKNOWN",
+      "match_count": 684,
+      "first_match_date": "1963-01-06",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "confederation": "UNKNOWN",
+      "match_count": 191,
+      "first_match_date": "1956-08-03",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "K\u00e1rp\u00e1talja",
+      "confederation": "UNKNOWN",
+      "match_count": 11,
+      "first_match_date": "2016-08-01",
+      "last_match_date": "2018-06-09"
+    },
+    {
+      "name": "Laos",
+      "confederation": "UNKNOWN",
+      "match_count": 224,
+      "first_match_date": "1961-12-12",
+      "last_match_date": "2025-11-19"
+    },
+    {
+      "name": "Latvia",
+      "confederation": "UNKNOWN",
+      "match_count": 461,
+      "first_match_date": "1922-09-24",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Lebanon",
+      "confederation": "UNKNOWN",
+      "match_count": 333,
+      "first_match_date": "1940-04-27",
+      "last_match_date": "2025-11-26"
+    },
+    {
+      "name": "Lesotho",
+      "confederation": "UNKNOWN",
+      "match_count": 296,
+      "first_match_date": "1970-08-08",
+      "last_match_date": "2026-06-04"
+    },
+    {
+      "name": "Liberia",
+      "confederation": "UNKNOWN",
+      "match_count": 302,
+      "first_match_date": "1961-12-25",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Libya",
+      "confederation": "UNKNOWN",
+      "match_count": 384,
+      "first_match_date": "1957-06-02",
+      "last_match_date": "2026-03-31"
+    },
+    {
+      "name": "Liechtenstein",
+      "confederation": "UNKNOWN",
+      "match_count": 259,
+      "first_match_date": "1981-06-14",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Lithuania",
+      "confederation": "UNKNOWN",
+      "match_count": 433,
+      "first_match_date": "1923-06-24",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Luhansk PR",
+      "confederation": "UNKNOWN",
+      "match_count": 6,
+      "first_match_date": "2015-05-05",
+      "last_match_date": "2019-12-08"
+    },
+    {
+      "name": "Luxembourg",
+      "confederation": "UNKNOWN",
+      "match_count": 467,
+      "first_match_date": "1911-10-29",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Macau",
+      "confederation": "UNKNOWN",
+      "match_count": 148,
+      "first_match_date": "1949-01-25",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Madagascar",
+      "confederation": "UNKNOWN",
+      "match_count": 320,
+      "first_match_date": "1947-02-15",
+      "last_match_date": "2026-06-02"
+    },
+    {
+      "name": "Madrid",
+      "confederation": "UNKNOWN",
+      "match_count": 1,
+      "first_match_date": "2013-06-07",
+      "last_match_date": "2013-06-07"
+    },
+    {
+      "name": "Malawi",
+      "confederation": "UNKNOWN",
+      "match_count": 644,
+      "first_match_date": "1957-08-28",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Malaysia",
+      "confederation": "UNKNOWN",
+      "match_count": 835,
+      "first_match_date": "1953-04-16",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Maldives",
+      "confederation": "UNKNOWN",
+      "match_count": 233,
+      "first_match_date": "1979-08-27",
+      "last_match_date": "2026-06-01"
+    },
+    {
+      "name": "Mali",
+      "confederation": "UNKNOWN",
+      "match_count": 569,
+      "first_match_date": "1960-04-14",
+      "last_match_date": "2026-06-04"
+    },
+    {
+      "name": "Malta",
+      "confederation": "UNKNOWN",
+      "match_count": 458,
+      "first_match_date": "1957-02-24",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Manchukuo",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "1939-09-03",
+      "last_match_date": "1942-08-09"
+    },
+    {
+      "name": "Mapuche",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2022-06-17",
+      "last_match_date": "2022-06-18"
+    },
+    {
+      "name": "Marshall Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2025-08-14",
+      "last_match_date": "2025-08-16"
+    },
+    {
+      "name": "Martinique",
+      "confederation": "UNKNOWN",
+      "match_count": 331,
+      "first_match_date": "1931-02-11",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Matabeleland",
+      "confederation": "UNKNOWN",
+      "match_count": 8,
+      "first_match_date": "2018-05-31",
+      "last_match_date": "2022-05-25"
+    },
+    {
+      "name": "Maule Sur",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2022-06-17",
+      "last_match_date": "2022-06-19"
+    },
+    {
+      "name": "Mauritania",
+      "confederation": "UNKNOWN",
+      "match_count": 273,
+      "first_match_date": "1961-12-25",
+      "last_match_date": "2026-06-08"
+    },
+    {
+      "name": "Mauritius",
+      "confederation": "UNKNOWN",
+      "match_count": 325,
+      "first_match_date": "1947-02-15",
+      "last_match_date": "2025-10-13"
+    },
+    {
+      "name": "Mayotte",
+      "confederation": "UNKNOWN",
+      "match_count": 38,
+      "first_match_date": "2001-11-20",
+      "last_match_date": "2023-08-26"
+    },
+    {
+      "name": "Menorca",
+      "confederation": "UNKNOWN",
+      "match_count": 25,
+      "first_match_date": "2007-06-30",
+      "last_match_date": "2023-07-13"
+    },
+    {
+      "name": "Mexico",
+      "confederation": "UNKNOWN",
+      "match_count": 1007,
+      "first_match_date": "1923-01-01",
+      "last_match_date": "2026-06-30"
+    },
+    {
+      "name": "Micronesia",
+      "confederation": "UNKNOWN",
+      "match_count": 7,
+      "first_match_date": "1999-06-05",
+      "last_match_date": "2003-07-07"
+    },
+    {
+      "name": "Moldova",
+      "confederation": "UNKNOWN",
+      "match_count": 299,
+      "first_match_date": "1956-08-12",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Monaco",
+      "confederation": "UNKNOWN",
+      "match_count": 24,
+      "first_match_date": "2000-06-11",
+      "last_match_date": "2017-04-29"
+    },
+    {
+      "name": "Mongolia",
+      "confederation": "UNKNOWN",
+      "match_count": 103,
+      "first_match_date": "1942-08-10",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Montenegro",
+      "confederation": "UNKNOWN",
+      "match_count": 170,
+      "first_match_date": "1946-08-22",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Montserrat",
+      "confederation": "UNKNOWN",
+      "match_count": 66,
+      "first_match_date": "1991-05-10",
+      "last_match_date": "2025-06-10"
+    },
+    {
+      "name": "Morocco",
+      "confederation": "UNKNOWN",
+      "match_count": 621,
+      "first_match_date": "1958-04-03",
+      "last_match_date": "2026-06-29"
+    },
+    {
+      "name": "Mozambique",
+      "confederation": "UNKNOWN",
+      "match_count": 375,
+      "first_match_date": "1975-06-25",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Myanmar",
+      "confederation": "UNKNOWN",
+      "match_count": 512,
+      "first_match_date": "1951-03-05",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Namibia",
+      "confederation": "UNKNOWN",
+      "match_count": 279,
+      "first_match_date": "1989-05-16",
+      "last_match_date": "2026-03-28"
+    },
+    {
+      "name": "Nepal",
+      "confederation": "UNKNOWN",
+      "match_count": 268,
+      "first_match_date": "1972-10-13",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Netherlands",
+      "confederation": "UNKNOWN",
+      "match_count": 883,
+      "first_match_date": "1905-04-30",
+      "last_match_date": "2026-06-29"
+    },
+    {
+      "name": "New Caledonia",
+      "confederation": "UNKNOWN",
+      "match_count": 265,
+      "first_match_date": "1951-09-19",
+      "last_match_date": "2026-03-26"
+    },
+    {
+      "name": "New Zealand",
+      "confederation": "UNKNOWN",
+      "match_count": 419,
+      "first_match_date": "1922-06-17",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Nicaragua",
+      "confederation": "UNKNOWN",
+      "match_count": 222,
+      "first_match_date": "1929-05-01",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Niger",
+      "confederation": "UNKNOWN",
+      "match_count": 260,
+      "first_match_date": "1961-12-25",
+      "last_match_date": "2026-06-08"
+    },
+    {
+      "name": "Nigeria",
+      "confederation": "UNKNOWN",
+      "match_count": 661,
+      "first_match_date": "1949-10-08",
+      "last_match_date": "2026-06-10"
+    },
+    {
+      "name": "Niue",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "1983-08-20",
+      "last_match_date": "1983-08-22"
+    },
+    {
+      "name": "North Korea",
+      "confederation": "UNKNOWN",
+      "match_count": 390,
+      "first_match_date": "1956-10-07",
+      "last_match_date": "2025-06-10"
+    },
+    {
+      "name": "North Macedonia",
+      "confederation": "UNKNOWN",
+      "match_count": 306,
+      "first_match_date": "1993-10-13",
+      "last_match_date": "2026-06-01"
+    },
+    {
+      "name": "North Vietnam",
+      "confederation": "UNKNOWN",
+      "match_count": 24,
+      "first_match_date": "1956-10-04",
+      "last_match_date": "1970-09-20"
+    },
+    {
+      "name": "Northern Cyprus",
+      "confederation": "UNKNOWN",
+      "match_count": 34,
+      "first_match_date": "1977-01-05",
+      "last_match_date": "2018-06-09"
+    },
+    {
+      "name": "Northern Ireland",
+      "confederation": "UNKNOWN",
+      "match_count": 707,
+      "first_match_date": "1882-02-18",
+      "last_match_date": "2026-06-08"
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 30,
+      "first_match_date": "1998-07-30",
+      "last_match_date": "2024-04-07"
+    },
+    {
+      "name": "Norway",
+      "confederation": "UNKNOWN",
+      "match_count": 876,
+      "first_match_date": "1908-07-12",
+      "last_match_date": "2026-06-30"
+    },
+    {
+      "name": "Occitania",
+      "confederation": "UNKNOWN",
+      "match_count": 33,
+      "first_match_date": "2005-02-12",
+      "last_match_date": "2014-12-30"
+    },
+    {
+      "name": "Oman",
+      "confederation": "UNKNOWN",
+      "match_count": 543,
+      "first_match_date": "1966-04-03",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Orkney",
+      "confederation": "UNKNOWN",
+      "match_count": 28,
+      "first_match_date": "2001-07-08",
+      "last_match_date": "2025-07-17"
+    },
+    {
+      "name": "Padania",
+      "confederation": "UNKNOWN",
+      "match_count": 45,
+      "first_match_date": "2008-07-08",
+      "last_match_date": "2019-06-08"
+    },
+    {
+      "name": "Pakistan",
+      "confederation": "UNKNOWN",
+      "match_count": 251,
+      "first_match_date": "1952-03-18",
+      "last_match_date": "2026-06-10"
+    },
+    {
+      "name": "Palau",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "1987-03-06",
+      "last_match_date": "1998-08-01"
+    },
+    {
+      "name": "Palestine",
+      "confederation": "UNKNOWN",
+      "match_count": 249,
+      "first_match_date": "1966-04-01",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Panama",
+      "confederation": "UNKNOWN",
+      "match_count": 542,
+      "first_match_date": "1938-02-12",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Panjab",
+      "confederation": "UNKNOWN",
+      "match_count": 19,
+      "first_match_date": "2015-05-30",
+      "last_match_date": "2019-12-29"
+    },
+    {
+      "name": "Papua New Guinea",
+      "confederation": "UNKNOWN",
+      "match_count": 155,
+      "first_match_date": "1963-08-29",
+      "last_match_date": "2025-11-23"
+    },
+    {
+      "name": "Paraguay",
+      "confederation": "UNKNOWN",
+      "match_count": 787,
+      "first_match_date": "1919-05-11",
+      "last_match_date": "2026-06-29"
+    },
+    {
+      "name": "Parishes of Jersey",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "2018-10-21",
+      "last_match_date": "2019-06-02"
+    },
+    {
+      "name": "Peru",
+      "confederation": "UNKNOWN",
+      "match_count": 714,
+      "first_match_date": "1927-11-01",
+      "last_match_date": "2026-06-08"
+    },
+    {
+      "name": "Philippines",
+      "confederation": "UNKNOWN",
+      "match_count": 342,
+      "first_match_date": "1913-02-04",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Poland",
+      "confederation": "UNKNOWN",
+      "match_count": 892,
+      "first_match_date": "1921-12-18",
+      "last_match_date": "2026-06-03"
+    },
+    {
+      "name": "Portugal",
+      "confederation": "UNKNOWN",
+      "match_count": 698,
+      "first_match_date": "1921-12-18",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Provence",
+      "confederation": "UNKNOWN",
+      "match_count": 23,
+      "first_match_date": "1921-04-03",
+      "last_match_date": "2013-06-28"
+    },
+    {
+      "name": "Puerto Rico",
+      "confederation": "UNKNOWN",
+      "match_count": 163,
+      "first_match_date": "1940-11-12",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Qatar",
+      "confederation": "UNKNOWN",
+      "match_count": 638,
+      "first_match_date": "1970-03-27",
+      "last_match_date": "2026-06-24"
+    },
+    {
+      "name": "Quebec",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "2013-06-23",
+      "last_match_date": "2013-06-27"
+    },
+    {
+      "name": "Raetia",
+      "confederation": "UNKNOWN",
+      "match_count": 26,
+      "first_match_date": "2011-12-04",
+      "last_match_date": "2023-08-06"
+    },
+    {
+      "name": "Republic of Ireland",
+      "confederation": "UNKNOWN",
+      "match_count": 633,
+      "first_match_date": "1924-05-28",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Republic of St. Pauli",
+      "confederation": "UNKNOWN",
+      "match_count": 4,
+      "first_match_date": "2006-05-29",
+      "last_match_date": "2006-06-03"
+    },
+    {
+      "name": "Rhodes",
+      "confederation": "UNKNOWN",
+      "match_count": 18,
+      "first_match_date": "1999-06-27",
+      "last_match_date": "2011-06-27"
+    },
+    {
+      "name": "Romani people",
+      "confederation": "UNKNOWN",
+      "match_count": 7,
+      "first_match_date": "2007-06-07",
+      "last_match_date": "2016-05-16"
+    },
+    {
+      "name": "Romania",
+      "confederation": "UNKNOWN",
+      "match_count": 766,
+      "first_match_date": "1919-06-24",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Russia",
+      "confederation": "UNKNOWN",
+      "match_count": 749,
+      "first_match_date": "1910-10-16",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Rwanda",
+      "confederation": "UNKNOWN",
+      "match_count": 280,
+      "first_match_date": "1976-07-03",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "Ry\u016bky\u016b",
+      "confederation": "UNKNOWN",
+      "match_count": 1,
+      "first_match_date": "2016-11-26",
+      "last_match_date": "2016-11-26"
+    },
+    {
+      "name": "R\u00e9union",
+      "confederation": "UNKNOWN",
+      "match_count": 124,
+      "first_match_date": "1947-05-15",
+      "last_match_date": "2023-09-02"
+    },
+    {
+      "name": "Saare County",
+      "confederation": "UNKNOWN",
+      "match_count": 35,
+      "first_match_date": "1999-06-27",
+      "last_match_date": "2017-06-29"
+    },
+    {
+      "name": "Saarland",
+      "confederation": "UNKNOWN",
+      "match_count": 9,
+      "first_match_date": "1953-06-24",
+      "last_match_date": "1956-06-06"
+    },
+    {
+      "name": "Saint Barth\u00e9lemy",
+      "confederation": "UNKNOWN",
+      "match_count": 10,
+      "first_match_date": "2010-07-03",
+      "last_match_date": "2023-03-10"
+    },
+    {
+      "name": "Saint Helena",
+      "confederation": "UNKNOWN",
+      "match_count": 8,
+      "first_match_date": "2019-06-12",
+      "last_match_date": "2023-07-13"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "confederation": "UNKNOWN",
+      "match_count": 226,
+      "first_match_date": "1938-08-17",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "Saint Lucia",
+      "confederation": "UNKNOWN",
+      "match_count": 230,
+      "first_match_date": "1938-01-09",
+      "last_match_date": "2026-03-27"
+    },
+    {
+      "name": "Saint Martin",
+      "confederation": "UNKNOWN",
+      "match_count": 68,
+      "first_match_date": "1990-03-24",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Saint Pierre and Miquelon",
+      "confederation": "UNKNOWN",
+      "match_count": 7,
+      "first_match_date": "2010-09-22",
+      "last_match_date": "2012-09-28"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "confederation": "UNKNOWN",
+      "match_count": 236,
+      "first_match_date": "1961-01-16",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Samoa",
+      "confederation": "UNKNOWN",
+      "match_count": 71,
+      "first_match_date": "1979-08-31",
+      "last_match_date": "2024-11-18"
+    },
+    {
+      "name": "San Marino",
+      "confederation": "UNKNOWN",
+      "match_count": 225,
+      "first_match_date": "1990-11-14",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Sark",
+      "confederation": "UNKNOWN",
+      "match_count": 4,
+      "first_match_date": "2003-06-29",
+      "last_match_date": "2003-07-03"
+    },
+    {
+      "name": "Saudi Arabia",
+      "confederation": "UNKNOWN",
+      "match_count": 744,
+      "first_match_date": "1963-11-18",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Saugeais",
+      "confederation": "UNKNOWN",
+      "match_count": 1,
+      "first_match_date": "2013-06-29",
+      "last_match_date": "2013-06-29"
+    },
+    {
+      "name": "Scotland",
+      "confederation": "UNKNOWN",
+      "match_count": 854,
+      "first_match_date": "1872-11-30",
+      "last_match_date": "2026-06-24"
+    },
+    {
+      "name": "Sealand",
+      "confederation": "UNKNOWN",
+      "match_count": 12,
+      "first_match_date": "2004-05-15",
+      "last_match_date": "2014-08-10"
+    },
+    {
+      "name": "Seborga",
+      "confederation": "UNKNOWN",
+      "match_count": 1,
+      "first_match_date": "2014-08-10",
+      "last_match_date": "2014-08-10"
+    },
+    {
+      "name": "Senegal",
+      "confederation": "UNKNOWN",
+      "match_count": 641,
+      "first_match_date": "1961-12-05",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Serbia",
+      "confederation": "UNKNOWN",
+      "match_count": 348,
+      "first_match_date": "1950-02-26",
+      "last_match_date": "2026-06-04"
+    },
+    {
+      "name": "Seychelles",
+      "confederation": "UNKNOWN",
+      "match_count": 176,
+      "first_match_date": "1974-03-13",
+      "last_match_date": "2025-10-14"
+    },
+    {
+      "name": "Shetland",
+      "confederation": "UNKNOWN",
+      "match_count": 58,
+      "first_match_date": "1989-07-06",
+      "last_match_date": "2025-07-17"
+    },
+    {
+      "name": "Sierra Leone",
+      "confederation": "UNKNOWN",
+      "match_count": 301,
+      "first_match_date": "1949-10-08",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Silesia",
+      "confederation": "UNKNOWN",
+      "match_count": 8,
+      "first_match_date": "1933-10-04",
+      "last_match_date": "2006-12-09"
+    },
+    {
+      "name": "Singapore",
+      "confederation": "UNKNOWN",
+      "match_count": 696,
+      "first_match_date": "1953-04-11",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Sint Maarten",
+      "confederation": "UNKNOWN",
+      "match_count": 60,
+      "first_match_date": "1989-05-07",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "Slovakia",
+      "confederation": "UNKNOWN",
+      "match_count": 367,
+      "first_match_date": "1939-08-27",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Slovenia",
+      "confederation": "UNKNOWN",
+      "match_count": 317,
+      "first_match_date": "1991-06-19",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "Solomon Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 214,
+      "first_match_date": "1963-08-30",
+      "last_match_date": "2026-03-30"
+    },
+    {
+      "name": "Somalia",
+      "confederation": "UNKNOWN",
+      "match_count": 124,
+      "first_match_date": "1963-11-11",
+      "last_match_date": "2025-11-26"
+    },
+    {
+      "name": "Somaliland",
+      "confederation": "UNKNOWN",
+      "match_count": 6,
+      "first_match_date": "2014-05-17",
+      "last_match_date": "2019-05-04"
+    },
+    {
+      "name": "South Africa",
+      "confederation": "UNKNOWN",
+      "match_count": 484,
+      "first_match_date": "1906-07-09",
+      "last_match_date": "2026-06-28"
+    },
+    {
+      "name": "South Korea",
+      "confederation": "UNKNOWN",
+      "match_count": 1010,
+      "first_match_date": "1949-01-02",
+      "last_match_date": "2026-06-24"
+    },
+    {
+      "name": "South Ossetia",
+      "confederation": "UNKNOWN",
+      "match_count": 17,
+      "first_match_date": "2013-09-23",
+      "last_match_date": "2019-12-08"
+    },
+    {
+      "name": "South Sudan",
+      "confederation": "UNKNOWN",
+      "match_count": 78,
+      "first_match_date": "2012-07-10",
+      "last_match_date": "2025-11-25"
+    },
+    {
+      "name": "South Yemen",
+      "confederation": "UNKNOWN",
+      "match_count": 3,
+      "first_match_date": "1982-11-21",
+      "last_match_date": "1982-11-25"
+    },
+    {
+      "name": "Spain",
+      "confederation": "UNKNOWN",
+      "match_count": 786,
+      "first_match_date": "1920-08-28",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Sri Lanka",
+      "confederation": "UNKNOWN",
+      "match_count": 251,
+      "first_match_date": "1952-03-24",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Sudan",
+      "confederation": "UNKNOWN",
+      "match_count": 469,
+      "first_match_date": "1956-11-16",
+      "last_match_date": "2026-01-03"
+    },
+    {
+      "name": "Suriname",
+      "confederation": "UNKNOWN",
+      "match_count": 399,
+      "first_match_date": "1921-01-28",
+      "last_match_date": "2026-03-26"
+    },
+    {
+      "name": "Surrey",
+      "confederation": "UNKNOWN",
+      "match_count": 1,
+      "first_match_date": "2018-05-06",
+      "last_match_date": "2018-05-06"
+    },
+    {
+      "name": "Sweden",
+      "confederation": "UNKNOWN",
+      "match_count": 1105,
+      "first_match_date": "1908-07-12",
+      "last_match_date": "2026-06-30"
+    },
+    {
+      "name": "Switzerland",
+      "confederation": "UNKNOWN",
+      "match_count": 887,
+      "first_match_date": "1905-02-12",
+      "last_match_date": "2026-06-24"
+    },
+    {
+      "name": "Syria",
+      "confederation": "UNKNOWN",
+      "match_count": 484,
+      "first_match_date": "1949-11-20",
+      "last_match_date": "2026-06-05"
+    },
+    {
+      "name": "Sz\u00e9kely Land",
+      "confederation": "UNKNOWN",
+      "match_count": 27,
+      "first_match_date": "2014-11-08",
+      "last_match_date": "2023-07-02"
+    },
+    {
+      "name": "S\u00e1pmi",
+      "confederation": "UNKNOWN",
+      "match_count": 29,
+      "first_match_date": "2006-11-20",
+      "last_match_date": "2023-07-16"
+    },
+    {
+      "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "confederation": "UNKNOWN",
+      "match_count": 71,
+      "first_match_date": "1976-05-02",
+      "last_match_date": "2025-10-13"
+    },
+    {
+      "name": "Tahiti",
+      "confederation": "UNKNOWN",
+      "match_count": 242,
+      "first_match_date": "1952-09-21",
+      "last_match_date": "2025-03-21"
+    },
+    {
+      "name": "Taiwan",
+      "confederation": "UNKNOWN",
+      "match_count": 245,
+      "first_match_date": "1950-04-16",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Tajikistan",
+      "confederation": "UNKNOWN",
+      "match_count": 201,
+      "first_match_date": "1992-06-17",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Tamil Eelam",
+      "confederation": "UNKNOWN",
+      "match_count": 28,
+      "first_match_date": "2012-06-05",
+      "last_match_date": "2025-07-04"
+    },
+    {
+      "name": "Tanzania",
+      "confederation": "UNKNOWN",
+      "match_count": 599,
+      "first_match_date": "1945-03-28",
+      "last_match_date": "2026-03-29"
+    },
+    {
+      "name": "Thailand",
+      "confederation": "UNKNOWN",
+      "match_count": 865,
+      "first_match_date": "1954-11-01",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Tibet",
+      "confederation": "UNKNOWN",
+      "match_count": 21,
+      "first_match_date": "2001-06-30",
+      "last_match_date": "2025-07-03"
+    },
+    {
+      "name": "Ticino",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2023-06-17",
+      "last_match_date": "2023-08-06"
+    },
+    {
+      "name": "Timor-Leste",
+      "confederation": "UNKNOWN",
+      "match_count": 86,
+      "first_match_date": "2003-03-21",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Togo",
+      "confederation": "UNKNOWN",
+      "match_count": 447,
+      "first_match_date": "1956-10-06",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Tonga",
+      "confederation": "UNKNOWN",
+      "match_count": 68,
+      "first_match_date": "1979-08-29",
+      "last_match_date": "2024-09-09"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "confederation": "UNKNOWN",
+      "match_count": 753,
+      "first_match_date": "1905-07-21",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Tunisia",
+      "confederation": "UNKNOWN",
+      "match_count": 681,
+      "first_match_date": "1957-06-02",
+      "last_match_date": "2026-06-25"
+    },
+    {
+      "name": "Turkey",
+      "confederation": "UNKNOWN",
+      "match_count": 645,
+      "first_match_date": "1923-10-26",
+      "last_match_date": "2026-06-25"
+    },
+    {
+      "name": "Turkmenistan",
+      "confederation": "UNKNOWN",
+      "match_count": 175,
+      "first_match_date": "1992-06-01",
+      "last_match_date": "2025-11-18"
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 52,
+      "first_match_date": "1999-02-24",
+      "last_match_date": "2025-08-16"
+    },
+    {
+      "name": "Tuvalu",
+      "confederation": "UNKNOWN",
+      "match_count": 39,
+      "first_match_date": "1979-08-30",
+      "last_match_date": "2023-11-30"
+    },
+    {
+      "name": "Two Sicilies",
+      "confederation": "UNKNOWN",
+      "match_count": 6,
+      "first_match_date": "2010-05-31",
+      "last_match_date": "2023-07-02"
+    },
+    {
+      "name": "Uganda",
+      "confederation": "UNKNOWN",
+      "match_count": 685,
+      "first_match_date": "1926-05-01",
+      "last_match_date": "2025-12-30"
+    },
+    {
+      "name": "Ukraine",
+      "confederation": "UNKNOWN",
+      "match_count": 338,
+      "first_match_date": "1928-08-19",
+      "last_match_date": "2026-06-07"
+    },
+    {
+      "name": "United Arab Emirates",
+      "confederation": "UNKNOWN",
+      "match_count": 612,
+      "first_match_date": "1972-03-17",
+      "last_match_date": "2025-12-15"
+    },
+    {
+      "name": "United Koreans in Japan",
+      "confederation": "UNKNOWN",
+      "match_count": 12,
+      "first_match_date": "2016-05-30",
+      "last_match_date": "2018-06-09"
+    },
+    {
+      "name": "United States",
+      "confederation": "UNKNOWN",
+      "match_count": 793,
+      "first_match_date": "1885-11-28",
+      "last_match_date": "2026-06-25"
+    },
+    {
+      "name": "United States Virgin Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 78,
+      "first_match_date": "1998-03-22",
+      "last_match_date": "2026-03-28"
+    },
+    {
+      "name": "Uruguay",
+      "confederation": "UNKNOWN",
+      "match_count": 973,
+      "first_match_date": "1902-07-20",
+      "last_match_date": "2026-06-26"
+    },
+    {
+      "name": "Uzbekistan",
+      "confederation": "UNKNOWN",
+      "match_count": 357,
+      "first_match_date": "1992-06-17",
+      "last_match_date": "2026-06-27"
+    },
+    {
+      "name": "Vanuatu",
+      "confederation": "UNKNOWN",
+      "match_count": 214,
+      "first_match_date": "1951-10-04",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Vatican City",
+      "confederation": "UNKNOWN",
+      "match_count": 8,
+      "first_match_date": "2002-11-23",
+      "last_match_date": "2022-04-22"
+    },
+    {
+      "name": "Venezuela",
+      "confederation": "UNKNOWN",
+      "match_count": 460,
+      "first_match_date": "1938-02-12",
+      "last_match_date": "2026-06-09"
+    },
+    {
+      "name": "Vietnam",
+      "confederation": "UNKNOWN",
+      "match_count": 297,
+      "first_match_date": "1949-01-16",
+      "last_match_date": "2026-03-26"
+    },
+    {
+      "name": "Vietnam Republic",
+      "confederation": "UNKNOWN",
+      "match_count": 195,
+      "first_match_date": "1956-05-03",
+      "last_match_date": "1975-03-23"
+    },
+    {
+      "name": "Wales",
+      "confederation": "UNKNOWN",
+      "match_count": 726,
+      "first_match_date": "1876-03-25",
+      "last_match_date": "2026-06-06"
+    },
+    {
+      "name": "Wallis Islands and Futuna",
+      "confederation": "UNKNOWN",
+      "match_count": 24,
+      "first_match_date": "1966-12-11",
+      "last_match_date": "1995-08-20"
+    },
+    {
+      "name": "West Papua",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2019-10-19",
+      "last_match_date": "2022-11-13"
+    },
+    {
+      "name": "Western Armenia",
+      "confederation": "UNKNOWN",
+      "match_count": 16,
+      "first_match_date": "2016-05-30",
+      "last_match_date": "2019-06-09"
+    },
+    {
+      "name": "Western Australia",
+      "confederation": "UNKNOWN",
+      "match_count": 32,
+      "first_match_date": "1967-08-10",
+      "last_match_date": "1980-11-25"
+    },
+    {
+      "name": "Western Isles",
+      "confederation": "UNKNOWN",
+      "match_count": 34,
+      "first_match_date": "2005-07-11",
+      "last_match_date": "2025-07-17"
+    },
+    {
+      "name": "Western Sahara",
+      "confederation": "UNKNOWN",
+      "match_count": 9,
+      "first_match_date": "2001-02-27",
+      "last_match_date": "2013-06-28"
+    },
+    {
+      "name": "Yemen",
+      "confederation": "UNKNOWN",
+      "match_count": 266,
+      "first_match_date": "1966-04-02",
+      "last_match_date": "2025-11-26"
+    },
+    {
+      "name": "Yemen DPR",
+      "confederation": "UNKNOWN",
+      "match_count": 25,
+      "first_match_date": "1972-01-01",
+      "last_match_date": "1989-11-05"
+    },
+    {
+      "name": "Ynys M\u00f4n",
+      "confederation": "UNKNOWN",
+      "match_count": 67,
+      "first_match_date": "1989-07-06",
+      "last_match_date": "2025-07-17"
+    },
+    {
+      "name": "Yorkshire",
+      "confederation": "UNKNOWN",
+      "match_count": 7,
+      "first_match_date": "2018-01-28",
+      "last_match_date": "2019-06-01"
+    },
+    {
+      "name": "Yoruba Nation",
+      "confederation": "UNKNOWN",
+      "match_count": 2,
+      "first_match_date": "2022-05-21",
+      "last_match_date": "2022-05-23"
+    },
+    {
+      "name": "Yugoslavia",
+      "confederation": "UNKNOWN",
+      "match_count": 483,
+      "first_match_date": "1920-08-28",
+      "last_match_date": "1992-03-25"
+    },
+    {
+      "name": "Zambia",
+      "confederation": "UNKNOWN",
+      "match_count": 793,
+      "first_match_date": "1946-06-16",
+      "last_match_date": "2026-03-31"
+    },
+    {
+      "name": "Zanzibar",
+      "confederation": "UNKNOWN",
+      "match_count": 209,
+      "first_match_date": "1947-09-18",
+      "last_match_date": "2025-01-13"
+    },
+    {
+      "name": "Zimbabwe",
+      "confederation": "UNKNOWN",
+      "match_count": 496,
+      "first_match_date": "1946-06-16",
+      "last_match_date": "2026-05-30"
+    },
+    {
+      "name": "\u00c5land Islands",
+      "confederation": "UNKNOWN",
+      "match_count": 51,
+      "first_match_date": "1989-07-08",
+      "last_match_date": "2023-07-13"
+    }
+  ]
+}

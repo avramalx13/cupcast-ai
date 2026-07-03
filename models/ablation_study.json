@@ -1,0 +1,89 @@
+{
+  "train_matches": 9000,
+  "test_matches": 3000,
+  "total_feature_rows": 49484,
+  "ablation_rows": 12000,
+  "data_window_note": "ablation uses the most recent 12000 rows for runtime",
+  "groups": [
+    {
+      "feature_group": "elo_only",
+      "model_name": "elo_logistic_regression",
+      "status": "ok",
+      "reason": null,
+      "accuracy": 0.6023333333333334,
+      "log_loss": 0.8680499614271274,
+      "brier_score": 0.5111176190983175,
+      "ece": 0.01345765119580259
+    },
+    {
+      "feature_group": "form_only",
+      "model_name": "recent_form_only",
+      "status": "ok",
+      "reason": null,
+      "accuracy": 0.5306666666666666,
+      "log_loss": 0.9770713391538774,
+      "brier_score": 0.5816553826977063,
+      "ece": 0.013863262660759953
+    },
+    {
+      "feature_group": "ranking_only",
+      "model_name": "ranking_only",
+      "status": "ok",
+      "reason": null,
+      "accuracy": 0.4726666666666667,
+      "log_loss": 1.0542847515752167,
+      "brier_score": 0.6360357956766963,
+      "ece": 0.005425321378053738
+    },
+    {
+      "feature_group": "schedule_only",
+      "model_name": "schedule_only",
+      "status": "ok",
+      "reason": null,
+      "accuracy": 0.474,
+      "log_loss": 1.0464295530199788,
+      "brier_score": 0.6303544047535888,
+      "ece": 0.013701624865141829
+    },
+    {
+      "feature_group": "goals_only",
+      "model_name": "goals_only",
+      "status": "ok",
+      "reason": null,
+      "accuracy": 0.5343333333333333,
+      "log_loss": 0.9745435189934609,
+      "brier_score": 0.5796632045412528,
+      "ece": 0.01379754337795666
+    },
+    {
+      "feature_group": "elo_plus_form",
+      "model_name": "elo_plus_form",
+      "status": "ok",
+      "reason": null,
+      "accuracy": 0.607,
+      "log_loss": 0.8609613345178047,
+      "brier_score": 0.5062339734664376,
+      "ece": 0.015144663818934895
+    },
+    {
+      "feature_group": "all_features",
+      "model_name": "logistic_regression",
+      "status": "ok",
+      "reason": null,
+      "accuracy": 0.607,
+      "log_loss": 0.8599287394419611,
+      "brier_score": 0.5059783276147384,
+      "ece": 0.02095114088002354
+    },
+    {
+      "feature_group": "all_features_plus_external_ratings",
+      "model_name": "logistic_regression",
+      "status": "unavailable",
+      "reason": "external rating CSVs not found",
+      "accuracy": null,
+      "log_loss": null,
+      "brier_score": null,
+      "ece": null
+    }
+  ]
+}

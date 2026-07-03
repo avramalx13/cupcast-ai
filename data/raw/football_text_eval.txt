@@ -1,0 +1,20 @@
+### Context:
+Team A: France
+Team B: Brazil
+France win probability: 42%
+Draw probability: 25%
+Brazil win probability: 33%
+
+### Analysis:
+France is narrowly favored, but the forecast remains uncertain because Brazil still has a meaningful win probability and the draw is material.
+
+### Context:
+Team A: Germany
+Team B: Paraguay
+Germany title probability before: 13%
+Germany title probability after: 0%
+Paraguay title probability before: 3%
+Paraguay title probability after: 11%
+
+### Analysis:
+Germany drops to zero because they were eliminated, while Paraguay improves because they advanced and inherited a better tournament path.

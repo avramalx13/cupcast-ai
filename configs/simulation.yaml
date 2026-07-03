@@ -1,0 +1,12 @@
+model_path: models/prediction_model.joblib
+matches_path: data/raw/historical_matches.csv
+teams_path: data/raw/teams.csv
+snapshot_path: data/processed/probability_snapshots.csv
+simulations: 10000
+random_seed: 42
+simulation_version: sample-2026
+
+simulation:
+  format: simple_16_team_knockout
+  simulations: 10000
+  random_seed: 42

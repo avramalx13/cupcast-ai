@@ -1,0 +1,1399 @@
+{
+  "dataset_source": "international-results",
+  "years": [
+    2014,
+    2018,
+    2022
+  ],
+  "results": [
+    {
+      "year": 2014,
+      "status": "ok",
+      "tournament_start": "2014-06-12",
+      "tournament_end": "2014-07-13",
+      "train_match_count": 37861,
+      "test_match_count": 64,
+      "group_stage_match_count": 0,
+      "knockout_match_count": 0,
+      "best_overall_model": "feature_logistic_regression_calibrated",
+      "best_group_stage_model": null,
+      "best_knockout_model": null,
+      "best_model": "feature_logistic_regression_calibrated",
+      "accuracy": 0.609375,
+      "log_loss": 0.9451041785554206,
+      "brier_score": 0.5581060649750706,
+      "ece": 0.06404777741486353,
+      "rps_if_available": null,
+      "calibration_ece": 0.06404777741486353,
+      "baseline_accuracy": 0.453125,
+      "elo_baseline_accuracy": 0.59375,
+      "ensemble_accuracy": 0.609375,
+      "baseline_comparison": {
+        "majority_baseline_log_loss": 1.0593279019136927,
+        "elo_baseline_log_loss": 0.9872708961496018,
+        "best_beats_majority_baseline": true,
+        "best_beats_elo_baseline": true
+      },
+      "models": [
+        {
+          "model_name": "feature_logistic_regression_calibrated",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.609375,
+          "top_class_accuracy": 0.609375,
+          "log_loss": 0.9451041785554206,
+          "brier_score": 0.5581060649750706,
+          "ece": 0.06404777741486353,
+          "expected_calibration_error": 0.06404777741486353,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 2,
+              "average_confidence": 0.3888811912535626,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 35,
+              "average_confidence": 0.48175113010401865,
+              "accuracy": 0.5714285714285714
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 22,
+              "average_confidence": 0.615501721285611,
+              "accuracy": 0.6363636363636364
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 5,
+              "average_confidence": 0.7441704882035026,
+              "accuracy": 0.8
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {
+            "calibration_method": "sigmoid"
+          },
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "logistic_regression",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.609375,
+          "top_class_accuracy": 0.609375,
+          "log_loss": 0.9454206155769095,
+          "brier_score": 0.5585947884342948,
+          "ece": 0.0886426783709707,
+          "expected_calibration_error": 0.0886426783709707,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 6,
+              "average_confidence": 0.38618639425091256,
+              "accuracy": 0.3333333333333333
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 31,
+              "average_confidence": 0.4817047537962218,
+              "accuracy": 0.6129032258064516
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 20,
+              "average_confidence": 0.6176427904667928,
+              "accuracy": 0.65
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 6,
+              "average_confidence": 0.7567641615852793,
+              "accuracy": 0.6666666666666666
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 1,
+              "average_confidence": 0.8988687422562954,
+              "accuracy": 1.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "weighted_probability_ensemble",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.609375,
+          "top_class_accuracy": 0.609375,
+          "log_loss": 0.9648015181526631,
+          "brier_score": 0.5717094775903518,
+          "ece": 0.11233714486168908,
+          "expected_calibration_error": 0.11233714486168908,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 8,
+              "average_confidence": 0.38131387191102584,
+              "accuracy": 0.375
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 40,
+              "average_confidence": 0.4718061461773394,
+              "accuracy": 0.625
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 15,
+              "average_confidence": 0.6152736196372727,
+              "accuracy": 0.6666666666666666
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 1,
+              "average_confidence": 0.7595835624874393,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {
+            "ensemble_weights": {
+              "elo_logistic_regression": 0.3466392801371221,
+              "logistic_regression": 0.3533100520324738,
+              "poisson_goal_model": 0.30005066783040407
+            }
+          },
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "elo_logistic_regression",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.59375,
+          "top_class_accuracy": 0.59375,
+          "log_loss": 0.9872708961496018,
+          "brier_score": 0.5836613012809952,
+          "ece": 0.09169212390270316,
+          "expected_calibration_error": 0.09169212390270316,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 13,
+              "average_confidence": 0.3683113533347865,
+              "accuracy": 0.38461538461538464
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 26,
+              "average_confidence": 0.46718252171368835,
+              "accuracy": 0.6538461538461539
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 16,
+              "average_confidence": 0.6142626383864564,
+              "accuracy": 0.625
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 9,
+              "average_confidence": 0.7368101446516029,
+              "accuracy": 0.6666666666666666
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "recent_form_only",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.578125,
+          "top_class_accuracy": 0.578125,
+          "log_loss": 0.9916127072739533,
+          "brier_score": 0.5923107376904704,
+          "ece": 0.09465833361143185,
+          "expected_calibration_error": 0.09465833361143185,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 6,
+              "average_confidence": 0.3872626115570976,
+              "accuracy": 0.6666666666666666
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 38,
+              "average_confidence": 0.48008803200734423,
+              "accuracy": 0.5526315789473685
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 16,
+              "average_confidence": 0.585436576093842,
+              "accuracy": 0.625
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 4,
+              "average_confidence": 0.7480098635636938,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "poisson_goal_model",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.546875,
+          "top_class_accuracy": 0.546875,
+          "log_loss": 1.0342630402481365,
+          "brier_score": 0.6230668965802395,
+          "ece": 0.1239032289616662,
+          "expected_calibration_error": 0.1239032289616662,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 9,
+              "average_confidence": 0.39213304632970036,
+              "accuracy": 0.3333333333333333
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 55,
+              "average_confidence": 0.4472616502440121,
+              "accuracy": 0.5818181818181818
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "majority_baseline",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.453125,
+          "top_class_accuracy": 0.453125,
+          "log_loss": 1.0593279019136927,
+          "brier_score": 0.6415542634525195,
+          "ece": 0.04062846662792852,
+          "expected_calibration_error": 0.04062846662792852,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 64,
+              "average_confidence": 0.4937534666279285,
+              "accuracy": 0.453125
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "uniform_random_baseline",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.453125,
+          "top_class_accuracy": 0.453125,
+          "log_loss": 1.0986122886681098,
+          "brier_score": 0.6666666666666669,
+          "ece": 0.11979166666666669,
+          "expected_calibration_error": 0.11979166666666669,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 64,
+              "average_confidence": 0.3333333333333333,
+              "accuracy": 0.453125
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "status": "ok",
+      "tournament_start": "2018-06-14",
+      "tournament_end": "2018-07-15",
+      "train_match_count": 41639,
+      "test_match_count": 64,
+      "group_stage_match_count": 0,
+      "knockout_match_count": 0,
+      "best_overall_model": "feature_logistic_regression_calibrated",
+      "best_group_stage_model": null,
+      "best_knockout_model": null,
+      "best_model": "feature_logistic_regression_calibrated",
+      "accuracy": 0.5625,
+      "log_loss": 0.9326368527091414,
+      "brier_score": 0.5520325111187143,
+      "ece": 0.05535761030418764,
+      "rps_if_available": null,
+      "calibration_ece": 0.05535761030418764,
+      "baseline_accuracy": 0.390625,
+      "elo_baseline_accuracy": 0.59375,
+      "ensemble_accuracy": 0.5625,
+      "baseline_comparison": {
+        "majority_baseline_log_loss": 1.0941107416461437,
+        "elo_baseline_log_loss": 1.0032062681450484,
+        "best_beats_majority_baseline": true,
+        "best_beats_elo_baseline": true
+      },
+      "models": [
+        {
+          "model_name": "feature_logistic_regression_calibrated",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.5625,
+          "top_class_accuracy": 0.5625,
+          "log_loss": 0.9326368527091414,
+          "brier_score": 0.5520325111187143,
+          "ece": 0.05535761030418764,
+          "expected_calibration_error": 0.05535761030418764,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 2,
+              "average_confidence": 0.3962964054099536,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 34,
+              "average_confidence": 0.4790928921463702,
+              "accuracy": 0.4411764705882353
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 21,
+              "average_confidence": 0.6192540878786115,
+              "accuracy": 0.7142857142857143
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 7,
+              "average_confidence": 0.7215224832517386,
+              "accuracy": 0.7142857142857143
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {
+            "calibration_method": "sigmoid"
+          },
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "logistic_regression",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.5625,
+          "top_class_accuracy": 0.5625,
+          "log_loss": 0.9341820120834314,
+          "brier_score": 0.5527821693623124,
+          "ece": 0.04843942218726799,
+          "expected_calibration_error": 0.04843942218726799,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 3,
+              "average_confidence": 0.38201968578557177,
+              "accuracy": 0.6666666666666666
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 34,
+              "average_confidence": 0.47505476795489193,
+              "accuracy": 0.4411764705882353
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 19,
+              "average_confidence": 0.6301082755341085,
+              "accuracy": 0.6842105263157895
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 8,
+              "average_confidence": 0.7582971502529503,
+              "accuracy": 0.75
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "weighted_probability_ensemble",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.5625,
+          "top_class_accuracy": 0.5625,
+          "log_loss": 0.9739673855464512,
+          "brier_score": 0.5789946957990926,
+          "ece": 0.0633181680548101,
+          "expected_calibration_error": 0.0633181680548101,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 9,
+              "average_confidence": 0.3863930600192418,
+              "accuracy": 0.4444444444444444
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 37,
+              "average_confidence": 0.4697404593207367,
+              "accuracy": 0.5135135135135135
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 18,
+              "average_confidence": 0.6160945949695399,
+              "accuracy": 0.7222222222222222
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {
+            "ensemble_weights": {
+              "elo_logistic_regression": 0.3463119009880535,
+              "logistic_regression": 0.3523817447955384,
+              "poisson_goal_model": 0.3013063542164081
+            }
+          },
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "elo_logistic_regression",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.59375,
+          "top_class_accuracy": 0.59375,
+          "log_loss": 1.0032062681450484,
+          "brier_score": 0.5985810418337789,
+          "ece": 0.13525737654304265,
+          "expected_calibration_error": 0.13525737654304265,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 13,
+              "average_confidence": 0.3612445927812041,
+              "accuracy": 0.6923076923076923
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 25,
+              "average_confidence": 0.4667611859355661,
+              "accuracy": 0.56
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 19,
+              "average_confidence": 0.6173150498657275,
+              "accuracy": 0.5263157894736842
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 7,
+              "average_confidence": 0.7560993579786729,
+              "accuracy": 0.7142857142857143
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "recent_form_only",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.4375,
+          "top_class_accuracy": 0.4375,
+          "log_loss": 1.0457541345478136,
+          "brier_score": 0.6294328018150492,
+          "ece": 0.10500709410218323,
+          "expected_calibration_error": 0.10500709410218323,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 8,
+              "average_confidence": 0.39065630128468865,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 42,
+              "average_confidence": 0.46892667830480184,
+              "accuracy": 0.35714285714285715
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 12,
+              "average_confidence": 0.6330648833781546,
+              "accuracy": 0.5833333333333334
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 2,
+              "average_confidence": 0.7229973282611477,
+              "accuracy": 1.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "poisson_goal_model",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.46875,
+          "top_class_accuracy": 0.46875,
+          "log_loss": 1.056387620970784,
+          "brier_score": 0.6392392246836098,
+          "ece": 0.027764561582547892,
+          "expected_calibration_error": 0.027764561582547892,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 7,
+              "average_confidence": 0.3943092710817803,
+              "accuracy": 0.5714285714285714
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 57,
+              "average_confidence": 0.44671759931832405,
+              "accuracy": 0.45614035087719296
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "majority_baseline",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.390625,
+          "top_class_accuracy": 0.390625,
+          "log_loss": 1.0941107416461437,
+          "brier_score": 0.667755548735971,
+          "ece": 0.10158182533202048,
+          "expected_calibration_error": 0.10158182533202048,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 64,
+              "average_confidence": 0.4922068253320205,
+              "accuracy": 0.390625
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "uniform_random_baseline",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.390625,
+          "top_class_accuracy": 0.390625,
+          "log_loss": 1.0986122886681098,
+          "brier_score": 0.6666666666666669,
+          "ece": 0.057291666666666685,
+          "expected_calibration_error": 0.057291666666666685,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 64,
+              "average_confidence": 0.3333333333333333,
+              "accuracy": 0.390625
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "ok",
+      "tournament_start": "2022-11-20",
+      "tournament_end": "2022-12-18",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "group_stage_match_count": 0,
+      "knockout_match_count": 0,
+      "best_overall_model": "weighted_probability_ensemble",
+      "best_group_stage_model": null,
+      "best_knockout_model": null,
+      "best_model": "weighted_probability_ensemble",
+      "accuracy": 0.484375,
+      "log_loss": 1.0189603158531908,
+      "brier_score": 0.6052926732549192,
+      "ece": 0.1047031977243252,
+      "rps_if_available": null,
+      "calibration_ece": 0.1047031977243252,
+      "baseline_accuracy": 0.4375,
+      "elo_baseline_accuracy": 0.484375,
+      "ensemble_accuracy": 0.484375,
+      "baseline_comparison": {
+        "majority_baseline_log_loss": 1.0742510158789302,
+        "elo_baseline_log_loss": 1.045326678916938,
+        "best_beats_majority_baseline": true,
+        "best_beats_elo_baseline": true
+      },
+      "models": [
+        {
+          "model_name": "weighted_probability_ensemble",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.484375,
+          "top_class_accuracy": 0.484375,
+          "log_loss": 1.0189603158531908,
+          "brier_score": 0.6052926732549192,
+          "ece": 0.1047031977243252,
+          "expected_calibration_error": 0.1047031977243252,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 7,
+              "average_confidence": 0.38270097302101064,
+              "accuracy": 0.2857142857142857
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 37,
+              "average_confidence": 0.48342130542400835,
+              "accuracy": 0.40540540540540543
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 19,
+              "average_confidence": 0.6106854446666616,
+              "accuracy": 0.7368421052631579
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 1,
+              "average_confidence": 0.7385329911880012,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {
+            "ensemble_weights": {
+              "elo_logistic_regression": 0.3478848693884845,
+              "logistic_regression": 0.3537920603361713,
+              "poisson_goal_model": 0.29832307027534427
+            }
+          },
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "elo_logistic_regression",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.484375,
+          "top_class_accuracy": 0.484375,
+          "log_loss": 1.045326678916938,
+          "brier_score": 0.6039040289434663,
+          "ece": 0.08300526619337656,
+          "expected_calibration_error": 0.08300526619337656,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 12,
+              "average_confidence": 0.36778787695306403,
+              "accuracy": 0.25
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 23,
+              "average_confidence": 0.47990273072984524,
+              "accuracy": 0.391304347826087
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 21,
+              "average_confidence": 0.6229757298149985,
+              "accuracy": 0.6666666666666666
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 8,
+              "average_confidence": 0.7429512540334825,
+              "accuracy": 0.625
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "logistic_regression",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.515625,
+          "top_class_accuracy": 0.515625,
+          "log_loss": 1.0457820365239683,
+          "brier_score": 0.6121300479849598,
+          "ece": 0.08835300893702319,
+          "expected_calibration_error": 0.08835300893702319,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 4,
+              "average_confidence": 0.38272485451438487,
+              "accuracy": 0.25
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 25,
+              "average_confidence": 0.46459234083627465,
+              "accuracy": 0.52
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 28,
+              "average_confidence": 0.6226898460951545,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 7,
+              "average_confidence": 0.7575979977363547,
+              "accuracy": 0.7142857142857143
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "feature_logistic_regression_calibrated",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.515625,
+          "top_class_accuracy": 0.515625,
+          "log_loss": 1.0464751482121852,
+          "brier_score": 0.6131272518912592,
+          "ece": 0.04965191612244249,
+          "expected_calibration_error": 0.04965191612244249,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 2,
+              "average_confidence": 0.3860072611558061,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 26,
+              "average_confidence": 0.47012057432064874,
+              "accuracy": 0.46153846153846156
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 33,
+              "average_confidence": 0.621285778531472,
+              "accuracy": 0.5757575757575758
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 3,
+              "average_confidence": 0.7413905100908296,
+              "accuracy": 0.3333333333333333
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {
+            "calibration_method": "sigmoid"
+          },
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "poisson_goal_model",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.4375,
+          "top_class_accuracy": 0.4375,
+          "log_loss": 1.0723559683547403,
+          "brier_score": 0.6483722297860425,
+          "ece": 0.11178289572384754,
+          "expected_calibration_error": 0.11178289572384754,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 11,
+              "average_confidence": 0.3916624267642455,
+              "accuracy": 0.09090909090909091
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 52,
+              "average_confidence": 0.45619124909314274,
+              "accuracy": 0.5192307692307693
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 1,
+              "average_confidence": 0.5677635847629622,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "majority_baseline",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.4375,
+          "top_class_accuracy": 0.4375,
+          "log_loss": 1.0742510158789302,
+          "brier_score": 0.6511563367552634,
+          "ece": 0.0540098468271335,
+          "expected_calibration_error": 0.0540098468271335,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 64,
+              "average_confidence": 0.4915098468271335,
+              "accuracy": 0.4375
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "recent_form_only",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.421875,
+          "top_class_accuracy": 0.421875,
+          "log_loss": 1.0885658816272654,
+          "brier_score": 0.6593137903897217,
+          "ece": 0.06456578430818702,
+          "expected_calibration_error": 0.06456578430818702,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 11,
+              "average_confidence": 0.37426469920977756,
+              "accuracy": 0.2727272727272727
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 37,
+              "average_confidence": 0.4691940012431703,
+              "accuracy": 0.43243243243243246
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 16,
+              "average_confidence": 0.6034450286511948,
+              "accuracy": 0.5
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        },
+        {
+          "model_name": "uniform_random_baseline",
+          "dataset_source": "international-results",
+          "status": "ok",
+          "accuracy": 0.4375,
+          "top_class_accuracy": 0.4375,
+          "log_loss": 1.0986122886681098,
+          "brier_score": 0.6666666666666669,
+          "ece": 0.10416666666666669,
+          "expected_calibration_error": 0.10416666666666669,
+          "number_of_matches": 64,
+          "calibration": [
+            {
+              "lower": 0.0,
+              "upper": 0.4,
+              "count": 64,
+              "average_confidence": 0.3333333333333333,
+              "accuracy": 0.4375
+            },
+            {
+              "lower": 0.4,
+              "upper": 0.55,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.55,
+              "upper": 0.7,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.7,
+              "upper": 0.85,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            },
+            {
+              "lower": 0.85,
+              "upper": 1.0,
+              "count": 0,
+              "average_confidence": 0.0,
+              "accuracy": 0.0
+            }
+          ],
+          "model_details": {},
+          "group_stage_accuracy": null,
+          "knockout_accuracy": null,
+          "error_message": null
+        }
+      ]
+    }
+  ]
+}

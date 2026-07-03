@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-labelledby="title desc">
+  <title id="title">CupCast AI analyst mascot</title>
+  <desc id="desc">Original robot owl analyst mascot with headset, glowing eyes, circuit feathers, and a tactics tablet.</desc>
+  <defs>
+    <linearGradient id="body" x1="85" y1="62" x2="229" y2="287" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E293B"/>
+      <stop offset=".62" stop-color="#10172A"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="206" y1="136" x2="300" y2="254" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13293B"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="360" fill="none"/>
+  <ellipse cx="158" cy="320" rx="88" ry="18" fill="#020617" opacity=".28"/>
+  <path d="M72 148c0-56 38-100 87-100s87 44 87 100v80c0 52-36 86-87 86s-87-34-87-86v-80Z" fill="url(#body)" stroke="#38BDF8" stroke-width="4"/>
+  <path d="M93 77l37 27M225 77l-37 27" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M76 136c-19 8-31 28-30 53 2 35 29 55 57 48M242 136c19 8 31 28 30 53-2 35-29 55-57 48" fill="#10172A" stroke="#22D3EE" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="126" cy="145" r="31" fill="#0B1020" stroke="#38BDF8" stroke-width="4"/>
+  <circle cx="191" cy="145" r="31" fill="#0B1020" stroke="#38BDF8" stroke-width="4"/>
+  <circle cx="126" cy="145" r="12" fill="#A3E635"/>
+  <circle cx="191" cy="145" r="12" fill="#A3E635"/>
+  <circle cx="130" cy="141" r="4" fill="#F8FAFC"/>
+  <circle cx="195" cy="141" r="4" fill="#F8FAFC"/>
+  <path d="M153 154l10 18 10-18" fill="none" stroke="#22D3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M92 122c7-29 34-49 67-49s60 20 67 49" fill="none" stroke="#64748B" stroke-width="7" stroke-linecap="round"/>
+  <path d="M228 130h20c13 0 23 10 23 23v20" fill="none" stroke="#A3E635" stroke-width="5" stroke-linecap="round"/>
+  <rect x="263" y="167" width="18" height="42" rx="9" fill="#A3E635"/>
+  <path d="M106 203h104M112 231h92M121 258h75" stroke="#38BDF8" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M127 206v48M159 199v67M192 206v48" stroke="#22D3EE" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+  <path d="M111 203l16 17-17 18M159 199l17 20-17 20M207 203l-16 17 17 18" fill="none" stroke="#A3E635" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M66 224l-33 34 33 20 33-37" fill="#10172A" stroke="#38BDF8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M45 258l28 16M58 244l27 16" stroke="#22D3EE" stroke-opacity=".45" stroke-width="3"/>
+  <rect x="205" y="164" width="86" height="110" rx="16" fill="url(#panel)" stroke="#38BDF8" stroke-width="4"/>
+  <path d="M221 238l15-27 18 12 23-42" fill="none" stroke="#A3E635" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M221 198h20M221 216h13M221 254h52" stroke="#22D3EE" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="236" cy="211" r="4" fill="#A3E635"/>
+  <circle cx="254" cy="223" r="4" fill="#A3E635"/>
+  <circle cx="277" cy="181" r="4" fill="#A3E635"/>
+  <path d="M216 218c-22 4-36 15-45 31" fill="none" stroke="#A3E635" stroke-width="5" stroke-linecap="round"/>
+  <path d="M116 296h-22M224 296h-22" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+</svg>

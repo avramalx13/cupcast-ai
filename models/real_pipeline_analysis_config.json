@@ -1,0 +1,20 @@
+{
+  "data": {
+    "mode": "real",
+    "matches_path": "data\\processed\\real_completed_matches.csv",
+    "shootouts_path": "data\\real\\shootouts.csv",
+    "teams_path": "data\\processed\\teams_real.csv",
+    "elo_ratings_path": null,
+    "fifa_rankings_path": null
+  },
+  "features": {
+    "recent_window": 5,
+    "elo_k": 28.0,
+    "enable_groups": {
+      "external_ratings": true,
+      "schedule": true,
+      "tournament_context": true,
+      "elo_history": true
+    }
+  }
+}

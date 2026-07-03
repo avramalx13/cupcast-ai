@@ -1,0 +1,953 @@
+### Context:
+Team A: Germany
+Team B: France
+Germany Elo: 1959
+France Elo: 2026
+Germany win probability: 31%
+Draw probability: 24%
+France win probability: 45%
+
+### Analysis:
+France is favored because the structured model gives them the stronger Elo profile and a cleaner path against Germany. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Germany eliminated France on penalties.
+France title probability before: 12.0%
+France title probability after: 0.0%
+Germany title probability before: 1.8%
+Germany title probability after: 3.5%
+
+### Analysis:
+Germany's probability increased because the bracket removed a stronger opponent. France falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Canada
+Team B: Uruguay
+Canada Elo: 1717
+Uruguay Elo: 1846
+Canada win probability: 25%
+Draw probability: 23%
+Uruguay win probability: 52%
+
+### Analysis:
+Uruguay is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Canada
+Team B: Senegal
+Canada Elo: 1712
+Senegal Elo: 1790
+Canada win probability: 30%
+Draw probability: 24%
+Senegal win probability: 46%
+
+### Analysis:
+Senegal is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Paraguay
+Team B: England
+Paraguay Elo: 1745
+England Elo: 1968
+Paraguay win probability: 17%
+Draw probability: 22%
+England win probability: 61%
+
+### Analysis:
+England is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Morocco
+Team B: Brazil
+Morocco Elo: 1847
+Brazil Elo: 2057
+Morocco win probability: 18%
+Draw probability: 22%
+Brazil win probability: 60%
+
+### Analysis:
+Brazil is favored because the structured model gives them the stronger Elo profile and a cleaner path against Morocco. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Senegal
+Team B: Colombia
+Senegal Elo: 1781
+Colombia Elo: 1842
+Senegal win probability: 31%
+Draw probability: 24%
+Colombia win probability: 45%
+
+### Analysis:
+Colombia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Canada
+Team B: Switzerland
+Canada Elo: 1685
+Switzerland Elo: 1846
+Canada win probability: 22%
+Draw probability: 23%
+Switzerland win probability: 55%
+
+### Analysis:
+Switzerland is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Switzerland
+Team B: England
+Switzerland Elo: 1838
+England Elo: 1966
+Switzerland win probability: 25%
+Draw probability: 23%
+England win probability: 52%
+
+### Analysis:
+England is favored because the structured model gives them the stronger Elo profile and a cleaner path against Switzerland. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Paraguay
+Team B: Croatia
+Paraguay Elo: 1779
+Croatia Elo: 1868
+Paraguay win probability: 28%
+Draw probability: 24%
+Croatia win probability: 48%
+
+### Analysis:
+Croatia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Paraguay eliminated Croatia on penalties.
+Croatia title probability before: 9.9%
+Croatia title probability after: 0.0%
+Paraguay title probability before: 1.9%
+Paraguay title probability after: 7.6%
+
+### Analysis:
+Paraguay's probability increased because the bracket removed a stronger opponent. Croatia falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Portugal
+Team B: Senegal
+Portugal Elo: 1952
+Senegal Elo: 1791
+Portugal win probability: 55%
+Draw probability: 23%
+Senegal win probability: 22%
+
+### Analysis:
+Portugal is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Argentina
+Team B: Brazil
+Argentina Elo: 1995
+Brazil Elo: 2066
+Argentina win probability: 30%
+Draw probability: 24%
+Brazil win probability: 46%
+
+### Analysis:
+Brazil is favored because the structured model gives them the stronger Elo profile and a cleaner path against Argentina. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Paraguay
+Team B: United States
+Paraguay Elo: 1751
+United States Elo: 1781
+Paraguay win probability: 34%
+Draw probability: 25%
+United States win probability: 41%
+
+### Analysis:
+United States is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Senegal
+Team B: Germany
+Senegal Elo: 1803
+Germany Elo: 1948
+Senegal win probability: 23%
+Draw probability: 23%
+Germany win probability: 54%
+
+### Analysis:
+Germany is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Belgium
+Team B: Canada
+Belgium Elo: 1917
+Canada Elo: 1687
+Belgium win probability: 62%
+Draw probability: 22%
+Canada win probability: 16%
+
+### Analysis:
+Belgium is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Japan
+Team B: Switzerland
+Japan Elo: 1835
+Switzerland Elo: 1830
+Japan win probability: 38%
+Draw probability: 25%
+Switzerland win probability: 37%
+
+### Analysis:
+Japan is favored because the structured model gives them the stronger Elo profile and a cleaner path against Switzerland. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Uruguay
+Team B: Colombia
+Uruguay Elo: 1878
+Colombia Elo: 1870
+Uruguay win probability: 38%
+Draw probability: 25%
+Colombia win probability: 37%
+
+### Analysis:
+Uruguay is favored because the structured model gives them the stronger Elo profile and a cleaner path against Colombia. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Argentina
+Team B: Senegal
+Argentina Elo: 2004
+Senegal Elo: 1783
+Argentina win probability: 61%
+Draw probability: 22%
+Senegal win probability: 17%
+
+### Analysis:
+Argentina is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Senegal eliminated Argentina on penalties.
+Argentina title probability before: 15.9%
+Argentina title probability after: 0.0%
+Senegal title probability before: 2.5%
+Senegal title probability after: 3.8%
+
+### Analysis:
+Senegal's probability increased because the bracket removed a stronger opponent. Argentina falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Senegal
+Team B: Croatia
+Senegal Elo: 1822
+Croatia Elo: 1865
+Senegal win probability: 33%
+Draw probability: 25%
+Croatia win probability: 42%
+
+### Analysis:
+Croatia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Argentina
+Team B: United States
+Argentina Elo: 2029
+United States Elo: 1766
+Argentina win probability: 65%
+Draw probability: 21%
+United States win probability: 14%
+
+### Analysis:
+Argentina is favored because the structured model gives them the stronger Elo profile and a cleaner path against United States. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Paraguay
+Team B: Uruguay
+Paraguay Elo: 1782
+Uruguay Elo: 1856
+Paraguay win probability: 30%
+Draw probability: 24%
+Uruguay win probability: 46%
+
+### Analysis:
+Uruguay is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Colombia
+Team B: Spain
+Colombia Elo: 1858
+Spain Elo: 2004
+Colombia win probability: 23%
+Draw probability: 23%
+Spain win probability: 54%
+
+### Analysis:
+Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Colombia. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Germany
+Team B: Mexico
+Germany Elo: 1973
+Mexico Elo: 1814
+Germany win probability: 55%
+Draw probability: 23%
+Mexico win probability: 22%
+
+### Analysis:
+Germany is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Switzerland
+Team B: Mexico
+Switzerland Elo: 1860
+Mexico Elo: 1807
+Switzerland win probability: 43%
+Draw probability: 25%
+Mexico win probability: 32%
+
+### Analysis:
+Switzerland is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Mexico
+Team B: Uruguay
+Mexico Elo: 1816
+Uruguay Elo: 1880
+Mexico win probability: 31%
+Draw probability: 24%
+Uruguay win probability: 45%
+
+### Analysis:
+Uruguay is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Croatia
+Team B: Switzerland
+Croatia Elo: 1890
+Switzerland Elo: 1834
+Croatia win probability: 43%
+Draw probability: 25%
+Switzerland win probability: 32%
+
+### Analysis:
+Croatia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Switzerland. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Switzerland eliminated Croatia on penalties.
+Croatia title probability before: 10.3%
+Croatia title probability after: 0.0%
+Switzerland title probability before: 2.3%
+Switzerland title probability after: 3.9%
+
+### Analysis:
+Switzerland's probability increased because the bracket removed a stronger opponent. Croatia falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Morocco
+Team B: Canada
+Morocco Elo: 1839
+Canada Elo: 1713
+Morocco win probability: 52%
+Draw probability: 23%
+Canada win probability: 25%
+
+### Analysis:
+Morocco is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Netherlands
+Team B: Portugal
+Netherlands Elo: 1951
+Portugal Elo: 1970
+Netherlands win probability: 35%
+Draw probability: 25%
+Portugal win probability: 40%
+
+### Analysis:
+Portugal is favored because the structured model gives them the stronger Elo profile and a cleaner path against Netherlands. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Germany
+Team B: United States
+Germany Elo: 1985
+United States Elo: 1791
+Germany win probability: 59%
+Draw probability: 22%
+United States win probability: 19%
+
+### Analysis:
+Germany is favored because the structured model gives them the stronger Elo profile and a cleaner path against United States. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Canada
+Team B: Switzerland
+Canada Elo: 1698
+Switzerland Elo: 1849
+Canada win probability: 23%
+Draw probability: 23%
+Switzerland win probability: 54%
+
+### Analysis:
+Switzerland is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Morocco
+Team B: Senegal
+Morocco Elo: 1824
+Senegal Elo: 1784
+Morocco win probability: 42%
+Draw probability: 25%
+Senegal win probability: 33%
+
+### Analysis:
+Morocco is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Uruguay
+Team B: Mexico
+Uruguay Elo: 1875
+Mexico Elo: 1813
+Uruguay win probability: 45%
+Draw probability: 24%
+Mexico win probability: 31%
+
+### Analysis:
+Uruguay is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: England
+Team B: Canada
+England Elo: 1973
+Canada Elo: 1728
+England win probability: 64%
+Draw probability: 21%
+Canada win probability: 15%
+
+### Analysis:
+England is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Mexico
+Team B: Belgium
+Mexico Elo: 1808
+Belgium Elo: 1892
+Mexico win probability: 29%
+Draw probability: 24%
+Belgium win probability: 47%
+
+### Analysis:
+Belgium is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Mexico eliminated Belgium on penalties.
+Belgium title probability before: 13.6%
+Belgium title probability after: 0.0%
+Mexico title probability before: 1.1%
+Mexico title probability after: 7.9%
+
+### Analysis:
+Mexico's probability increased because the bracket removed a stronger opponent. Belgium falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: France
+Team B: Spain
+France Elo: 2067
+Spain Elo: 1981
+France win probability: 47%
+Draw probability: 24%
+Spain win probability: 29%
+
+### Analysis:
+France is favored because the structured model gives them the stronger Elo profile and a cleaner path against Spain. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Mexico
+Team B: Colombia
+Mexico Elo: 1808
+Colombia Elo: 1871
+Mexico win probability: 31%
+Draw probability: 24%
+Colombia win probability: 45%
+
+### Analysis:
+Colombia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Morocco
+Team B: France
+Morocco Elo: 1842
+France Elo: 2055
+Morocco win probability: 18%
+Draw probability: 22%
+France win probability: 60%
+
+### Analysis:
+France is favored because the structured model gives them the stronger Elo profile and a cleaner path against Morocco. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Canada
+Team B: United States
+Canada Elo: 1711
+United States Elo: 1800
+Canada win probability: 28%
+Draw probability: 24%
+United States win probability: 48%
+
+### Analysis:
+United States is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Belgium
+Team B: Morocco
+Belgium Elo: 1912
+Morocco Elo: 1824
+Belgium win probability: 47%
+Draw probability: 24%
+Morocco win probability: 29%
+
+### Analysis:
+Belgium is favored because the structured model gives them the stronger Elo profile and a cleaner path against Morocco. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Argentina
+Team B: Croatia
+Argentina Elo: 1998
+Croatia Elo: 1878
+Argentina win probability: 51%
+Draw probability: 23%
+Croatia win probability: 26%
+
+### Analysis:
+Argentina is favored because the structured model gives them the stronger Elo profile and a cleaner path against Croatia. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Senegal
+Team B: England
+Senegal Elo: 1807
+England Elo: 2007
+Senegal win probability: 19%
+Draw probability: 22%
+England win probability: 59%
+
+### Analysis:
+England is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Croatia
+Team B: Spain
+Croatia Elo: 1903
+Spain Elo: 1965
+Croatia win probability: 31%
+Draw probability: 24%
+Spain win probability: 45%
+
+### Analysis:
+Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Croatia. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Croatia eliminated Spain on penalties.
+Spain title probability before: 6.4%
+Spain title probability after: 0.0%
+Croatia title probability before: 4.4%
+Croatia title probability after: 8.6%
+
+### Analysis:
+Croatia's probability increased because the bracket removed a stronger opponent. Spain falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Uruguay
+Team B: Brazil
+Uruguay Elo: 1885
+Brazil Elo: 2053
+Uruguay win probability: 21%
+Draw probability: 23%
+Brazil win probability: 56%
+
+### Analysis:
+Brazil is favored because the structured model gives them the stronger Elo profile and a cleaner path against Uruguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Uruguay
+Team B: Brazil
+Uruguay Elo: 1844
+Brazil Elo: 2060
+Uruguay win probability: 17%
+Draw probability: 22%
+Brazil win probability: 61%
+
+### Analysis:
+Brazil is favored because the structured model gives them the stronger Elo profile and a cleaner path against Uruguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Croatia
+Team B: Canada
+Croatia Elo: 1883
+Canada Elo: 1690
+Croatia win probability: 59%
+Draw probability: 22%
+Canada win probability: 19%
+
+### Analysis:
+Croatia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Croatia
+Team B: Uruguay
+Croatia Elo: 1900
+Uruguay Elo: 1850
+Croatia win probability: 43%
+Draw probability: 25%
+Uruguay win probability: 32%
+
+### Analysis:
+Croatia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Uruguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Uruguay
+Team B: Colombia
+Uruguay Elo: 1874
+Colombia Elo: 1830
+Uruguay win probability: 42%
+Draw probability: 25%
+Colombia win probability: 33%
+
+### Analysis:
+Uruguay is favored because the structured model gives them the stronger Elo profile and a cleaner path against Colombia. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Morocco
+Team B: Colombia
+Morocco Elo: 1833
+Colombia Elo: 1876
+Morocco win probability: 33%
+Draw probability: 25%
+Colombia win probability: 42%
+
+### Analysis:
+Colombia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Morocco. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: France
+Team B: Senegal
+France Elo: 2035
+Senegal Elo: 1785
+France win probability: 64%
+Draw probability: 21%
+Senegal win probability: 15%
+
+### Analysis:
+France is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Colombia
+Team B: Netherlands
+Colombia Elo: 1874
+Netherlands Elo: 1935
+Colombia win probability: 31%
+Draw probability: 24%
+Netherlands win probability: 45%
+
+### Analysis:
+Netherlands is favored because the structured model gives them the stronger Elo profile and a cleaner path against Colombia. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Colombia eliminated Netherlands on penalties.
+Netherlands title probability before: 12.6%
+Netherlands title probability after: 0.0%
+Colombia title probability before: 4.1%
+Colombia title probability after: 4.7%
+
+### Analysis:
+Colombia's probability increased because the bracket removed a stronger opponent. Netherlands falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Senegal
+Team B: Spain
+Senegal Elo: 1802
+Spain Elo: 1996
+Senegal win probability: 19%
+Draw probability: 22%
+Spain win probability: 59%
+
+### Analysis:
+Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Japan
+Team B: Spain
+Japan Elo: 1816
+Spain Elo: 1969
+Japan win probability: 23%
+Draw probability: 23%
+Spain win probability: 54%
+
+### Analysis:
+Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Japan. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Mexico
+Team B: Spain
+Mexico Elo: 1814
+Spain Elo: 1996
+Mexico win probability: 20%
+Draw probability: 22%
+Spain win probability: 58%
+
+### Analysis:
+Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Japan
+Team B: Belgium
+Japan Elo: 1816
+Belgium Elo: 1928
+Japan win probability: 26%
+Draw probability: 24%
+Belgium win probability: 50%
+
+### Analysis:
+Belgium is favored because the structured model gives them the stronger Elo profile and a cleaner path against Japan. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: United States
+Team B: Germany
+United States Elo: 1789
+Germany Elo: 1961
+United States win probability: 21%
+Draw probability: 23%
+Germany win probability: 56%
+
+### Analysis:
+Germany is favored because the structured model gives them the stronger Elo profile and a cleaner path against United States. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: England
+Team B: Colombia
+England Elo: 2006
+Colombia Elo: 1851
+England win probability: 55%
+Draw probability: 23%
+Colombia win probability: 22%
+
+### Analysis:
+England is favored because the structured model gives them the stronger Elo profile and a cleaner path against Colombia. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Argentina
+Team B: Canada
+Argentina Elo: 2007
+Canada Elo: 1689
+Argentina win probability: 69%
+Draw probability: 20%
+Canada win probability: 11%
+
+### Analysis:
+Argentina is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Mexico
+Team B: Belgium
+Mexico Elo: 1792
+Belgium Elo: 1894
+Mexico win probability: 27%
+Draw probability: 24%
+Belgium win probability: 49%
+
+### Analysis:
+Belgium is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Mexico eliminated Belgium on penalties.
+Belgium title probability before: 8.3%
+Belgium title probability after: 0.0%
+Mexico title probability before: 2.0%
+Mexico title probability after: 6.9%
+
+### Analysis:
+Mexico's probability increased because the bracket removed a stronger opponent. Belgium falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Spain
+Team B: Germany
+Spain Elo: 1972
+Germany Elo: 1955
+Spain win probability: 39%
+Draw probability: 25%
+Germany win probability: 36%
+
+### Analysis:
+Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against Germany. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: England
+Team B: Belgium
+England Elo: 1981
+Belgium Elo: 1883
+England win probability: 48%
+Draw probability: 24%
+Belgium win probability: 28%
+
+### Analysis:
+England is favored because the structured model gives them the stronger Elo profile and a cleaner path against Belgium. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Senegal
+Team B: Paraguay
+Senegal Elo: 1786
+Paraguay Elo: 1769
+Senegal win probability: 39%
+Draw probability: 25%
+Paraguay win probability: 36%
+
+### Analysis:
+Senegal is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Argentina
+Team B: Canada
+Argentina Elo: 2027
+Canada Elo: 1703
+Argentina win probability: 69%
+Draw probability: 20%
+Canada win probability: 11%
+
+### Analysis:
+Argentina is favored because the structured model gives them the stronger Elo profile and a cleaner path against Canada. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Spain
+Team B: United States
+Spain Elo: 2000
+United States Elo: 1799
+Spain win probability: 59%
+Draw probability: 22%
+United States win probability: 19%
+
+### Analysis:
+Spain is favored because the structured model gives them the stronger Elo profile and a cleaner path against United States. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Paraguay
+Team B: Brazil
+Paraguay Elo: 1763
+Brazil Elo: 2039
+Paraguay win probability: 13%
+Draw probability: 21%
+Brazil win probability: 66%
+
+### Analysis:
+Brazil is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Senegal
+Team B: Portugal
+Senegal Elo: 1821
+Portugal Elo: 1981
+Senegal win probability: 22%
+Draw probability: 23%
+Portugal win probability: 55%
+
+### Analysis:
+Portugal is favored because the structured model gives them the stronger Elo profile and a cleaner path against Senegal. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Netherlands
+Team B: Uruguay
+Netherlands Elo: 1959
+Uruguay Elo: 1884
+Netherlands win probability: 46%
+Draw probability: 24%
+Uruguay win probability: 30%
+
+### Analysis:
+Netherlands is favored because the structured model gives them the stronger Elo profile and a cleaner path against Uruguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Event: Uruguay eliminated Netherlands on penalties.
+Netherlands title probability before: 16.0%
+Netherlands title probability after: 0.0%
+Uruguay title probability before: 4.8%
+Uruguay title probability after: 6.6%
+
+### Analysis:
+Uruguay's probability increased because the bracket removed a stronger opponent. Netherlands falls to zero title probability because they are eliminated, while the remaining teams on that side inherit a slightly easier tournament path.
+
+### Context:
+Team A: Switzerland
+Team B: Croatia
+Switzerland Elo: 1836
+Croatia Elo: 1886
+Switzerland win probability: 32%
+Draw probability: 25%
+Croatia win probability: 43%
+
+### Analysis:
+Croatia is favored because the structured model gives them the stronger Elo profile and a cleaner path against Switzerland. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Morocco
+Team B: Mexico
+Morocco Elo: 1826
+Mexico Elo: 1817
+Morocco win probability: 38%
+Draw probability: 25%
+Mexico win probability: 37%
+
+### Analysis:
+Morocco is favored because the structured model gives them the stronger Elo profile and a cleaner path against Mexico. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Morocco
+Team B: United States
+Morocco Elo: 1860
+United States Elo: 1788
+Morocco win probability: 46%
+Draw probability: 24%
+United States win probability: 30%
+
+### Analysis:
+Morocco is favored because the structured model gives them the stronger Elo profile and a cleaner path against United States. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Germany
+Team B: United States
+Germany Elo: 1942
+United States Elo: 1775
+Germany win probability: 56%
+Draw probability: 23%
+United States win probability: 21%
+
+### Analysis:
+Germany is favored because the structured model gives them the stronger Elo profile and a cleaner path against United States. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Paraguay
+Team B: Germany
+Paraguay Elo: 1747
+Germany Elo: 1952
+Paraguay win probability: 18%
+Draw probability: 22%
+Germany win probability: 60%
+
+### Analysis:
+Germany is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Morocco
+Team B: Paraguay
+Morocco Elo: 1848
+Paraguay Elo: 1753
+Morocco win probability: 48%
+Draw probability: 24%
+Paraguay win probability: 28%
+
+### Analysis:
+Morocco is favored because the structured model gives them the stronger Elo profile and a cleaner path against Paraguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.
+
+### Context:
+Team A: Uruguay
+Team B: Argentina
+Uruguay Elo: 1850
+Argentina Elo: 2014
+Uruguay win probability: 22%
+Draw probability: 23%
+Argentina win probability: 55%
+
+### Analysis:
+Argentina is favored because the structured model gives them the stronger Elo profile and a cleaner path against Uruguay. The draw remains relevant, so the forecast should be read as a probability distribution rather than a guaranteed result.

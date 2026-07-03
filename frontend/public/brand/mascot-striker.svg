@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">CupCast AI striker mascot</title>
+  <desc id="desc">Original lightning fox striker mascot in a dynamic kick with neon accents, speed trail, and geometric football.</desc>
+  <defs>
+    <linearGradient id="foxBody" x1="110" y1="56" x2="242" y2="297" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E293B"/>
+      <stop offset=".58" stop-color="#10172A"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="23" y1="104" x2="202" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity=".05"/>
+      <stop offset=".55" stop-color="#22D3EE" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#A3E635" stop-opacity=".7"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="360" fill="none"/>
+  <ellipse cx="184" cy="321" rx="110" ry="18" fill="#020617" opacity=".28"/>
+  <path d="M29 183c50-48 100-62 150-40l-43 48c-37-13-72-7-107 18Z" fill="url(#trail)"/>
+  <path d="M60 147c33-21 68-29 105-24M45 207c34-11 69-11 105 0" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" opacity=".58"/>
+  <path d="M139 95l-34-39 50 11 24-36 22 42 49-4-31 39" fill="#10172A" stroke="#38BDF8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M123 106c18-45 91-48 113-3 14 28 3 66-25 83-18 11-54 10-72-1-31-18-30-53-16-79Z" fill="url(#foxBody)" stroke="#38BDF8" stroke-width="4"/>
+  <path d="M151 119c13-16 37-17 51-1" fill="none" stroke="#A3E635" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="154" cy="136" r="8" fill="#A3E635"/>
+  <circle cx="202" cy="136" r="8" fill="#A3E635"/>
+  <path d="M178 143l11 12-12 12-11-12Z" fill="#22D3EE"/>
+  <path d="M155 169c14 10 34 10 48 0" fill="none" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round"/>
+  <path d="M126 190l71-17 41 36-19 58-77 8-47-40Z" fill="#10172A" stroke="#22D3EE" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M139 206l45 42 42-28M154 182l7 84M204 186l-16 82" stroke="#38BDF8" stroke-opacity=".38" stroke-width="3" stroke-linecap="round"/>
+  <path d="M190 197l20-27 31 20-21 28Z" fill="#0B1020" stroke="#A3E635" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M146 232l-58 26 13 25 68-19" fill="#10172A" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M97 274l-26 17 12 18 31-10" fill="#0B1020" stroke="#A3E635" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M198 257l42 39 26-16-39-57" fill="#10172A" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 281l44 10-3 23-47 3" fill="#0B1020" stroke="#A3E635" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M109 204l-39-24 17-24 45 20" fill="#10172A" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M238 209l45-2 8 26-48 12" fill="#10172A" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M260 62l-26 49h27l-41 72 82-96h-33l20-25Z" fill="#A3E635" opacity=".92"/>
+  <circle cx="305" cy="215" r="31" fill="#0B1020" stroke="#F8FAFC" stroke-width="4"/>
+  <path d="M305 184l19 19-7 26h-25l-8-26 21-19ZM276 215h29M305 246v-31M334 215h-29" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

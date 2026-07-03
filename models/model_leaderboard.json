@@ -1,0 +1,132 @@
+{
+  "models": [
+    {
+      "model_name": "weighted_probability_ensemble",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.484375,
+      "log_loss": 1.0189603158531908,
+      "brier_score": 0.6052926732549192,
+      "ece": 0.1047031977243252,
+      "beats_majority_baseline": true,
+      "beats_elo_baseline": true,
+      "notes": "beats selected baselines on log loss for this split",
+      "model_details": {
+        "ensemble_weights": {
+          "elo_logistic_regression": 0.3478848693884845,
+          "logistic_regression": 0.3537920603361713,
+          "poisson_goal_model": 0.29832307027534427
+        }
+      }
+    },
+    {
+      "model_name": "elo_logistic_regression",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.484375,
+      "log_loss": 1.045326678916938,
+      "brier_score": 0.6039040289434663,
+      "ece": 0.08300526619337656,
+      "beats_majority_baseline": true,
+      "beats_elo_baseline": false,
+      "notes": "beats selected baselines on log loss for this split",
+      "model_details": {}
+    },
+    {
+      "model_name": "logistic_regression",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.515625,
+      "log_loss": 1.0457820365239683,
+      "brier_score": 0.6121300479849598,
+      "ece": 0.08835300893702319,
+      "beats_majority_baseline": true,
+      "beats_elo_baseline": false,
+      "notes": "does not beat Elo baseline on log loss",
+      "model_details": {}
+    },
+    {
+      "model_name": "feature_logistic_regression_calibrated",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.515625,
+      "log_loss": 1.0464751482121852,
+      "brier_score": 0.6131272518912592,
+      "ece": 0.04965191612244249,
+      "beats_majority_baseline": true,
+      "beats_elo_baseline": false,
+      "notes": "does not beat Elo baseline on log loss",
+      "model_details": {
+        "calibration_method": "sigmoid"
+      }
+    },
+    {
+      "model_name": "poisson_goal_model",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.4375,
+      "log_loss": 1.0723559683547403,
+      "brier_score": 0.6483722297860425,
+      "ece": 0.11178289572384754,
+      "beats_majority_baseline": true,
+      "beats_elo_baseline": false,
+      "notes": "does not beat Elo baseline on log loss",
+      "model_details": {}
+    },
+    {
+      "model_name": "majority_baseline",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.4375,
+      "log_loss": 1.0742510158789302,
+      "brier_score": 0.6511563367552634,
+      "ece": 0.0540098468271335,
+      "beats_majority_baseline": false,
+      "beats_elo_baseline": false,
+      "notes": "does not beat majority baseline on log loss; does not beat Elo baseline on log loss",
+      "model_details": {}
+    },
+    {
+      "model_name": "recent_form_only",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.421875,
+      "log_loss": 1.0885658816272654,
+      "brier_score": 0.6593137903897217,
+      "ece": 0.06456578430818702,
+      "beats_majority_baseline": false,
+      "beats_elo_baseline": false,
+      "notes": "does not beat majority baseline on log loss; does not beat Elo baseline on log loss",
+      "model_details": {}
+    },
+    {
+      "model_name": "uniform_random_baseline",
+      "dataset_source": "international-results",
+      "status": "ok",
+      "train_match_count": 45700,
+      "test_match_count": 64,
+      "accuracy": 0.4375,
+      "log_loss": 1.0986122886681098,
+      "brier_score": 0.6666666666666669,
+      "ece": 0.10416666666666669,
+      "beats_majority_baseline": false,
+      "beats_elo_baseline": false,
+      "notes": "does not beat majority baseline on log loss; does not beat Elo baseline on log loss",
+      "model_details": {}
+    }
+  ]
+}

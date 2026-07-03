@@ -1,0 +1,1204 @@
+{
+  "errors": [
+    {
+      "year": 2014,
+      "match": "Brazil vs Mexico",
+      "date": "2014-06-17",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.7803816608295904,
+        "DRAW": 0.13811807544954502,
+        "B_WIN": 0.08150026372086468
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.13811807544954502,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.780 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Uruguay vs Costa Rica",
+      "date": "2014-06-14",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6222342969237237,
+        "DRAW": 0.22801950579245545,
+        "B_WIN": 0.14974619728382088
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.14974619728382088,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.622 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Germany vs Ghana",
+      "date": "2014-06-21",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.7257575675494656,
+        "DRAW": 0.17440499047526592,
+        "B_WIN": 0.09983744197526853
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.17440499047526592,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.726 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Ecuador vs France",
+      "date": "2014-06-25",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.20134035583010232,
+        "DRAW": 0.18387605569283594,
+        "B_WIN": 0.6147835884770618
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.18387605569283594,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.615 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Netherlands vs Costa Rica",
+      "date": "2014-07-05",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6528515898397194,
+        "DRAW": 0.19008889582745395,
+        "B_WIN": 0.1570595143328267
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.19008889582745395,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.653 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Brazil vs Chile",
+      "date": "2014-06-28",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6887160281936983,
+        "DRAW": 0.19049824335035484,
+        "B_WIN": 0.12078572845594689
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.19049824335035484,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.689 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Brazil vs Germany",
+      "date": "2014-07-08",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6047671484260365,
+        "DRAW": 0.20255070327593266,
+        "B_WIN": 0.19268214829803082
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.19268214829803082,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.605 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Spain vs Netherlands",
+      "date": "2014-06-13",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5367800145435594,
+        "DRAW": 0.26502825392710616,
+        "B_WIN": 0.1981917315293344
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.1981917315293344,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.537 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Netherlands vs Argentina",
+      "date": "2014-07-09",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.43420754880730916,
+        "DRAW": 0.20509385183888257,
+        "B_WIN": 0.3606985993538084
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.20509385183888257,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.434 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Italy vs Costa Rica",
+      "date": "2014-06-20",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.561962298405179,
+        "DRAW": 0.23008530243338143,
+        "B_WIN": 0.20795239916143962
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.20795239916143962,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.562 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Spain vs Chile",
+      "date": "2014-06-18",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5417249860225234,
+        "DRAW": 0.241882001474368,
+        "B_WIN": 0.21639301250310858
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.21639301250310858,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.542 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "England vs Italy",
+      "date": "2014-06-14",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5220435075856183,
+        "DRAW": 0.26079146764709876,
+        "B_WIN": 0.2171650247672829
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2171650247672829,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.522 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Algeria vs Russia",
+      "date": "2014-06-26",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.2730408188884877,
+        "DRAW": 0.22101179857339484,
+        "B_WIN": 0.5059473825381174
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.22101179857339484,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.506 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Costa Rica vs England",
+      "date": "2014-06-24",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.24578559002516528,
+        "DRAW": 0.22519759143222448,
+        "B_WIN": 0.5290168185426102
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.22519759143222448,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.529 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "United States vs Portugal",
+      "date": "2014-06-22",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.39165738268744915,
+        "DRAW": 0.22950021326334194,
+        "B_WIN": 0.37884240404920894
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.22950021326334194,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.392 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Brazil vs Netherlands",
+      "date": "2014-07-12",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.555797781864941,
+        "DRAW": 0.20641517971962647,
+        "B_WIN": 0.23778703841543253
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.23778703841543253,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.556 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Japan vs Greece",
+      "date": "2014-06-19",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.3991940670121886,
+        "DRAW": 0.23942047658539162,
+        "B_WIN": 0.3613854564024197
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.23942047658539162,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.399 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Russia vs South Korea",
+      "date": "2014-06-17",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5247711470044302,
+        "DRAW": 0.24352557249883405,
+        "B_WIN": 0.23170328049673586
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.24352557249883405,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.525 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Costa Rica vs Greece",
+      "date": "2014-06-29",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.35652145539967417,
+        "DRAW": 0.24469353288914808,
+        "B_WIN": 0.39878501171117786
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.24469353288914808,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.399 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Iran vs Nigeria",
+      "date": "2014-06-16",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.4147824886326185,
+        "DRAW": 0.2629878604284715,
+        "B_WIN": 0.32222965093891
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2629878604284715,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.415 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "South Korea vs Algeria",
+      "date": "2014-06-22",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5015301583651101,
+        "DRAW": 0.23041157404723134,
+        "B_WIN": 0.2680582675876586
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2680582675876586,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.502 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Uruguay vs England",
+      "date": "2014-06-19",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.30427711703340327,
+        "DRAW": 0.26209059083986797,
+        "B_WIN": 0.4336322921267288
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.30427711703340327,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.434 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Belgium vs United States",
+      "date": "2014-07-01",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.339926730834609,
+        "DRAW": 0.24752891544370637,
+        "B_WIN": 0.4125443537216847
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.339926730834609,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.413 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Bosnia and Herzegovina vs Iran",
+      "date": "2014-06-25",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.3620144307040182,
+        "DRAW": 0.26535962324926726,
+        "B_WIN": 0.3726259460467146
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.3620144307040182,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.373 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Ivory Coast vs Japan",
+      "date": "2014-06-14",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.39189317269914586,
+        "DRAW": 0.19936072777874814,
+        "B_WIN": 0.408746099522106
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.39189317269914586,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.409 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "South Korea vs Germany",
+      "date": "2018-06-27",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.13001710221527538,
+        "DRAW": 0.2066704954399233,
+        "B_WIN": 0.6633124023448013
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.13001710221527538,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.663 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Argentina vs Iceland",
+      "date": "2018-06-16",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.7522275179607091,
+        "DRAW": 0.14054243532437227,
+        "B_WIN": 0.10723004671491866
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.14054243532437227,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.752 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Spain vs Morocco",
+      "date": "2018-06-25",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.7356100833139702,
+        "DRAW": 0.15654093473727335,
+        "B_WIN": 0.10784898194875657
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.15654093473727335,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.736 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Colombia vs Japan",
+      "date": "2018-06-19",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.616050639360049,
+        "DRAW": 0.20923455182021183,
+        "B_WIN": 0.17471480881973922
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.17471480881973922,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.616 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Switzerland vs Costa Rica",
+      "date": "2018-06-27",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6529317537218463,
+        "DRAW": 0.17764266097025763,
+        "B_WIN": 0.16942558530789614
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.17764266097025763,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.653 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Brazil vs Belgium",
+      "date": "2018-07-06",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6357705235135162,
+        "DRAW": 0.17106497666023232,
+        "B_WIN": 0.1931644998262516
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.1931644998262516,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.636 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Russia vs Spain",
+      "date": "2018-07-01",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.1935220950261575,
+        "DRAW": 0.21359617774844433,
+        "B_WIN": 0.5928817272253982
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.21359617774844433,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.593 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Brazil vs Switzerland",
+      "date": "2018-06-17",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6551842409493555,
+        "DRAW": 0.22064594276547114,
+        "B_WIN": 0.12416981628517339
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.22064594276547114,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.655 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Russia vs Croatia",
+      "date": "2018-07-07",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.35753509364277547,
+        "DRAW": 0.22813453500326386,
+        "B_WIN": 0.4143303713539606
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.22813453500326386,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.414 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Mexico vs Sweden",
+      "date": "2018-06-27",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.4826817449179512,
+        "DRAW": 0.28491861002237395,
+        "B_WIN": 0.23239964505967495
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.23239964505967495,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.483 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Germany vs Mexico",
+      "date": "2018-06-17",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.523482510241476,
+        "DRAW": 0.24175575091368876,
+        "B_WIN": 0.23476173884483525
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.23476173884483525,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.523 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Denmark vs France",
+      "date": "2018-06-26",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.21818876463492626,
+        "DRAW": 0.23998818447225043,
+        "B_WIN": 0.5418230508928233
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.23998818447225043,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.542 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Japan vs Senegal",
+      "date": "2018-06-24",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.37753818421563806,
+        "DRAW": 0.24500302813062166,
+        "B_WIN": 0.37745878765374025
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.24500302813062166,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.378 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Colombia vs England",
+      "date": "2018-07-03",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.3461372380602049,
+        "DRAW": 0.2519020288858144,
+        "B_WIN": 0.40196073305398067
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.2519020288858144,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.402 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Portugal vs Spain",
+      "date": "2018-06-15",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.24735054636853154,
+        "DRAW": 0.2525296545944413,
+        "B_WIN": 0.5001197990370271
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.2525296545944413,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.500 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Peru vs Denmark",
+      "date": "2018-06-16",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.4589697546349325,
+        "DRAW": 0.28705585866633354,
+        "B_WIN": 0.25397438669873396
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.25397438669873396,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.459 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Croatia vs Denmark",
+      "date": "2018-07-01",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.423063758685189,
+        "DRAW": 0.2554028381601537,
+        "B_WIN": 0.32153340315465745
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2554028381601537,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.423 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Iran vs Portugal",
+      "date": "2018-06-25",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.23778877599055684,
+        "DRAW": 0.27195851726383313,
+        "B_WIN": 0.49025270674561006
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.27195851726383313,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.490 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Argentina vs Croatia",
+      "date": "2018-06-21",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.49103826791957134,
+        "DRAW": 0.2320579240468216,
+        "B_WIN": 0.27690380803360715
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.27690380803360715,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.491 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Denmark vs Australia",
+      "date": "2018-06-21",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.46720439959636895,
+        "DRAW": 0.28067244819994164,
+        "B_WIN": 0.25212315220368947
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.28067244819994164,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.467 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Poland vs Senegal",
+      "date": "2018-06-19",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.45724038733292016,
+        "DRAW": 0.25466109476937776,
+        "B_WIN": 0.28809851789770213
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.28809851789770213,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.457 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Croatia vs England",
+      "date": "2018-07-11",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.2887802401040851,
+        "DRAW": 0.22934711998295024,
+        "B_WIN": 0.48187263991296475
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.2887802401040851,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.482 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Uruguay vs Portugal",
+      "date": "2018-06-30",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.3012665969089654,
+        "DRAW": 0.25791471450864023,
+        "B_WIN": 0.4408186885823943
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.3012665969089654,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.441 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Russia vs Uruguay",
+      "date": "2018-06-25",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.43353325319038605,
+        "DRAW": 0.23955643654815323,
+        "B_WIN": 0.3269103102614607
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.3269103102614607,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.434 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Sweden vs Switzerland",
+      "date": "2018-07-03",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.3332162145855363,
+        "DRAW": 0.26150904620374726,
+        "B_WIN": 0.40527473921071644
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.3332162145855363,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.405 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Argentina vs Saudi Arabia",
+      "date": "2022-11-22",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.8195922926823236,
+        "DRAW": 0.14829834113268664,
+        "B_WIN": 0.03210936618498967
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.03210936618498967,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.820 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Cameroon vs Brazil",
+      "date": "2022-12-02",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.0447597305504506,
+        "DRAW": 0.20609909314650146,
+        "B_WIN": 0.7491411763030479
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.0447597305504506,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.749 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "South Korea vs Ghana",
+      "date": "2022-11-28",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.7183711603231485,
+        "DRAW": 0.20095986673664432,
+        "B_WIN": 0.0806689729402072
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.0806689729402072,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.718 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Belgium vs Morocco",
+      "date": "2022-11-27",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.639031688929439,
+        "DRAW": 0.25297756841380653,
+        "B_WIN": 0.10799074265675448
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.10799074265675448,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.639 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Tunisia vs France",
+      "date": "2022-11-30",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.13059255242862597,
+        "DRAW": 0.288958108195048,
+        "B_WIN": 0.580449339376326
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.13059255242862597,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.580 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Japan vs Costa Rica",
+      "date": "2022-11-27",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5897209474121168,
+        "DRAW": 0.26430994292513393,
+        "B_WIN": 0.14596910966274926
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.14596910966274926,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.590 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Germany vs Japan",
+      "date": "2022-11-23",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.555856678692964,
+        "DRAW": 0.2887985878577946,
+        "B_WIN": 0.15534473344924152
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.15534473344924152,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.556 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Ecuador vs Senegal",
+      "date": "2022-11-29",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5350633070047389,
+        "DRAW": 0.28127301991999604,
+        "B_WIN": 0.18366367307526507
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.18366367307526507,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.535 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Japan vs Spain",
+      "date": "2022-12-01",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.21361731325259017,
+        "DRAW": 0.33492223389069614,
+        "B_WIN": 0.4514604528567137
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.21361731325259017,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.451 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Denmark vs Tunisia",
+      "date": "2022-11-22",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6524362789049,
+        "DRAW": 0.2407163986035914,
+        "B_WIN": 0.10684732249150859
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2407163986035914,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.652 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2022,
+      "match": "Iran vs United States",
+      "date": "2022-11-29",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.4434069157798671,
+        "DRAW": 0.3153973160380636,
+        "B_WIN": 0.2411957681820693
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2411957681820693,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.443 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "South Korea vs Portugal",
+      "date": "2022-12-02",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.24483247181297207,
+        "DRAW": 0.33648795747321963,
+        "B_WIN": 0.41867957071380824
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.24483247181297207,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.419 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Netherlands vs Ecuador",
+      "date": "2022-11-25",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6455580623593666,
+        "DRAW": 0.25182632575733,
+        "B_WIN": 0.10261561188330343
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.25182632575733,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.646 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2022,
+      "match": "England vs France",
+      "date": "2022-12-10",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.38669265112633255,
+        "DRAW": 0.35092251922705214,
+        "B_WIN": 0.26238482964661525
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.26238482964661525,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.387 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Morocco vs Portugal",
+      "date": "2022-12-10",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.2635909310478296,
+        "DRAW": 0.338900789822094,
+        "B_WIN": 0.3975082791300764
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.2635909310478296,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.398 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Qatar vs Senegal",
+      "date": "2022-11-25",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.4322986941231295,
+        "DRAW": 0.2966437261465154,
+        "B_WIN": 0.2710575797303551
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2710575797303551,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.432 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "England vs United States",
+      "date": "2022-11-25",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5846206688766246,
+        "DRAW": 0.27894388388980995,
+        "B_WIN": 0.13643544723356543
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.27894388388980995,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.585 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2022,
+      "match": "Tunisia vs Australia",
+      "date": "2022-11-26",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.413164985711775,
+        "DRAW": 0.3051242389541094,
+        "B_WIN": 0.28171077533411565
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.28171077533411565,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.413 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "United States vs Wales",
+      "date": "2022-11-21",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5317676673422176,
+        "DRAW": 0.28510248882336103,
+        "B_WIN": 0.18312984383442146
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.28510248882336103,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.532 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2022,
+      "match": "Australia vs Denmark",
+      "date": "2022-11-30",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.2909168671775889,
+        "DRAW": 0.32775580072873095,
+        "B_WIN": 0.3813273320936802
+      },
+      "actual_result": "A_WIN",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.2909168671775889,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.381 to B_WIN, actual was A_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Serbia vs Switzerland",
+      "date": "2022-12-02",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.3824053234390028,
+        "DRAW": 0.3250812170441412,
+        "B_WIN": 0.2925134595168561
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2925134595168561,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.382 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2022,
+      "match": "Cameroon vs Serbia",
+      "date": "2022-11-28",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.23816284824917788,
+        "DRAW": 0.3029232617103495,
+        "B_WIN": 0.45891389004047256
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.3029232617103495,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.459 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2022,
+      "match": "Uruguay vs South Korea",
+      "date": "2022-11-24",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.47818292505781534,
+        "DRAW": 0.31137540438917544,
+        "B_WIN": 0.21044167055300916
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.31137540438917544,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.478 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2022,
+      "match": "Spain vs Germany",
+      "date": "2022-11-27",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5224077362995136,
+        "DRAW": 0.3117985270474288,
+        "B_WIN": 0.1657937366530577
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.3117985270474288,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.522 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2022,
+      "match": "Mexico vs Poland",
+      "date": "2022-11-22",
+      "model_name": "elo_logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.4252178724480073,
+        "DRAW": 0.3123071418619302,
+        "B_WIN": 0.26247498569006245
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.3123071418619302,
+      "error_type": "predicted_top_class_lost",
+      "notes": "elo_logistic_regression assigned 0.425 to A_WIN, actual was DRAW"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+data:
+  mode: real
+  matches_path: data/processed/real_completed_matches.csv
+  shootouts_path: data/real/shootouts.csv
+  goalscorers_path: data/real/goalscorers.csv
+  teams_path: data/processed/teams_real.csv
+  elo_ratings_path: data/real/elo_ratings.csv
+  fifa_rankings_path: data/real/fifa_rankings.csv
+
+model:
+  type: logistic_regression
+  random_state: 42
+  max_iter: 1000
+  output_path: models/prediction_model_real.joblib
+
+features:
+  recent_window: 5
+  elo_k: 28.0
+  enable_groups:
+    external_ratings: true
+    schedule: true
+    tournament_context: true
+    elo_history: true
+
+calibration:
+  enabled: true
+  method: sigmoid
+  cv: 3
+
+ensemble:
+  mode: validation_weighted
+  candidates:
+    - elo_logistic_regression
+    - logistic_regression
+    - poisson_goal_model
+    - gradient_boosting
+
+evaluation:
+  test_size: 0.25

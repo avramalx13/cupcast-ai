@@ -1,0 +1,39 @@
+data:
+  mode: synthetic  # synthetic | real
+  matches_path: data/raw/historical_matches.csv
+  shootouts_path:
+  teams_path: data/raw/teams.csv
+  # Optional local free-data snapshots. Missing files are ignored; no fake rankings are generated.
+  elo_ratings_path: data/real/elo_ratings.csv
+  fifa_rankings_path: data/real/fifa_rankings.csv
+
+model:
+  type: logistic_regression
+  random_state: 42
+  max_iter: 1000
+  output_path: models/prediction_model.joblib
+
+features:
+  recent_window: 5
+  elo_k: 28.0
+  enable_groups:
+    external_ratings: true
+    schedule: true
+    tournament_context: true
+    elo_history: true
+
+calibration:
+  enabled: true
+  method: sigmoid
+  cv: 3
+
+ensemble:
+  mode: validation_weighted
+  candidates:
+    - elo_logistic_regression
+    - logistic_regression
+    - poisson_goal_model
+    - gradient_boosting
+
+evaluation:
+  test_size: 0.25
