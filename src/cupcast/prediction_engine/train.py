@@ -38,6 +38,9 @@ def train_from_config(config_path: str | Path) -> Path:
     elo_k = float(feature_cfg.get("elo_k", 28.0))
     elo_ratings_path = _optional_path(data_cfg.get("elo_ratings_path") or data_cfg.get("elo_path"))
     fifa_rankings_path = _optional_path(data_cfg.get("fifa_rankings_path") or data_cfg.get("fifa_path"))
+    external_elo_ratings = LocalEloRatingSource(elo_ratings_path).load() if elo_ratings_path else None
+    external_fifa_rankings = LocalFifaRankingSource(fifa_rankings_path).load() if fifa_rankings_path else None
+    feature_flags = dict(feature_cfg.get("enable_groups", {})) if isinstance(feature_cfg.get("enable_groups"), dict) else {}
 
     matches, teams = load_dataset(
         matches_path,
@@ -50,9 +53,9 @@ def train_from_config(config_path: str | Path) -> Path:
         teams,
         recent_window=recent_window,
         elo_k=elo_k,
-        external_elo_ratings=LocalEloRatingSource(elo_ratings_path).load() if elo_ratings_path else None,
-        external_fifa_rankings=LocalFifaRankingSource(fifa_rankings_path).load() if fifa_rankings_path else None,
-        feature_flags=dict(feature_cfg.get("enable_groups", {})) if isinstance(feature_cfg.get("enable_groups"), dict) else {},
+        external_elo_ratings=external_elo_ratings,
+        external_fifa_rankings=external_fifa_rankings,
+        feature_flags=feature_flags,
     )
     model = train_prediction_model(
         features,
@@ -63,6 +66,9 @@ def train_from_config(config_path: str | Path) -> Path:
         elo_k=elo_k,
         model_version=f"{Path(config_path).stem}-local",
         model_params=_model_params(calibration_cfg, ensemble_cfg),
+        external_elo_ratings=external_elo_ratings,
+        external_fifa_rankings=external_fifa_rankings,
+        feature_flags=feature_flags,
     )
     save_model(model, output_path)
     return output_path

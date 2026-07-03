@@ -88,8 +88,8 @@ def backtest_single_world_cup_year(
                 "log_loss": metrics["log_loss"],
                 "brier_score": metrics["brier_score"],
                 "calibration_ece": metrics["expected_calibration_error"],
-                "group_stage_accuracy": _subset_accuracy(model, test_features, stage="group"),
-                "knockout_accuracy": _subset_accuracy(model, test_features, stage="knockout"),
+                **_subset_metrics(model, test_features, stage="group", prefix="group_stage"),
+                **_subset_metrics(model, test_features, stage="knockout", prefix="knockout"),
                 "matches_tested": metrics["matches_tested"],
             }
         )
@@ -100,8 +100,8 @@ def backtest_single_world_cup_year(
     ensemble = _find_model_row(model_rows, "weighted_probability_ensemble")
     group_stage_count = _subset_count(test_features, stage="group")
     knockout_count = _subset_count(test_features, stage="knockout")
-    best_group = _best_subset_model(model_rows, "group_stage_accuracy")
-    best_knockout = _best_subset_model(model_rows, "knockout_accuracy")
+    best_group = _best_subset_model(model_rows, "group_stage_log_loss", lower_is_better=True)
+    best_knockout = _best_subset_model(model_rows, "knockout_log_loss", lower_is_better=True)
     return {
         "year": int(year),
         "tournament_start": tournament_start.date().isoformat(),
@@ -113,6 +113,8 @@ def backtest_single_world_cup_year(
         "best_overall_model": best["model_name"],
         "best_group_stage_model": best_group["model_name"] if best_group else None,
         "best_knockout_model": best_knockout["model_name"] if best_knockout else None,
+        "best_group_stage_log_loss": best_group["group_stage_log_loss"] if best_group else None,
+        "best_knockout_log_loss": best_knockout["knockout_log_loss"] if best_knockout else None,
         "accuracy": best["accuracy"],
         "log_loss": best["log_loss"],
         "brier_score": best["brier_score"],
@@ -147,14 +149,30 @@ def _world_cup_mask(features: pd.DataFrame, year: int) -> pd.Series:
 
 
 def _subset_accuracy(model, features: pd.DataFrame, stage: str) -> float | None:
+    metrics = _subset_metrics(model, features, stage=stage, prefix=stage)
+    return metrics[f"{stage}_accuracy"]
+
+
+def _subset_metrics(model, features: pd.DataFrame, stage: str, prefix: str) -> dict[str, float | None]:
     stage_values = features["stage"].fillna("").astype(str).str.lower()
     if stage == "group":
         subset = features.loc[stage_values.eq("group")]
     else:
         subset = features.loc[~stage_values.isin(["group", "unknown", "friendly", "qualifier"])]
     if subset.empty:
-        return None
-    return float(evaluate_model(model, subset)["accuracy"])
+        return {
+            f"{prefix}_accuracy": None,
+            f"{prefix}_log_loss": None,
+            f"{prefix}_brier_score": None,
+            f"{prefix}_ece": None,
+        }
+    report = evaluate_model(model, subset)
+    return {
+        f"{prefix}_accuracy": float(report["accuracy"]),
+        f"{prefix}_log_loss": float(report["log_loss"]),
+        f"{prefix}_brier_score": float(report["brier_score"]),
+        f"{prefix}_ece": float(report["expected_calibration_error"]),
+    }
 
 
 def _subset_count(features: pd.DataFrame, stage: str) -> int:
@@ -164,11 +182,16 @@ def _subset_count(features: pd.DataFrame, stage: str) -> int:
     return int((~stage_values.isin(["group", "unknown", "friendly", "qualifier"])).sum())
 
 
-def _best_subset_model(rows: list[dict[str, Any]], metric_name: str) -> dict[str, Any] | None:
+def _best_subset_model(
+    rows: list[dict[str, Any]],
+    metric_name: str,
+    lower_is_better: bool = False,
+) -> dict[str, Any] | None:
     available = [row for row in rows if row.get(metric_name) is not None]
     if not available:
         return None
-    return max(available, key=lambda row: float(row[metric_name]))
+    selector = min if lower_is_better else max
+    return selector(available, key=lambda row: float(row[metric_name]))
 
 
 def _find_model_row(rows: list[dict[str, Any]], model_name: str) -> dict[str, Any] | None:

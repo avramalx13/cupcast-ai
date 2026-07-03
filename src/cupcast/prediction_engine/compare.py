@@ -23,10 +23,12 @@ DEFAULT_COMPARISON_MODELS = [
     "logistic_regression",
     "random_forest",
     "gradient_boosting",
+    "hist_gradient_boosting",
     "poisson_goal_model",
     "feature_logistic_regression_calibrated",
     "random_forest_calibrated",
     "gradient_boosting_calibrated",
+    "hist_gradient_boosting_calibrated",
     "weighted_probability_ensemble",
 ]
 

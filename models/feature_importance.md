@@ -1,76 +1,79 @@
 # CupCast AI Feature Importance
 
+Rows used: 12000 of 49484
+Note: feature importance uses the most recent 12000 rows for runtime
+
 ## random_forest
 
 | Feature | Importance |
 |---|---:|
-| `elo_diff` | 0.071550 |
-| `elo_external_diff` | 0.055127 |
-| `avg_elo_diff` | 0.048059 |
-| `max_elo_last_10_b` | 0.030186 |
-| `elo_a` | 0.029835 |
-| `opponent_adjusted_form_diff` | 0.029699 |
-| `avg_elo_last_5_b` | 0.028749 |
-| `elo_b` | 0.028743 |
-| `elo_volatility_10_matches_a` | 0.028591 |
-| `elo_volatility_diff` | 0.028396 |
-| `elo_volatility_10_matches_b` | 0.028329 |
-| `elo_external_a` | 0.027494 |
-| `elo_external_b` | 0.026902 |
-| `elo_trend_5_matches_b` | 0.026874 |
-| `elo_trend_diff` | 0.026814 |
-| `max_elo_last_10_a` | 0.026794 |
-| `elo_trend_5_matches_a` | 0.026703 |
-| `avg_elo_last_5_a` | 0.026176 |
-| `weighted_goal_diff_last_5_a` | 0.026106 |
-| `opponent_adjusted_form_b` | 0.025337 |
+| `elo_external_diff` | 0.071616 |
+| `avg_elo_diff` | 0.056942 |
+| `elo_diff` | 0.051865 |
+| `elo_b` | 0.026034 |
+| `elo_a` | 0.025500 |
+| `goal_diff_form_diff` | 0.024932 |
+| `avg_elo_last_5_a` | 0.024777 |
+| `max_elo_last_10_b` | 0.024635 |
+| `competitive_goal_diff_diff` | 0.024467 |
+| `avg_elo_last_5_b` | 0.024381 |
+| `elo_trend_5_matches_a` | 0.023782 |
+| `opponent_adjusted_form_diff` | 0.023542 |
+| `elo_external_b` | 0.023476 |
+| `elo_volatility_diff` | 0.023132 |
+| `elo_volatility_10_matches_a` | 0.023104 |
+| `max_elo_last_10_a` | 0.022952 |
+| `elo_external_a` | 0.022655 |
+| `elo_volatility_10_matches_b` | 0.022601 |
+| `elo_trend_5_matches_b` | 0.021704 |
+| `elo_trend_diff` | 0.021504 |
 
 ## gradient_boosting
 
 | Feature | Importance |
 |---|---:|
-| `elo_diff` | 0.503581 |
-| `elo_external_diff` | 0.321238 |
-| `avg_elo_diff` | 0.022336 |
-| `weighted_goal_diff_last_5_b` | 0.020564 |
-| `team_a_goals_conceded_last_5` | 0.017846 |
-| `weighted_goal_diff_last_5_a` | 0.016697 |
-| `home_advantage_flag` | 0.014145 |
-| `team_b_goals_conceded_last_5` | 0.012700 |
-| `stage_encoded` | 0.009088 |
-| `neutral` | 0.008500 |
-| `avg_elo_last_5_b` | 0.006362 |
-| `host_country_advantage_flag` | 0.005795 |
-| `elo_volatility_10_matches_b` | 0.005169 |
-| `elo_external_b` | 0.004337 |
-| `elo_volatility_10_matches_a` | 0.004196 |
-| `rest_days_diff` | 0.003219 |
-| `team_a_goals_scored_last_5` | 0.003159 |
-| `elo_b` | 0.002266 |
-| `is_friendly` | 0.002149 |
-| `elo_volatility_diff` | 0.001926 |
+| `elo_diff` | 0.467576 |
+| `elo_external_diff` | 0.264202 |
+| `avg_elo_diff` | 0.123461 |
+| `home_advantage_flag` | 0.012693 |
+| `team_b_goals_conceded_last_5` | 0.011295 |
+| `team_a_goals_conceded_last_5` | 0.011202 |
+| `goal_diff_form_diff` | 0.008922 |
+| `neutral` | 0.008474 |
+| `weighted_goal_diff_last_5_a` | 0.007309 |
+| `competitive_goal_diff_diff` | 0.006958 |
+| `elo_b` | 0.004340 |
+| `avg_elo_last_5_b` | 0.004335 |
+| `weighted_goal_diff_last_5_b` | 0.004286 |
+| `max_elo_last_10_b` | 0.004112 |
+| `elo_trend_diff` | 0.003900 |
+| `rest_days_diff` | 0.003890 |
+| `elo_volatility_10_matches_a` | 0.002943 |
+| `is_continental_tournament` | 0.002807 |
+| `opponent_adjusted_form_diff` | 0.002789 |
+| `elo_volatility_10_matches_b` | 0.002689 |
 
 ## logistic_regression
 
 | Feature | Importance |
 |---|---:|
-| `avg_elo_diff` | 0.461660 |
-| `elo_diff` | 0.388754 |
-| `elo_external_diff` | 0.388754 |
-| `avg_elo_last_5_b` | 0.320864 |
-| `elo_b` | 0.292838 |
-| `elo_external_b` | 0.292838 |
-| `avg_elo_last_5_a` | 0.235285 |
-| `elo_a` | 0.212989 |
-| `elo_external_a` | 0.212989 |
-| `weighted_goal_diff_last_5_b` | 0.128063 |
-| `weighted_goal_diff_last_5_a` | 0.099142 |
-| `weighted_form_diff` | 0.094669 |
-| `team_a_recent_form` | 0.092380 |
-| `opponent_adjusted_form_b` | 0.086399 |
-| `max_elo_last_10_b` | 0.079861 |
-| `weighted_form_last_5_b` | 0.077955 |
-| `opponent_adjusted_form_a` | 0.074532 |
-| `team_b_goals_conceded_last_5` | 0.069150 |
-| `team_a_goals_conceded_last_5` | 0.064306 |
-| `team_a_goals_scored_last_5` | 0.055179 |
+| `elo_diff` | 0.368214 |
+| `elo_external_diff` | 0.368214 |
+| `avg_elo_diff` | 0.309887 |
+| `elo_a` | 0.245100 |
+| `elo_external_a` | 0.245100 |
+| `max_elo_last_10_b` | 0.224871 |
+| `avg_elo_last_5_b` | 0.175442 |
+| `avg_elo_last_5_a` | 0.164144 |
+| `weighted_goal_diff_last_5_b` | 0.163598 |
+| `max_elo_last_10_a` | 0.161831 |
+| `team_a_recent_form` | 0.137573 |
+| `elo_b` | 0.120452 |
+| `elo_external_b` | 0.120452 |
+| `weighted_goal_diff_last_5_a` | 0.108498 |
+| `weighted_form_last_5_b` | 0.106154 |
+| `weighted_form_diff` | 0.095455 |
+| `neutral` | 0.080315 |
+| `home_advantage_flag` | 0.080315 |
+| `host_country_advantage_flag` | 0.074835 |
+| `opponent_adjusted_form_a` | 0.068697 |

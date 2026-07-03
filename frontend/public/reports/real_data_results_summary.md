@@ -27,22 +27,22 @@ This report was generated locally from user-supplied real historical match data.
 
 | Model | Status | Accuracy | Log loss | Brier | ECE | Beats majority | Beats Elo | Notes |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| weighted_probability_ensemble | ok | 0.4844 | 1.0190 | 0.6053 | 0.1047 | yes | yes | beats selected baselines on log loss for this split |
+| weighted_probability_ensemble | ok | 0.4688 | 1.0202 | 0.6060 | 0.1177 | yes | yes | beats selected baselines on log loss for this split |
 | elo_logistic_regression | ok | 0.4844 | 1.0453 | 0.6039 | 0.0830 | yes | no | beats selected baselines on log loss for this split |
-| logistic_regression | ok | 0.5156 | 1.0458 | 0.6121 | 0.0884 | yes | no | does not beat Elo baseline on log loss |
-| feature_logistic_regression_calibrated | ok | 0.5156 | 1.0465 | 0.6131 | 0.0497 | yes | no | does not beat Elo baseline on log loss |
+| logistic_regression | ok | 0.5156 | 1.0496 | 0.6144 | 0.1069 | yes | no | does not beat Elo baseline on log loss |
+| feature_logistic_regression_calibrated | ok | 0.5156 | 1.0500 | 0.6151 | 0.0737 | yes | no | does not beat Elo baseline on log loss |
 | poisson_goal_model | ok | 0.4375 | 1.0724 | 0.6484 | 0.1118 | yes | no | does not beat Elo baseline on log loss |
 | majority_baseline | ok | 0.4375 | 1.0743 | 0.6512 | 0.0540 | no | no | does not beat majority baseline on log loss; does not beat Elo baseline on log loss |
-| recent_form_only | ok | 0.4219 | 1.0886 | 0.6593 | 0.0646 | no | no | does not beat majority baseline on log loss; does not beat Elo baseline on log loss |
+| recent_form_only | ok | 0.4688 | 1.0928 | 0.6622 | 0.0835 | no | no | does not beat majority baseline on log loss; does not beat Elo baseline on log loss |
 | uniform_random_baseline | ok | 0.4375 | 1.0986 | 0.6667 | 0.1042 | no | no | does not beat majority baseline on log loss; does not beat Elo baseline on log loss |
 
 ## World Cup Backtests
 
 | Year | Status | Train matches | Test matches | Best model | Accuracy | Log loss | Brier | ECE |
 |---:|---:|---:|---:|---|---:|---:|---:|---:|
-| 2014 | ok | 37861 | 64 | feature_logistic_regression_calibrated | 0.6094 | 0.9451 | 0.5581 | 0.0640 |
-| 2018 | ok | 41639 | 64 | feature_logistic_regression_calibrated | 0.5625 | 0.9326 | 0.5520 | 0.0554 |
-| 2022 | ok | 45700 | 64 | weighted_probability_ensemble | 0.4844 | 1.0190 | 0.6053 | 0.1047 |
+| 2014 | ok | 37861 | 64 | feature_logistic_regression_calibrated | 0.5938 | 0.9487 | 0.5605 | 0.0722 |
+| 2018 | ok | 41639 | 64 | logistic_regression | 0.5625 | 0.9314 | 0.5503 | 0.0510 |
+| 2022 | ok | 45700 | 64 | weighted_probability_ensemble | 0.4688 | 1.0202 | 0.6060 | 0.1177 |
 
 ## Calibration
 
@@ -50,19 +50,19 @@ Calibration is evaluated with log loss, Brier score, calibration bins, and expec
 
 ## Feature Importance
 
-- `random_forest` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `max_elo_last_10_b`, `elo_a`
-- `gradient_boosting` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `weighted_goal_diff_last_5_b`, `team_a_goals_conceded_last_5`
-- `logistic_regression` top features: `avg_elo_diff`, `elo_diff`, `elo_external_diff`, `avg_elo_last_5_b`, `elo_b`
+- `random_forest` top features: `elo_external_diff`, `avg_elo_diff`, `elo_diff`, `elo_b`, `elo_a`
+- `gradient_boosting` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `home_advantage_flag`, `team_b_goals_conceded_last_5`
+- `logistic_regression` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `elo_a`, `elo_external_a`
 
 ## Ablation Study
 
 - `elo_only`: ok (log loss: 0.8680)
-- `form_only`: ok (log loss: 0.9771)
+- `form_only`: ok (log loss: 0.9704)
 - `ranking_only`: ok (log loss: 1.0543)
 - `schedule_only`: ok (log loss: 1.0464)
-- `goals_only`: ok (log loss: 0.9745)
+- `goals_only`: ok (log loss: 0.9680)
 - `elo_plus_form`: ok (log loss: 0.8610)
-- `all_features`: ok (log loss: 0.8599)
+- `all_features`: ok (log loss: 0.8601)
 - `all_features_plus_external_ratings`: unavailable (log loss: external rating CSVs not found)
 
 ## Error Analysis

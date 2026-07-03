@@ -206,6 +206,7 @@ def run_real_data_pipeline(
             analysis_config_path,
             output_json=outputs.feature_importance_json,
             output_md=outputs.feature_importance_md,
+            max_rows=12000,
         )
     except Exception as exc:
         feature_importance = {"models": [], "error_message": str(exc)}
@@ -353,8 +354,8 @@ def _backtest_world_cup_years(
             majority = _find_model_row(successful, "majority_baseline")
             elo = _find_model_row(successful, "elo_logistic_regression")
             ensemble = _find_model_row(successful, "weighted_probability_ensemble")
-            best_group = _best_subset_model(successful, "group_stage_accuracy")
-            best_knockout = _best_subset_model(successful, "knockout_accuracy")
+            best_group = _best_subset_model(successful, "group_stage_log_loss", lower_is_better=True)
+            best_knockout = _best_subset_model(successful, "knockout_log_loss", lower_is_better=True)
             results.append(
                 {
                     "year": int(year),
@@ -368,6 +369,8 @@ def _backtest_world_cup_years(
                     "best_overall_model": best["model_name"],
                     "best_group_stage_model": best_group["model_name"] if best_group else None,
                     "best_knockout_model": best_knockout["model_name"] if best_knockout else None,
+                    "best_group_stage_log_loss": best_group["group_stage_log_loss"] if best_group else None,
+                    "best_knockout_log_loss": best_knockout["knockout_log_loss"] if best_knockout else None,
                     "best_model": best["model_name"],
                     "accuracy": best["accuracy"],
                     "log_loss": best["log_loss"],
@@ -404,6 +407,8 @@ def _backtest_world_cup_years(
                     "best_overall_model": None,
                     "best_group_stage_model": None,
                     "best_knockout_model": None,
+                    "best_group_stage_log_loss": None,
+                    "best_knockout_log_loss": None,
                     "best_model": None,
                     "accuracy": None,
                     "log_loss": None,
@@ -597,21 +602,45 @@ def _subset_metrics(model: Any, subset_features: dict[str, pd.DataFrame] | None)
         return {}
     metrics: dict[str, float | None] = {}
     for name, subset in subset_features.items():
-        metrics[f"{name}_accuracy"] = None if subset.empty else float(evaluate_model(model, subset)["accuracy"])
+        if subset.empty:
+            metrics[f"{name}_accuracy"] = None
+            metrics[f"{name}_log_loss"] = None
+            metrics[f"{name}_brier_score"] = None
+            metrics[f"{name}_ece"] = None
+            continue
+        subset_report = evaluate_model(model, subset)
+        metrics[f"{name}_accuracy"] = float(subset_report["accuracy"])
+        metrics[f"{name}_log_loss"] = float(subset_report["log_loss"])
+        metrics[f"{name}_brier_score"] = float(subset_report["brier_score"])
+        metrics[f"{name}_ece"] = float(subset_report["expected_calibration_error"])
     return metrics
 
 
 def _empty_subset_metrics(subset_features: dict[str, pd.DataFrame] | None) -> dict[str, None]:
     if not subset_features:
         return {}
-    return {f"{name}_accuracy": None for name in subset_features}
+    return {
+        metric_name: None
+        for name in subset_features
+        for metric_name in (
+            f"{name}_accuracy",
+            f"{name}_log_loss",
+            f"{name}_brier_score",
+            f"{name}_ece",
+        )
+    }
 
 
-def _best_subset_model(rows: list[dict[str, Any]], metric_name: str) -> dict[str, Any] | None:
+def _best_subset_model(
+    rows: list[dict[str, Any]],
+    metric_name: str,
+    lower_is_better: bool = False,
+) -> dict[str, Any] | None:
     available = [row for row in rows if row.get(metric_name) is not None]
     if not available:
         return None
-    return max(available, key=lambda row: float(row[metric_name]))
+    selector = min if lower_is_better else max
+    return selector(available, key=lambda row: float(row[metric_name]))
 
 
 def _model_details(estimator: Any) -> dict[str, Any]:

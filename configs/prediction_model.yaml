@@ -8,7 +8,7 @@ data:
   fifa_rankings_path: data/real/fifa_rankings.csv
 
 model:
-  type: logistic_regression
+  type: weighted_probability_ensemble
   random_state: 42
   max_iter: 1000
   output_path: models/prediction_model.joblib
@@ -33,7 +33,6 @@ ensemble:
     - elo_logistic_regression
     - logistic_regression
     - poisson_goal_model
-    - gradient_boosting
 
 evaluation:
   test_size: 0.25

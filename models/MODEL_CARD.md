@@ -49,15 +49,13 @@ Calibrated variants are evaluated beside uncalibrated models. The ensemble repor
 ## Real-Data Results Summary
 
 Best comparison model by log loss: `weighted probability ensemble`.
-Accuracy: 0.4844; log loss: 1.0190; Brier score: 0.6053; ECE: 0.1047.
+Accuracy: 0.4688; log loss: 1.0202; Brier score: 0.6060; ECE: 0.1177.
 
 ## Known Limitations
 
 - Historical results alone do not include injuries, player availability, tactical changes, travel, rest, lineups, or market expectations.
 - World Cup backtests are small samples and can be noisy.
 - Generated real teams use unknown confederation and blank FIFA rank until richer metadata is supplied.
-- The full World Cup 2026 simulator approximates third-place Round of 32 placement deterministically until an official FIFA placement matrix is implemented. This affects exact path probabilities more than group qualification estimates.
-- Group-stage scorelines are sampled from simple fixed scoreline buckets after the model samples win/draw/loss.
 - The model is not a production-grade sports betting system.
 
 ## Ethical/Product Limitations

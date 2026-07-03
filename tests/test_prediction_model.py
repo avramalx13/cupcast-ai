@@ -3,6 +3,7 @@ import pandas as pd
 from cupcast.prediction_engine.data_loader import load_matches, load_teams
 from cupcast.prediction_engine.features import build_feature_table
 from cupcast.prediction_engine.model import load_model, save_model, train_prediction_model
+from cupcast.prediction_engine.rating_sources import normalize_elo_ratings
 from scripts.create_sample_data import main as create_sample_data
 
 
@@ -42,3 +43,32 @@ def test_prediction_model_artifact_roundtrip(tmp_path) -> None:
         + result.team_b_win_probability
         - 1.0
     ) < 1e-9
+
+
+def test_prediction_model_artifact_preserves_external_rating_snapshots(tmp_path) -> None:
+    create_sample_data()
+    matches = load_matches("data/raw/historical_matches.csv")
+    teams = load_teams("data/raw/teams.csv")
+    external_elo = normalize_elo_ratings(
+        pd.DataFrame(
+            [
+                {"date": "2020-01-01", "team": "France", "elo": 2010},
+                {"date": "2020-01-01", "team": "Brazil", "elo": 1990},
+            ]
+        )
+    )
+    feature_flags = {"external_ratings": True}
+    model = train_prediction_model(
+        build_feature_table(matches, teams, external_elo_ratings=external_elo, feature_flags=feature_flags),
+        model_version="ratings-roundtrip-test",
+        external_elo_ratings=external_elo,
+        feature_flags=feature_flags,
+    )
+    model_path = tmp_path / "prediction_model.joblib"
+
+    save_model(model, model_path)
+    loaded = load_model(model_path)
+
+    assert loaded.external_elo_ratings is not None
+    assert loaded.feature_flags == feature_flags
+    assert loaded.external_elo_ratings["elo"].tolist() == [1990, 2010]

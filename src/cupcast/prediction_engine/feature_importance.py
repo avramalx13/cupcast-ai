@@ -23,9 +23,13 @@ def analyze_feature_importance(
     output_json: str | Path = PROJECT_ROOT / "models" / "feature_importance.json",
     output_md: str | Path = PROJECT_ROOT / "models" / "feature_importance.md",
     model_names: list[str] | None = None,
+    max_rows: int | None = None,
 ) -> dict[str, Any]:
     config = load_yaml(config_path)
     features = _features_from_config(config)
+    total_feature_rows = int(len(features))
+    if max_rows is not None and len(features) > int(max_rows):
+        features = features.sort_values("date").tail(int(max_rows)).reset_index(drop=True)
     rows = []
     for model_name in model_names or DEFAULT_IMPORTANCE_MODELS:
         try:
@@ -33,7 +37,16 @@ def analyze_feature_importance(
             rows.append(_importance_for_model(model_name, model.estimator, model.feature_columns))
         except Exception as exc:
             rows.append({"model_name": model_name, "status": "failed", "error_message": str(exc), "features": []})
-    payload = {"models": rows}
+    payload = {
+        "models": rows,
+        "total_feature_rows": total_feature_rows,
+        "importance_rows": int(len(features)),
+        "data_window_note": (
+            f"feature importance uses the most recent {len(features)} rows for runtime"
+            if max_rows is not None and total_feature_rows > int(max_rows)
+            else "feature importance uses all available rows"
+        ),
+    }
     json_path = Path(output_json)
     json_path.parent.mkdir(parents=True, exist_ok=True)
     json_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
@@ -42,7 +55,13 @@ def analyze_feature_importance(
 
 
 def render_feature_importance_markdown(payload: dict[str, Any]) -> str:
-    lines = ["# CupCast AI Feature Importance", ""]
+    lines = [
+        "# CupCast AI Feature Importance",
+        "",
+        f"Rows used: {payload.get('importance_rows')} of {payload.get('total_feature_rows')}",
+        f"Note: {payload.get('data_window_note')}",
+        "",
+    ]
     for model in payload.get("models", []):
         lines.extend([f"## {model.get('model_name')}", ""])
         if model.get("status") != "ok":

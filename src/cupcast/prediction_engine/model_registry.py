@@ -7,7 +7,7 @@ from typing import Any
 import joblib
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier, HistGradientBoostingClassifier, RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
@@ -26,6 +26,15 @@ RECENT_FORM_ONLY_COLUMNS = [
     "team_b_goals_scored_last_5",
     "team_a_goals_conceded_last_5",
     "team_b_goals_conceded_last_5",
+    "team_a_goal_diff_last_5",
+    "team_b_goal_diff_last_5",
+    "goal_diff_form_diff",
+    "team_a_competitive_form_last_5",
+    "team_b_competitive_form_last_5",
+    "competitive_form_diff",
+    "team_a_competitive_goal_diff_last_5",
+    "team_b_competitive_goal_diff_last_5",
+    "competitive_goal_diff_diff",
 ]
 RANKING_ONLY_COLUMNS = [
     "fifa_rank_a",
@@ -52,8 +61,14 @@ GOALS_ONLY_COLUMNS = [
     "team_b_goals_scored_last_5",
     "team_a_goals_conceded_last_5",
     "team_b_goals_conceded_last_5",
+    "team_a_goal_diff_last_5",
+    "team_b_goal_diff_last_5",
+    "goal_diff_form_diff",
     "weighted_goal_diff_last_5_a",
     "weighted_goal_diff_last_5_b",
+    "team_a_competitive_goal_diff_last_5",
+    "team_b_competitive_goal_diff_last_5",
+    "competitive_goal_diff_diff",
 ]
 ELO_PLUS_FORM_COLUMNS = list(dict.fromkeys(ELO_ONLY_COLUMNS + RECENT_FORM_ONLY_COLUMNS))
 
@@ -143,6 +158,7 @@ def create_model(model_name: str, config: dict[str, Any] | None = None) -> Any:
         "logistic_regression_calibrated",
         "random_forest_calibrated",
         "gradient_boosting_calibrated",
+        "hist_gradient_boosting_calibrated",
     }:
         from .calibration import CalibratedMatchModel
 
@@ -182,12 +198,20 @@ def create_model(model_name: str, config: dict[str, Any] | None = None) -> Any:
             subsample=float(config.get("subsample", 0.85)),
             random_state=random_state,
         )
+    if name in {"hist_gradient_boosting", "histogram_gradient_boosting"}:
+        return HistGradientBoostingClassifier(
+            max_iter=int(config.get("max_iter", 120)),
+            learning_rate=float(config.get("learning_rate", 0.06)),
+            max_leaf_nodes=int(config.get("max_leaf_nodes", 15)),
+            l2_regularization=float(config.get("l2_regularization", 0.01)),
+            random_state=random_state,
+        )
     raise ValueError(
         "model_name must be one of: majority_baseline, uniform_random_baseline, "
         "elo_logistic_regression, recent_form_only, logistic_regression, "
-        "random_forest, gradient_boosting, poisson_goal_model, "
+        "random_forest, gradient_boosting, hist_gradient_boosting, poisson_goal_model, "
         "feature_logistic_regression_calibrated, random_forest_calibrated, "
-        "gradient_boosting_calibrated, weighted_probability_ensemble"
+        "gradient_boosting_calibrated, hist_gradient_boosting_calibrated, weighted_probability_ensemble"
     )
 
 

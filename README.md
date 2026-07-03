@@ -324,19 +324,19 @@ This project does not use paid prediction APIs. Forecasts are generated from his
 | majority baseline | 0.4375 | 1.0743 | 0.6512 | 0.0540 | no | no |
 | uniform random baseline | 0.4375 | 1.0986 | 0.6667 | 0.1042 | no | no |
 | Elo-only logistic regression | 0.4844 | 1.0453 | 0.6039 | 0.0830 | yes | no |
-| recent-form-only model | 0.4219 | 1.0886 | 0.6593 | 0.0646 | no | no |
-| full feature logistic regression | 0.5156 | 1.0458 | 0.6121 | 0.0884 | yes | no |
+| recent-form-only model | 0.4688 | 1.0928 | 0.6622 | 0.0835 | no | no |
+| full feature logistic regression | 0.5156 | 1.0496 | 0.6144 | 0.1069 | yes | no |
 | Poisson goal model | 0.4375 | 1.0724 | 0.6484 | 0.1118 | yes | no |
-| calibrated feature logistic regression | 0.5156 | 1.0465 | 0.6131 | 0.0497 | yes | no |
-| weighted probability ensemble | 0.4844 | 1.0190 | 0.6053 | 0.1047 | yes | yes |
+| calibrated feature logistic regression | 0.5156 | 1.0500 | 0.6151 | 0.0737 | yes | no |
+| weighted probability ensemble | 0.4688 | 1.0202 | 0.6060 | 0.1177 | yes | yes |
 
 ### World Cup Backtests
 
 | Year | Train | Test | Group | Knockout | Best overall | Best group | Best knockout | Accuracy | Log loss | Brier | ECE |
 |---:|---:|---:|---:|---:|---|---|---|---:|---:|---:|---:|
-| 2014 | 37861 | 64 | 0 | 0 | calibrated feature logistic regression | n/a | n/a | 0.6094 | 0.9451 | 0.5581 | 0.0640 |
-| 2018 | 41639 | 64 | 0 | 0 | calibrated feature logistic regression | n/a | n/a | 0.5625 | 0.9326 | 0.5520 | 0.0554 |
-| 2022 | 45700 | 64 | 0 | 0 | weighted probability ensemble | n/a | n/a | 0.4844 | 1.0190 | 0.6053 | 0.1047 |
+| 2014 | 37861 | 64 | 0 | 0 | calibrated feature logistic regression | n/a | n/a | 0.5938 | 0.9487 | 0.5605 | 0.0722 |
+| 2018 | 41639 | 64 | 0 | 0 | full feature logistic regression | n/a | n/a | 0.5625 | 0.9314 | 0.5503 | 0.0510 |
+| 2022 | 45700 | 64 | 0 | 0 | weighted probability ensemble | n/a | n/a | 0.4688 | 1.0202 | 0.6060 | 0.1177 |
 
 ### Calibration
 
@@ -344,21 +344,21 @@ Calibration is compared with log loss, Brier score, reliability bins, and expect
 
 ### Feature Importance
 
-- `random forest` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `max_elo_last_10_b`, `elo_a`.
-- `gradient boosting` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `weighted_goal_diff_last_5_b`, `team_a_goals_conceded_last_5`.
-- `full feature logistic regression` top features: `avg_elo_diff`, `elo_diff`, `elo_external_diff`, `avg_elo_last_5_b`, `elo_b`.
+- `random forest` top features: `elo_external_diff`, `avg_elo_diff`, `elo_diff`, `elo_b`, `elo_a`.
+- `gradient boosting` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `home_advantage_flag`, `team_b_goals_conceded_last_5`.
+- `full feature logistic regression` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `elo_a`, `elo_external_a`.
 
 ### Ablation Study
 
 | Feature group | Status | Log loss | Accuracy | Reason |
 |---|---:|---:|---:|---|
 | elo_only | ok | 0.8680 | 0.6023 |  |
-| form_only | ok | 0.9771 | 0.5307 |  |
+| form_only | ok | 0.9704 | 0.5380 |  |
 | ranking_only | ok | 1.0543 | 0.4727 |  |
 | schedule_only | ok | 1.0464 | 0.4740 |  |
-| goals_only | ok | 0.9745 | 0.5343 |  |
-| elo_plus_form | ok | 0.8610 | 0.6070 |  |
-| all_features | ok | 0.8599 | 0.6070 |  |
+| goals_only | ok | 0.9680 | 0.5390 |  |
+| elo_plus_form | ok | 0.8610 | 0.6090 |  |
+| all_features | ok | 0.8601 | 0.6090 |  |
 | all_features_plus_external_ratings | unavailable | n/a | n/a | external rating CSVs not found |
 
 ### Error Analysis

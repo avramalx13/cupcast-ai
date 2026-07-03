@@ -14,7 +14,8 @@ from .features import FEATURE_COLUMNS, TeamStates, features_for_match
 from .model_registry import create_model, feature_columns_for_model
 
 
-ARTIFACT_VERSION = 1
+ARTIFACT_VERSION = 2
+SUPPORTED_ARTIFACT_VERSIONS = {1, 2}
 
 
 @dataclass
@@ -43,6 +44,9 @@ class PredictionModel:
     recent_window: int = 5
     elo_k: float = 28.0
     model_version: str = "local"
+    external_elo_ratings: pd.DataFrame | None = None
+    external_fifa_rankings: pd.DataFrame | None = None
+    feature_flags: dict[str, bool] | None = None
 
     def predict_features(self, features: pd.DataFrame) -> dict[str, float]:
         probabilities = self.estimator.predict_proba(features[self.feature_columns])[0]
@@ -74,6 +78,9 @@ class PredictionModel:
             recent_window=self.recent_window,
             elo_k=self.elo_k,
             current_states=current_states,
+            external_elo_ratings=self.external_elo_ratings,
+            external_fifa_rankings=self.external_fifa_rankings,
+            feature_flags=self.feature_flags,
         )
         probabilities = self.predict_features(features)
         return PredictionResult(
@@ -112,6 +119,9 @@ def train_prediction_model(
     elo_k: float = 28.0,
     model_version: str = "local",
     model_params: dict[str, Any] | None = None,
+    external_elo_ratings: pd.DataFrame | None = None,
+    external_fifa_rankings: pd.DataFrame | None = None,
+    feature_flags: dict[str, bool] | None = None,
 ) -> PredictionModel:
     feature_columns = feature_columns_for_model(model_type)
     missing = [column for column in feature_columns + ["label"] if column not in feature_table]
@@ -131,6 +141,9 @@ def train_prediction_model(
         recent_window=recent_window,
         elo_k=elo_k,
         model_version=model_version,
+        external_elo_ratings=external_elo_ratings,
+        external_fifa_rankings=external_fifa_rankings,
+        feature_flags=dict(feature_flags or {}),
     )
 
 
@@ -145,6 +158,9 @@ def save_model(model: PredictionModel, path: str | Path) -> None:
         "recent_window": model.recent_window,
         "elo_k": model.elo_k,
         "model_version": model.model_version,
+        "external_elo_ratings": model.external_elo_ratings,
+        "external_fifa_rankings": model.external_fifa_rankings,
+        "feature_flags": dict(model.feature_flags or {}),
         "created_at": datetime.now(UTC).isoformat(),
     }
     joblib.dump(artifact, model_path)
@@ -159,7 +175,7 @@ def load_model(path: str | Path) -> PredictionModel:
         return loaded
     if not isinstance(loaded, dict):
         raise TypeError(f"File is not a PredictionModel bundle: {model_path}")
-    if loaded.get("artifact_version") != ARTIFACT_VERSION:
+    if loaded.get("artifact_version") not in SUPPORTED_ARTIFACT_VERSIONS:
         raise ValueError(
             f"Unsupported prediction model artifact version: {loaded.get('artifact_version')}"
         )
@@ -177,4 +193,7 @@ def load_model(path: str | Path) -> PredictionModel:
         recent_window=int(loaded.get("recent_window", 5)),
         elo_k=float(loaded.get("elo_k", 28.0)),
         model_version=str(loaded.get("model_version", "local")),
+        external_elo_ratings=loaded.get("external_elo_ratings"),
+        external_fifa_rankings=loaded.get("external_fifa_rankings"),
+        feature_flags=dict(loaded.get("feature_flags") or {}),
     )

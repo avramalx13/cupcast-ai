@@ -129,3 +129,53 @@ def test_feature_group_flags_neutralize_disabled_groups() -> None:
     assert features.loc[1, "tournament_importance"] == 1
     assert features.loc[1, "home_advantage_flag"] == 0
     assert features.loc[1, "elo_trend_5_matches_a"] == pytest.approx(0)
+
+
+def test_competitive_form_ignores_friendlies_until_competitive_match() -> None:
+    matches = pd.DataFrame(
+        [
+            {
+                "date": pd.Timestamp("2020-01-01"),
+                "team_a": "France",
+                "team_b": "Brazil",
+                "team_a_score": 5,
+                "team_b_score": 0,
+                "tournament": "Friendly",
+                "neutral": 1,
+                "stage": "friendly",
+            },
+            {
+                "date": pd.Timestamp("2020-02-01"),
+                "team_a": "France",
+                "team_b": "Brazil",
+                "team_a_score": 1,
+                "team_b_score": 1,
+                "tournament": "FIFA World Cup",
+                "neutral": 1,
+                "stage": "group",
+            },
+            {
+                "date": pd.Timestamp("2020-03-01"),
+                "team_a": "France",
+                "team_b": "Brazil",
+                "team_a_score": 0,
+                "team_b_score": 1,
+                "tournament": "FIFA World Cup qualification",
+                "neutral": 1,
+                "stage": "qualifier",
+            },
+        ]
+    )
+    teams = pd.DataFrame(
+        [
+            {"team": "France", "confederation": "UEFA", "initial_elo": 1500, "fifa_rank": 2},
+            {"team": "Brazil", "confederation": "CONMEBOL", "initial_elo": 1500, "fifa_rank": 5},
+        ]
+    )
+
+    features = build_feature_table(matches, teams)
+
+    assert features.loc[1, "team_a_recent_form"] == pytest.approx(1.0)
+    assert features.loc[1, "team_a_competitive_form_last_5"] == pytest.approx(0.5)
+    assert features.loc[2, "team_a_competitive_form_last_5"] == pytest.approx(1.0 / 3.0)
+    assert features.loc[2, "team_a_competitive_goal_diff_last_5"] == pytest.approx(0.0)

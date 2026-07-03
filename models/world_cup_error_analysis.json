@@ -6,13 +6,13 @@
       "date": "2014-06-17",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.7803816608295904,
-        "DRAW": 0.13811807544954502,
-        "B_WIN": 0.08150026372086468
+        "A_WIN": 0.7795519233465535,
+        "DRAW": 0.13845651736636647,
+        "B_WIN": 0.08199155928708002
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.13811807544954502,
+      "actual_probability": 0.13845651736636647,
       "error_type": "predicted_top_class_lost",
       "notes": "logistic_regression assigned 0.780 to A_WIN, actual was DRAW"
     },
@@ -22,15 +22,15 @@
       "date": "2014-06-14",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.6222342969237237,
-        "DRAW": 0.22801950579245545,
-        "B_WIN": 0.14974619728382088
+        "A_WIN": 0.6183599055041799,
+        "DRAW": 0.23398430999768943,
+        "B_WIN": 0.1476557844981307
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.14974619728382088,
+      "actual_probability": 0.1476557844981307,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.622 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.618 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2014,
@@ -38,15 +38,15 @@
       "date": "2014-06-21",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.7257575675494656,
-        "DRAW": 0.17440499047526592,
-        "B_WIN": 0.09983744197526853
+        "A_WIN": 0.7224773874034134,
+        "DRAW": 0.17545742199181893,
+        "B_WIN": 0.10206519060476767
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.17440499047526592,
+      "actual_probability": 0.17545742199181893,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.726 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.722 to A_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -54,31 +54,15 @@
       "date": "2014-06-25",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.20134035583010232,
-        "DRAW": 0.18387605569283594,
-        "B_WIN": 0.6147835884770618
+        "A_WIN": 0.20869893608018536,
+        "DRAW": 0.18170008825565342,
+        "B_WIN": 0.6096009756641612
       },
       "actual_result": "DRAW",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.18387605569283594,
+      "actual_probability": 0.18170008825565342,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.615 to B_WIN, actual was DRAW"
-    },
-    {
-      "year": 2014,
-      "match": "Netherlands vs Costa Rica",
-      "date": "2014-07-05",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.6528515898397194,
-        "DRAW": 0.19008889582745395,
-        "B_WIN": 0.1570595143328267
-      },
-      "actual_result": "DRAW",
-      "predicted_result": "A_WIN",
-      "actual_probability": 0.19008889582745395,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.653 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.610 to B_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -86,15 +70,15 @@
       "date": "2014-06-28",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.6887160281936983,
-        "DRAW": 0.19049824335035484,
-        "B_WIN": 0.12078572845594689
+        "A_WIN": 0.693898329849759,
+        "DRAW": 0.18645876316243862,
+        "B_WIN": 0.11964290698780242
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.19049824335035484,
+      "actual_probability": 0.18645876316243862,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.689 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.694 to A_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -102,15 +86,31 @@
       "date": "2014-07-08",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.6047671484260365,
-        "DRAW": 0.20255070327593266,
-        "B_WIN": 0.19268214829803082
+        "A_WIN": 0.6072582801744624,
+        "DRAW": 0.2022370451753899,
+        "B_WIN": 0.19050467465014775
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.19268214829803082,
+      "actual_probability": 0.19050467465014775,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.605 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.607 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Netherlands vs Costa Rica",
+      "date": "2014-07-05",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.6531275255566835,
+        "DRAW": 0.191425439121945,
+        "B_WIN": 0.1554470353213714
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.191425439121945,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.653 to A_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -118,15 +118,15 @@
       "date": "2014-06-13",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.5367800145435594,
-        "DRAW": 0.26502825392710616,
-        "B_WIN": 0.1981917315293344
+        "A_WIN": 0.519697097585279,
+        "DRAW": 0.27948950669788275,
+        "B_WIN": 0.20081339571683832
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.1981917315293344,
+      "actual_probability": 0.20081339571683832,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.537 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.520 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2014,
@@ -134,47 +134,15 @@
       "date": "2014-07-09",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.43420754880730916,
-        "DRAW": 0.20509385183888257,
-        "B_WIN": 0.3606985993538084
+        "A_WIN": 0.4381396277652619,
+        "DRAW": 0.20633219445176845,
+        "B_WIN": 0.3555281777829697
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.20509385183888257,
+      "actual_probability": 0.20633219445176845,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.434 to A_WIN, actual was DRAW"
-    },
-    {
-      "year": 2014,
-      "match": "Italy vs Costa Rica",
-      "date": "2014-06-20",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.561962298405179,
-        "DRAW": 0.23008530243338143,
-        "B_WIN": 0.20795239916143962
-      },
-      "actual_result": "B_WIN",
-      "predicted_result": "A_WIN",
-      "actual_probability": 0.20795239916143962,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.562 to A_WIN, actual was B_WIN"
-    },
-    {
-      "year": 2014,
-      "match": "Spain vs Chile",
-      "date": "2014-06-18",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.5417249860225234,
-        "DRAW": 0.241882001474368,
-        "B_WIN": 0.21639301250310858
-      },
-      "actual_result": "B_WIN",
-      "predicted_result": "A_WIN",
-      "actual_probability": 0.21639301250310858,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.542 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.438 to A_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -182,15 +150,47 @@
       "date": "2014-06-14",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.5220435075856183,
-        "DRAW": 0.26079146764709876,
-        "B_WIN": 0.2171650247672829
+        "A_WIN": 0.5326730802787907,
+        "DRAW": 0.2583752399220233,
+        "B_WIN": 0.20895167979918605
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.2171650247672829,
+      "actual_probability": 0.20895167979918605,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.522 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.533 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Spain vs Chile",
+      "date": "2014-06-18",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5465687883814111,
+        "DRAW": 0.24427122378853672,
+        "B_WIN": 0.20915998783005224
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.20915998783005224,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.547 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2014,
+      "match": "Italy vs Costa Rica",
+      "date": "2014-06-20",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.554214856284777,
+        "DRAW": 0.23644314811360476,
+        "B_WIN": 0.20934199560161837
+      },
+      "actual_result": "B_WIN",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.20934199560161837,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.554 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2014,
@@ -198,15 +198,15 @@
       "date": "2014-06-26",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.2730408188884877,
-        "DRAW": 0.22101179857339484,
-        "B_WIN": 0.5059473825381174
+        "A_WIN": 0.266002204452891,
+        "DRAW": 0.21868855636496146,
+        "B_WIN": 0.5153092391821475
       },
       "actual_result": "DRAW",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.22101179857339484,
+      "actual_probability": 0.21868855636496146,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.506 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.515 to B_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -214,15 +214,15 @@
       "date": "2014-06-24",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.24578559002516528,
-        "DRAW": 0.22519759143222448,
-        "B_WIN": 0.5290168185426102
+        "A_WIN": 0.24131336891461722,
+        "DRAW": 0.21912107547952925,
+        "B_WIN": 0.5395655556058535
       },
       "actual_result": "DRAW",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.22519759143222448,
+      "actual_probability": 0.21912107547952925,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.529 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.540 to B_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -230,15 +230,15 @@
       "date": "2014-06-22",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.39165738268744915,
-        "DRAW": 0.22950021326334194,
-        "B_WIN": 0.37884240404920894
+        "A_WIN": 0.3997100382187382,
+        "DRAW": 0.22298926946505518,
+        "B_WIN": 0.37730069231620667
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.22950021326334194,
+      "actual_probability": 0.22298926946505518,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.392 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.400 to A_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -246,47 +246,15 @@
       "date": "2014-07-12",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.555797781864941,
-        "DRAW": 0.20641517971962647,
-        "B_WIN": 0.23778703841543253
+        "A_WIN": 0.5543296201866996,
+        "DRAW": 0.20859876819330783,
+        "B_WIN": 0.2370716116199926
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.23778703841543253,
+      "actual_probability": 0.2370716116199926,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.556 to A_WIN, actual was B_WIN"
-    },
-    {
-      "year": 2014,
-      "match": "Japan vs Greece",
-      "date": "2014-06-19",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.3991940670121886,
-        "DRAW": 0.23942047658539162,
-        "B_WIN": 0.3613854564024197
-      },
-      "actual_result": "DRAW",
-      "predicted_result": "A_WIN",
-      "actual_probability": 0.23942047658539162,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.399 to A_WIN, actual was DRAW"
-    },
-    {
-      "year": 2014,
-      "match": "Russia vs South Korea",
-      "date": "2014-06-17",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.5247711470044302,
-        "DRAW": 0.24352557249883405,
-        "B_WIN": 0.23170328049673586
-      },
-      "actual_result": "DRAW",
-      "predicted_result": "A_WIN",
-      "actual_probability": 0.24352557249883405,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.525 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.554 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2014,
@@ -294,15 +262,47 @@
       "date": "2014-06-29",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.35652145539967417,
-        "DRAW": 0.24469353288914808,
-        "B_WIN": 0.39878501171117786
+        "A_WIN": 0.3536587666497356,
+        "DRAW": 0.23958142340839986,
+        "B_WIN": 0.4067598099418646
       },
       "actual_result": "DRAW",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.24469353288914808,
+      "actual_probability": 0.23958142340839986,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.399 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.407 to B_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Japan vs Greece",
+      "date": "2014-06-19",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.4075875937675779,
+        "DRAW": 0.24523315159943262,
+        "B_WIN": 0.34717925463298943
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.24523315159943262,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.408 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2014,
+      "match": "Russia vs South Korea",
+      "date": "2014-06-17",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.5213330458034605,
+        "DRAW": 0.2475910944961454,
+        "B_WIN": 0.2310758597003941
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "A_WIN",
+      "actual_probability": 0.2475910944961454,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.521 to A_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -310,15 +310,15 @@
       "date": "2014-06-16",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.4147824886326185,
-        "DRAW": 0.2629878604284715,
-        "B_WIN": 0.32222965093891
+        "A_WIN": 0.4144787811743468,
+        "DRAW": 0.25481391599082415,
+        "B_WIN": 0.3307073028348291
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.2629878604284715,
+      "actual_probability": 0.25481391599082415,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.415 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.414 to A_WIN, actual was DRAW"
     },
     {
       "year": 2014,
@@ -326,15 +326,15 @@
       "date": "2014-06-22",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.5015301583651101,
-        "DRAW": 0.23041157404723134,
-        "B_WIN": 0.2680582675876586
+        "A_WIN": 0.5075185425924931,
+        "DRAW": 0.2327617226144324,
+        "B_WIN": 0.2597197347930746
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.2680582675876586,
+      "actual_probability": 0.2597197347930746,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.502 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.508 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2014,
@@ -342,15 +342,15 @@
       "date": "2014-06-19",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.30427711703340327,
-        "DRAW": 0.26209059083986797,
-        "B_WIN": 0.4336322921267288
+        "A_WIN": 0.3035188519634509,
+        "DRAW": 0.26962911311431714,
+        "B_WIN": 0.4268520349222319
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.30427711703340327,
+      "actual_probability": 0.3035188519634509,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.434 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.427 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2014,
@@ -358,15 +358,15 @@
       "date": "2014-07-01",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.339926730834609,
-        "DRAW": 0.24752891544370637,
-        "B_WIN": 0.4125443537216847
+        "A_WIN": 0.3357861107470755,
+        "DRAW": 0.24565856806973188,
+        "B_WIN": 0.4185553211831926
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.339926730834609,
+      "actual_probability": 0.3357861107470755,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.413 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.419 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2014,
@@ -374,15 +374,15 @@
       "date": "2014-06-25",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.3620144307040182,
-        "DRAW": 0.26535962324926726,
-        "B_WIN": 0.3726259460467146
+        "A_WIN": 0.3623950423253431,
+        "DRAW": 0.26974952834266186,
+        "B_WIN": 0.3678554293319951
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.3620144307040182,
+      "actual_probability": 0.3623950423253431,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.373 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.368 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2014,
@@ -390,15 +390,15 @@
       "date": "2014-06-14",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.39189317269914586,
-        "DRAW": 0.19936072777874814,
-        "B_WIN": 0.408746099522106
+        "A_WIN": 0.38187683245954274,
+        "DRAW": 0.18917899539149727,
+        "B_WIN": 0.42894417214895997
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.39189317269914586,
+      "actual_probability": 0.38187683245954274,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.409 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.429 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2018,
@@ -406,15 +406,15 @@
       "date": "2018-06-27",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.13001710221527538,
-        "DRAW": 0.2066704954399233,
-        "B_WIN": 0.6633124023448013
+        "A_WIN": 0.1278819067154737,
+        "DRAW": 0.21210253819504368,
+        "B_WIN": 0.6600155550894826
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.13001710221527538,
+      "actual_probability": 0.1278819067154737,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.663 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.660 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2018,
@@ -422,15 +422,15 @@
       "date": "2018-06-16",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.7522275179607091,
-        "DRAW": 0.14054243532437227,
-        "B_WIN": 0.10723004671491866
+        "A_WIN": 0.7567001684778769,
+        "DRAW": 0.14432928377995494,
+        "B_WIN": 0.098970547742168
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.14054243532437227,
+      "actual_probability": 0.14432928377995494,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.752 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.757 to A_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -438,15 +438,15 @@
       "date": "2018-06-25",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.7356100833139702,
-        "DRAW": 0.15654093473727335,
-        "B_WIN": 0.10784898194875657
+        "A_WIN": 0.7333899370130124,
+        "DRAW": 0.1576625489677692,
+        "B_WIN": 0.10894751401921847
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.15654093473727335,
+      "actual_probability": 0.1576625489677692,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.736 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.733 to A_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -454,15 +454,15 @@
       "date": "2018-06-19",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.616050639360049,
-        "DRAW": 0.20923455182021183,
-        "B_WIN": 0.17471480881973922
+        "A_WIN": 0.6292813469417354,
+        "DRAW": 0.2088886744303294,
+        "B_WIN": 0.16182997862793524
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.17471480881973922,
+      "actual_probability": 0.16182997862793524,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.616 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.629 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2018,
@@ -470,15 +470,15 @@
       "date": "2018-06-27",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.6529317537218463,
-        "DRAW": 0.17764266097025763,
-        "B_WIN": 0.16942558530789614
+        "A_WIN": 0.6398328728412354,
+        "DRAW": 0.1754081727335029,
+        "B_WIN": 0.1847589544252618
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.17764266097025763,
+      "actual_probability": 0.1754081727335029,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.653 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.640 to A_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -486,15 +486,15 @@
       "date": "2018-07-06",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.6357705235135162,
-        "DRAW": 0.17106497666023232,
-        "B_WIN": 0.1931644998262516
+        "A_WIN": 0.6337975634221867,
+        "DRAW": 0.17494660970872303,
+        "B_WIN": 0.1912558268690903
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.1931644998262516,
+      "actual_probability": 0.1912558268690903,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.636 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.634 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2018,
@@ -502,15 +502,15 @@
       "date": "2018-07-01",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.1935220950261575,
-        "DRAW": 0.21359617774844433,
-        "B_WIN": 0.5928817272253982
+        "A_WIN": 0.19510052906348213,
+        "DRAW": 0.2157012560691696,
+        "B_WIN": 0.5891982148673484
       },
       "actual_result": "DRAW",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.21359617774844433,
+      "actual_probability": 0.2157012560691696,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.593 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.589 to B_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -518,31 +518,15 @@
       "date": "2018-06-17",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.6551842409493555,
-        "DRAW": 0.22064594276547114,
-        "B_WIN": 0.12416981628517339
+        "A_WIN": 0.6597945121144139,
+        "DRAW": 0.21895333156434232,
+        "B_WIN": 0.12125215632124377
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.22064594276547114,
+      "actual_probability": 0.21895333156434232,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.655 to A_WIN, actual was DRAW"
-    },
-    {
-      "year": 2018,
-      "match": "Russia vs Croatia",
-      "date": "2018-07-07",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.35753509364277547,
-        "DRAW": 0.22813453500326386,
-        "B_WIN": 0.4143303713539606
-      },
-      "actual_result": "DRAW",
-      "predicted_result": "B_WIN",
-      "actual_probability": 0.22813453500326386,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.414 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.660 to A_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -550,15 +534,31 @@
       "date": "2018-06-27",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.4826817449179512,
-        "DRAW": 0.28491861002237395,
-        "B_WIN": 0.23239964505967495
+        "A_WIN": 0.48950613305838997,
+        "DRAW": 0.28088377208052645,
+        "B_WIN": 0.2296100948610837
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.23239964505967495,
+      "actual_probability": 0.2296100948610837,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.483 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.490 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Russia vs Croatia",
+      "date": "2018-07-07",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.3542577861471775,
+        "DRAW": 0.23089499798853272,
+        "B_WIN": 0.41484721586428974
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.23089499798853272,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.415 to B_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -566,13 +566,13 @@
       "date": "2018-06-17",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.523482510241476,
-        "DRAW": 0.24175575091368876,
-        "B_WIN": 0.23476173884483525
+        "A_WIN": 0.5231171835203698,
+        "DRAW": 0.23558058464775167,
+        "B_WIN": 0.24130223183187846
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.23476173884483525,
+      "actual_probability": 0.24130223183187846,
       "error_type": "predicted_top_class_lost",
       "notes": "logistic_regression assigned 0.523 to A_WIN, actual was B_WIN"
     },
@@ -582,15 +582,15 @@
       "date": "2018-06-26",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.21818876463492626,
-        "DRAW": 0.23998818447225043,
-        "B_WIN": 0.5418230508928233
+        "A_WIN": 0.2258504835887139,
+        "DRAW": 0.24395219621126776,
+        "B_WIN": 0.5301973202000183
       },
       "actual_result": "DRAW",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.23998818447225043,
+      "actual_probability": 0.24395219621126776,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.542 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.530 to B_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -598,47 +598,15 @@
       "date": "2018-06-24",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.37753818421563806,
-        "DRAW": 0.24500302813062166,
-        "B_WIN": 0.37745878765374025
+        "A_WIN": 0.3828603801938064,
+        "DRAW": 0.24685612991939648,
+        "B_WIN": 0.37028348988679716
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.24500302813062166,
+      "actual_probability": 0.24685612991939648,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.378 to A_WIN, actual was DRAW"
-    },
-    {
-      "year": 2018,
-      "match": "Colombia vs England",
-      "date": "2018-07-03",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.3461372380602049,
-        "DRAW": 0.2519020288858144,
-        "B_WIN": 0.40196073305398067
-      },
-      "actual_result": "DRAW",
-      "predicted_result": "B_WIN",
-      "actual_probability": 0.2519020288858144,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.402 to B_WIN, actual was DRAW"
-    },
-    {
-      "year": 2018,
-      "match": "Portugal vs Spain",
-      "date": "2018-06-15",
-      "model_name": "logistic_regression",
-      "predicted_probabilities": {
-        "A_WIN": 0.24735054636853154,
-        "DRAW": 0.2525296545944413,
-        "B_WIN": 0.5001197990370271
-      },
-      "actual_result": "DRAW",
-      "predicted_result": "B_WIN",
-      "actual_probability": 0.2525296545944413,
-      "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.500 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.383 to A_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -646,15 +614,31 @@
       "date": "2018-06-16",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.4589697546349325,
-        "DRAW": 0.28705585866633354,
-        "B_WIN": 0.25397438669873396
+        "A_WIN": 0.45644657053049886,
+        "DRAW": 0.2938095629815363,
+        "B_WIN": 0.24974386648796487
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.25397438669873396,
+      "actual_probability": 0.24974386648796487,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.459 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.456 to A_WIN, actual was B_WIN"
+    },
+    {
+      "year": 2018,
+      "match": "Colombia vs England",
+      "date": "2018-07-03",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.34722286787620565,
+        "DRAW": 0.2531605648140565,
+        "B_WIN": 0.39961656730973777
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.2531605648140565,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.400 to B_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -662,31 +646,31 @@
       "date": "2018-07-01",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.423063758685189,
-        "DRAW": 0.2554028381601537,
-        "B_WIN": 0.32153340315465745
+        "A_WIN": 0.4203817519552231,
+        "DRAW": 0.2574788344090014,
+        "B_WIN": 0.3221394136357756
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.2554028381601537,
+      "actual_probability": 0.2574788344090014,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.423 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.420 to A_WIN, actual was DRAW"
     },
     {
       "year": 2018,
-      "match": "Iran vs Portugal",
-      "date": "2018-06-25",
+      "match": "Portugal vs Spain",
+      "date": "2018-06-15",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.23778877599055684,
-        "DRAW": 0.27195851726383313,
-        "B_WIN": 0.49025270674561006
+        "A_WIN": 0.24701050284859954,
+        "DRAW": 0.2594237162010561,
+        "B_WIN": 0.4935657809503443
       },
       "actual_result": "DRAW",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.27195851726383313,
+      "actual_probability": 0.2594237162010561,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.490 to B_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.494 to B_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -694,15 +678,15 @@
       "date": "2018-06-21",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.49103826791957134,
-        "DRAW": 0.2320579240468216,
-        "B_WIN": 0.27690380803360715
+        "A_WIN": 0.4872848489147664,
+        "DRAW": 0.2393291485761464,
+        "B_WIN": 0.2733860025090871
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.27690380803360715,
+      "actual_probability": 0.2733860025090871,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.491 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.487 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2018,
@@ -710,15 +694,31 @@
       "date": "2018-06-21",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.46720439959636895,
-        "DRAW": 0.28067244819994164,
-        "B_WIN": 0.25212315220368947
+        "A_WIN": 0.4701374181902838,
+        "DRAW": 0.2795561888507303,
+        "B_WIN": 0.2503063929589858
       },
       "actual_result": "DRAW",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.28067244819994164,
+      "actual_probability": 0.2795561888507303,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.467 to A_WIN, actual was DRAW"
+      "notes": "logistic_regression assigned 0.470 to A_WIN, actual was DRAW"
+    },
+    {
+      "year": 2018,
+      "match": "Iran vs Portugal",
+      "date": "2018-06-25",
+      "model_name": "logistic_regression",
+      "predicted_probabilities": {
+        "A_WIN": 0.24895032054834232,
+        "DRAW": 0.2796447710118617,
+        "B_WIN": 0.4714049084397961
+      },
+      "actual_result": "DRAW",
+      "predicted_result": "B_WIN",
+      "actual_probability": 0.2796447710118617,
+      "error_type": "predicted_top_class_lost",
+      "notes": "logistic_regression assigned 0.471 to B_WIN, actual was DRAW"
     },
     {
       "year": 2018,
@@ -726,15 +726,15 @@
       "date": "2018-06-19",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.45724038733292016,
-        "DRAW": 0.25466109476937776,
-        "B_WIN": 0.28809851789770213
+        "A_WIN": 0.46402550459262776,
+        "DRAW": 0.25416216275022385,
+        "B_WIN": 0.28181233265714845
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.28809851789770213,
+      "actual_probability": 0.28181233265714845,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.457 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.464 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2018,
@@ -742,15 +742,15 @@
       "date": "2018-07-11",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.2887802401040851,
-        "DRAW": 0.22934711998295024,
-        "B_WIN": 0.48187263991296475
+        "A_WIN": 0.28677359523538376,
+        "DRAW": 0.22653315271986368,
+        "B_WIN": 0.48669325204475256
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.2887802401040851,
+      "actual_probability": 0.28677359523538376,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.482 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.487 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2018,
@@ -758,15 +758,15 @@
       "date": "2018-06-30",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.3012665969089654,
-        "DRAW": 0.25791471450864023,
-        "B_WIN": 0.4408186885823943
+        "A_WIN": 0.3065425993532691,
+        "DRAW": 0.25765689802947667,
+        "B_WIN": 0.4358005026172542
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.3012665969089654,
+      "actual_probability": 0.3065425993532691,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.441 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.436 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2018,
@@ -774,15 +774,15 @@
       "date": "2018-06-25",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.43353325319038605,
-        "DRAW": 0.23955643654815323,
-        "B_WIN": 0.3269103102614607
+        "A_WIN": 0.43823380948685936,
+        "DRAW": 0.2387210596306573,
+        "B_WIN": 0.3230451308824834
       },
       "actual_result": "B_WIN",
       "predicted_result": "A_WIN",
-      "actual_probability": 0.3269103102614607,
+      "actual_probability": 0.3230451308824834,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.434 to A_WIN, actual was B_WIN"
+      "notes": "logistic_regression assigned 0.438 to A_WIN, actual was B_WIN"
     },
     {
       "year": 2018,
@@ -790,15 +790,15 @@
       "date": "2018-07-03",
       "model_name": "logistic_regression",
       "predicted_probabilities": {
-        "A_WIN": 0.3332162145855363,
-        "DRAW": 0.26150904620374726,
-        "B_WIN": 0.40527473921071644
+        "A_WIN": 0.3334173488146791,
+        "DRAW": 0.25764674378048963,
+        "B_WIN": 0.4089359074048313
       },
       "actual_result": "A_WIN",
       "predicted_result": "B_WIN",
-      "actual_probability": 0.3332162145855363,
+      "actual_probability": 0.3334173488146791,
       "error_type": "predicted_top_class_lost",
-      "notes": "logistic_regression assigned 0.405 to B_WIN, actual was A_WIN"
+      "notes": "logistic_regression assigned 0.409 to B_WIN, actual was A_WIN"
     },
     {
       "year": 2022,

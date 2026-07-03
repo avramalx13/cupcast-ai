@@ -11,12 +11,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--config", default="configs/prediction_model.yaml")
     parser.add_argument("--output-json", default="models/feature_importance.json")
     parser.add_argument("--output-md", default="models/feature_importance.md")
+    parser.add_argument("--max-rows", type=int, default=None, help="Use the most recent N feature rows for runtime")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    payload = analyze_feature_importance(args.config, output_json=args.output_json, output_md=args.output_md)
+    payload = analyze_feature_importance(
+        args.config,
+        output_json=args.output_json,
+        output_md=args.output_md,
+        max_rows=args.max_rows,
+    )
     print(json.dumps({"models": [row["model_name"] for row in payload["models"]]}, indent=2))
     print(f"output={args.output_json}")
     print(f"markdown={args.output_md}")

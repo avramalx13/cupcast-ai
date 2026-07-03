@@ -25,6 +25,15 @@ FEATURE_COLUMNS = [
     "team_b_goals_scored_last_5",
     "team_a_goals_conceded_last_5",
     "team_b_goals_conceded_last_5",
+    "team_a_goal_diff_last_5",
+    "team_b_goal_diff_last_5",
+    "goal_diff_form_diff",
+    "team_a_competitive_form_last_5",
+    "team_b_competitive_form_last_5",
+    "competitive_form_diff",
+    "team_a_competitive_goal_diff_last_5",
+    "team_b_competitive_goal_diff_last_5",
+    "competitive_goal_diff_diff",
     "neutral",
     "stage_encoded",
     "elo_external_a",
@@ -53,8 +62,10 @@ FEATURE_COLUMNS = [
     "opponent_adjusted_form_diff",
     "tournament_importance",
     "is_friendly",
+    "is_qualifier",
     "is_world_cup",
     "is_continental_tournament",
+    "is_knockout",
     "home_advantage_flag",
     "host_country_advantage_flag",
     "same_confederation_match",
@@ -94,6 +105,8 @@ class TeamState:
     goals_for: deque[int]
     goals_against: deque[int]
     goal_diffs: deque[int]
+    competitive_points: deque[float]
+    competitive_goal_diffs: deque[int]
     match_dates: deque[pd.Timestamp]
     opponent_adjusted_points: deque[float]
     elo_history: deque[float]
@@ -155,6 +168,8 @@ def build_feature_table(
             score_a=int(match.team_a_score),
             score_b=int(match.team_b_score),
             match_date=pd.to_datetime(match.date),
+            tournament=str(match.tournament),
+            stage=str(match.stage),
             elo_k=elo_k,
         )
 
@@ -203,6 +218,8 @@ def initialize_team_states(teams: pd.DataFrame, recent_window: int = 5) -> TeamS
             goals_for=deque(maxlen=recent_window),
             goals_against=deque(maxlen=recent_window),
             goal_diffs=deque(maxlen=recent_window),
+            competitive_points=deque(maxlen=recent_window),
+            competitive_goal_diffs=deque(maxlen=recent_window),
             match_dates=deque(maxlen=20),
             opponent_adjusted_points=deque(maxlen=recent_window),
             elo_history=deque([float(row.initial_elo)], maxlen=20),
@@ -230,6 +247,8 @@ def build_current_states(
             score_a=int(match.team_a_score),
             score_b=int(match.team_b_score),
             match_date=pd.to_datetime(match.date),
+            tournament=str(match.tournament),
+            stage=str(match.stage),
             elo_k=elo_k,
         )
     return states
@@ -298,6 +317,12 @@ def features_from_state(
     gf_b = _average(state_b.goals_for)
     ga_a = _average(state_a.goals_against)
     ga_b = _average(state_b.goals_against)
+    gd_a = _average_float(state_a.goal_diffs, default=0.0)
+    gd_b = _average_float(state_b.goal_diffs, default=0.0)
+    competitive_form_a = _recent_form(state_a.competitive_points)
+    competitive_form_b = _recent_form(state_b.competitive_points)
+    competitive_gd_a = _average_float(state_a.competitive_goal_diffs, default=0.0)
+    competitive_gd_b = _average_float(state_b.competitive_goal_diffs, default=0.0)
     stage_key = stage.strip().lower().replace(" ", "_")
     match_ts = pd.to_datetime(match_date)
     elo_external_a = _external_value_or_default(
@@ -351,6 +376,15 @@ def features_from_state(
         "team_b_goals_scored_last_5": gf_b,
         "team_a_goals_conceded_last_5": ga_a,
         "team_b_goals_conceded_last_5": ga_b,
+        "team_a_goal_diff_last_5": gd_a,
+        "team_b_goal_diff_last_5": gd_b,
+        "goal_diff_form_diff": gd_a - gd_b,
+        "team_a_competitive_form_last_5": competitive_form_a,
+        "team_b_competitive_form_last_5": competitive_form_b,
+        "competitive_form_diff": competitive_form_a - competitive_form_b,
+        "team_a_competitive_goal_diff_last_5": competitive_gd_a,
+        "team_b_competitive_goal_diff_last_5": competitive_gd_b,
+        "competitive_goal_diff_diff": competitive_gd_a - competitive_gd_b,
         "neutral": int(neutral),
         "stage_encoded": STAGE_ENCODING.get(stage_key, 0),
         "elo_external_a": elo_external_a,
@@ -379,8 +413,10 @@ def features_from_state(
         "opponent_adjusted_form_diff": opponent_form_a - opponent_form_b,
         "tournament_importance": importance,
         "is_friendly": int(_is_friendly(tournament, stage)),
+        "is_qualifier": int(_is_qualifier(tournament, stage)),
         "is_world_cup": int(_is_world_cup(tournament)),
         "is_continental_tournament": int(_is_continental_tournament(tournament)),
+        "is_knockout": int(_is_knockout_stage(stage)),
         "home_advantage_flag": int(not int(neutral)),
         "host_country_advantage_flag": host_advantage,
         "same_confederation_match": same_confed,
@@ -407,6 +443,8 @@ def _apply_result(
     score_a: int,
     score_b: int,
     match_date: pd.Timestamp,
+    tournament: str,
+    stage: str,
     elo_k: float,
 ) -> None:
     state_a = states[team_a]
@@ -430,6 +468,11 @@ def _apply_result(
     state_b.goals_for.append(score_b)
     state_b.goals_against.append(score_a)
     state_b.goal_diffs.append(score_b - score_a)
+    if not _is_friendly(tournament, stage):
+        state_a.competitive_points.append(points_a)
+        state_b.competitive_points.append(points_b)
+        state_a.competitive_goal_diffs.append(score_a - score_b)
+        state_b.competitive_goal_diffs.append(score_b - score_a)
     state_a.match_dates.append(match_date)
     state_b.match_dates.append(match_date)
     state_a.last_match_date = match_date
@@ -460,6 +503,8 @@ def _ensure_team(
         goals_for=deque(maxlen=recent_window),
         goals_against=deque(maxlen=recent_window),
         goal_diffs=deque(maxlen=recent_window),
+        competitive_points=deque(maxlen=recent_window),
+        competitive_goal_diffs=deque(maxlen=recent_window),
         match_dates=deque(maxlen=20),
         opponent_adjusted_points=deque(maxlen=recent_window),
         elo_history=deque([float(record["initial_elo"])], maxlen=20),
@@ -485,6 +530,13 @@ def _average(values: Iterable[int]) -> float:
     items = list(values)
     if not items:
         return 1.0
+    return float(sum(items) / len(items))
+
+
+def _average_float(values: Iterable[float], default: float) -> float:
+    items = [float(value) for value in values]
+    if not items:
+        return float(default)
     return float(sum(items) / len(items))
 
 
@@ -529,6 +581,10 @@ def _is_friendly(tournament: str, stage: str = "") -> bool:
     return "friendly" in f"{tournament} {stage}".lower()
 
 
+def _is_qualifier(tournament: str, stage: str = "") -> bool:
+    return "qualif" in f"{tournament} {stage}".lower()
+
+
 def _is_world_cup(tournament: str) -> bool:
     text = tournament.lower()
     return "world cup" in text and "qualif" not in text
@@ -547,6 +603,11 @@ def _is_continental_tournament(tournament: str) -> bool:
         "ofc",
     ]
     return any(marker in text for marker in continental_markers)
+
+
+def _is_knockout_stage(stage: str) -> bool:
+    stage_key = stage.strip().lower().replace(" ", "_")
+    return stage_key in {"round_of_16", "quarterfinal", "semifinal", "third_place", "final"}
 
 
 def _host_country_advantage(team_a: str, team_b: str, country: str) -> int:
@@ -627,8 +688,10 @@ def _apply_feature_flags(
             {
                 "tournament_importance": 1,
                 "is_friendly": 0,
+                "is_qualifier": 0,
                 "is_world_cup": 0,
                 "is_continental_tournament": 0,
+                "is_knockout": 0,
                 "home_advantage_flag": 0,
                 "host_country_advantage_flag": 0,
                 "same_confederation_match": 0,

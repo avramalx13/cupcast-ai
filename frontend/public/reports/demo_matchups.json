@@ -4,58 +4,58 @@
     {
       "team_a": "France",
       "team_b": "Brazil",
-      "team_a_win_probability": 0.516642474533857,
-      "draw_probability": 0.2504055699066422,
-      "team_b_win_probability": 0.2329519555595007
+      "team_a_win_probability": 0.47242251523321777,
+      "draw_probability": 0.26717483468373326,
+      "team_b_win_probability": 0.2604026500830489
     },
     {
       "team_a": "Argentina",
       "team_b": "Spain",
-      "team_a_win_probability": 0.43671794763011473,
-      "draw_probability": 0.2972947920410951,
-      "team_b_win_probability": 0.26598726032879016
+      "team_a_win_probability": 0.40954370974737003,
+      "draw_probability": 0.2923627667764556,
+      "team_b_win_probability": 0.2980935234761744
     },
     {
       "team_a": "Morocco",
       "team_b": "Senegal",
-      "team_a_win_probability": 0.5950421321617577,
-      "draw_probability": 0.22345339787242133,
-      "team_b_win_probability": 0.18150446996582095
+      "team_a_win_probability": 0.4946502311085567,
+      "draw_probability": 0.2558259070526845,
+      "team_b_win_probability": 0.24952386183875885
     },
     {
       "team_a": "England",
       "team_b": "Portugal",
-      "team_a_win_probability": 0.42168164410052206,
-      "draw_probability": 0.29076155821963734,
-      "team_b_win_probability": 0.28755679767984055
+      "team_a_win_probability": 0.3740264468714706,
+      "draw_probability": 0.2881197722076524,
+      "team_b_win_probability": 0.337853780920877
     },
     {
       "team_a": "Germany",
       "team_b": "Netherlands",
-      "team_a_win_probability": 0.46960720187257543,
-      "draw_probability": 0.23667320443402554,
-      "team_b_win_probability": 0.29371959369339906
+      "team_a_win_probability": 0.4012028480703267,
+      "draw_probability": 0.2712683278963902,
+      "team_b_win_probability": 0.3275288240332831
     },
     {
       "team_a": "Japan",
       "team_b": "South Korea",
-      "team_a_win_probability": 0.5785249590807845,
-      "draw_probability": 0.24505377423990204,
-      "team_b_win_probability": 0.17642126667931352
+      "team_a_win_probability": 0.5270311992880502,
+      "draw_probability": 0.2560240413791537,
+      "team_b_win_probability": 0.2169447593327962
     },
     {
       "team_a": "Mexico",
       "team_b": "United States",
-      "team_a_win_probability": 0.6118505583276584,
-      "draw_probability": 0.21716669988718182,
-      "team_b_win_probability": 0.1709827417851598
+      "team_a_win_probability": 0.49116890290547305,
+      "draw_probability": 0.24735416852030107,
+      "team_b_win_probability": 0.26147692857422583
     },
     {
       "team_a": "Ghana",
       "team_b": "Ivory Coast",
-      "team_a_win_probability": 0.24136611835741004,
-      "draw_probability": 0.2701145960478468,
-      "team_b_win_probability": 0.48851928559474317
+      "team_a_win_probability": 0.23831056278665724,
+      "draw_probability": 0.2640079565513201,
+      "team_b_win_probability": 0.4976814806620226
     }
   ],
   "warnings": []
