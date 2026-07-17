@@ -284,6 +284,21 @@ python scripts/backtest_world_cups.py ^
 
 This writes `models/world_cup_backtest_results.json`. For each year, training uses only matches before that World Cup's first match date, and testing uses only World Cup matches from that year.
 
+Create offline pre-World-Cup rating snapshots:
+
+```bash
+python scripts/create_pre_world_cup_rating_snapshots.py ^
+  --matches data/processed/real_completed_matches.csv ^
+  --elo-output data/real/elo_ratings.csv ^
+  --fifa-output data/real/fifa_rankings.csv
+
+python scripts/validate_ratings.py ^
+  --elo data/real/elo_ratings.csv ^
+  --fifa data/real/fifa_rankings.csv
+```
+
+This does not call FIFA or any paid API. It creates local Elo snapshots from the historical match file and static FIFA rank snapshots dated before the 2014, 2018, and 2022 World Cups.
+
 Run the full real-data evaluation and portfolio report pipeline:
 
 ```bash
@@ -325,18 +340,18 @@ This project does not use paid prediction APIs. Forecasts are generated from his
 | uniform random baseline | 0.4375 | 1.0986 | 0.6667 | 0.1042 | no | no |
 | Elo-only logistic regression | 0.4844 | 1.0453 | 0.6039 | 0.0830 | yes | no |
 | recent-form-only model | 0.4688 | 1.0928 | 0.6622 | 0.0835 | no | no |
-| full feature logistic regression | 0.5156 | 1.0496 | 0.6144 | 0.1069 | yes | no |
-| Poisson goal model | 0.4375 | 1.0724 | 0.6484 | 0.1118 | yes | no |
-| calibrated feature logistic regression | 0.5156 | 1.0500 | 0.6151 | 0.0737 | yes | no |
-| weighted probability ensemble | 0.4688 | 1.0202 | 0.6060 | 0.1177 | yes | yes |
+| full feature logistic regression | 0.5625 | 1.0503 | 0.6144 | 0.0708 | yes | no |
+| Poisson goal model | 0.4844 | 1.0686 | 0.6455 | 0.0948 | yes | no |
+| calibrated feature logistic regression | 0.5625 | 1.0345 | 0.6051 | 0.0707 | yes | yes |
+| weighted probability ensemble | 0.4844 | 1.0175 | 0.6042 | 0.1470 | yes | yes |
 
 ### World Cup Backtests
 
 | Year | Train | Test | Group | Knockout | Best overall | Best group | Best knockout | Accuracy | Log loss | Brier | ECE |
 |---:|---:|---:|---:|---:|---|---|---|---:|---:|---:|---:|
-| 2014 | 37861 | 64 | 0 | 0 | calibrated feature logistic regression | n/a | n/a | 0.5938 | 0.9487 | 0.5605 | 0.0722 |
-| 2018 | 41639 | 64 | 0 | 0 | full feature logistic regression | n/a | n/a | 0.5625 | 0.9314 | 0.5503 | 0.0510 |
-| 2022 | 45700 | 64 | 0 | 0 | weighted probability ensemble | n/a | n/a | 0.4688 | 1.0202 | 0.6060 | 0.1177 |
+| 2014 | 37861 | 64 | 0 | 0 | weighted probability ensemble | n/a | n/a | 0.5625 | 0.9837 | 0.5831 | 0.0484 |
+| 2018 | 41639 | 64 | 0 | 0 | full feature logistic regression | n/a | n/a | 0.5625 | 0.9225 | 0.5432 | 0.0759 |
+| 2022 | 45700 | 64 | 0 | 0 | weighted probability ensemble | n/a | n/a | 0.4844 | 1.0175 | 0.6042 | 0.1470 |
 
 ### Calibration
 
@@ -344,9 +359,9 @@ Calibration is compared with log loss, Brier score, reliability bins, and expect
 
 ### Feature Importance
 
-- `random forest` top features: `elo_external_diff`, `avg_elo_diff`, `elo_diff`, `elo_b`, `elo_a`.
-- `gradient boosting` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `home_advantage_flag`, `team_b_goals_conceded_last_5`.
-- `full feature logistic regression` top features: `elo_diff`, `elo_external_diff`, `avg_elo_diff`, `elo_a`, `elo_external_a`.
+- `random forest` top features: `avg_elo_diff`, `elo_external_diff`, `elo_diff`, `avg_elo_last_5_a`, `elo_b`.
+- `gradient boosting` top features: `elo_diff`, `avg_elo_diff`, `elo_external_diff`, `neutral`, `team_a_goals_conceded_last_5`.
+- `full feature logistic regression` top features: `elo_diff`, `elo_a`, `max_elo_last_10_b`, `max_elo_last_10_a`, `elo_b`.
 
 ### Ablation Study
 
@@ -354,12 +369,12 @@ Calibration is compared with log loss, Brier score, reliability bins, and expect
 |---|---:|---:|---:|---|
 | elo_only | ok | 0.8680 | 0.6023 |  |
 | form_only | ok | 0.9704 | 0.5380 |  |
-| ranking_only | ok | 1.0543 | 0.4727 |  |
+| ranking_only | ok | 0.9971 | 0.5210 |  |
 | schedule_only | ok | 1.0464 | 0.4740 |  |
 | goals_only | ok | 0.9680 | 0.5390 |  |
 | elo_plus_form | ok | 0.8610 | 0.6090 |  |
-| all_features | ok | 0.8601 | 0.6090 |  |
-| all_features_plus_external_ratings | unavailable | n/a | n/a | external rating CSVs not found |
+| all_features | ok | 0.8597 | 0.6100 |  |
+| all_features_plus_external_ratings | ok | 0.8597 | 0.6100 |  |
 
 ### Error Analysis
 

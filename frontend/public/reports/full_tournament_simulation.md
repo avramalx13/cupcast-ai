@@ -8,33 +8,33 @@ Model version: prediction_model_real-local
 
 | Team | Title Probability |
 | --- | ---: |
-| Argentina | 11.2% |
-| France | 9.9% |
-| Spain | 8.4% |
+| France | 11.6% |
+| Argentina | 11.4% |
+| Spain | 8.7% |
 | Brazil | 7.6% |
-| Mexico | 5.4% |
-| Germany | 5.2% |
-| Portugal | 5.1% |
+| Germany | 5.3% |
+| Portugal | 5.2% |
 | Netherlands | 4.9% |
-| Morocco | 4.6% |
-| England | 4.3% |
+| Mexico | 4.7% |
+| Belgium | 3.6% |
+| Japan | 3.5% |
 
 ## Group Winners
 
 | Group | Most Likely Winner | Win Group |
 | --- | --- | ---: |
-| A | Mexico | 57.1% |
-| B | Canada | 43.2% |
-| C | Brazil | 51.7% |
-| D | United States | 35.0% |
-| E | Germany | 56.1% |
-| F | Netherlands | 49.1% |
-| G | Belgium | 50.8% |
-| H | Spain | 66.0% |
-| I | France | 60.9% |
-| J | Argentina | 61.8% |
-| K | Portugal | 51.5% |
-| L | England | 54.3% |
+| A | Mexico | 54.3% |
+| B | Canada | 41.7% |
+| C | Brazil | 55.0% |
+| D | United States | 39.0% |
+| E | Germany | 54.7% |
+| F | Netherlands | 48.9% |
+| G | Belgium | 50.6% |
+| H | Spain | 64.8% |
+| I | France | 61.6% |
+| J | Argentina | 61.6% |
+| K | Portugal | 51.9% |
+| L | England | 52.6% |
 
 ## Method Notes
 

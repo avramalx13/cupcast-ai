@@ -6,6 +6,7 @@ from cupcast.prediction_engine.data_sources import (
     CsvDataSource,
     InternationalResultsCsvDataSource,
     build_teams_from_matches,
+    load_player_events,
     normalize_matches,
     validate_dataset_files,
 )
@@ -102,6 +103,121 @@ def test_normalize_matches_adds_optional_defaults() -> None:
     assert frame.loc[0, "tournament"] == "Unknown"
     assert frame.loc[0, "stage"] == "unknown"
     assert frame.loc[0, "neutral"] == 1
+
+
+def test_load_player_events_normalizes_goalscorer_rows(tmp_path) -> None:
+    events_path = tmp_path / "goals.csv"
+    pd.DataFrame(
+        [
+            {
+                "date": "2024-01-10",
+                "team": "France",
+                "scorer": "Mbappé",
+                "own_goal": False,
+                "penalty": True,
+            }
+        ]
+    ).to_csv(events_path, index=False)
+
+    events = load_player_events(events_path)
+
+    assert list(events.columns) == [
+        "date",
+        "team",
+        "event_category",
+        "player",
+        "goal_event",
+        "own_goal",
+        "penalty",
+        "injury_event",
+        "reason",
+    ]
+    assert events.loc[0, "team"] == "France"
+    assert events.loc[0, "event_category"] == "goal"
+    assert events.loc[0, "goal_event"] == 1
+    assert events.loc[0, "own_goal"] == 0
+    assert events.loc[0, "penalty"] == 1
+
+
+def test_load_player_events_normalizes_injury_rows(tmp_path) -> None:
+    events_path = tmp_path / "injuries.csv"
+    pd.DataFrame(
+        [
+            {
+                "date": "2024-01-10",
+                "team": "Brazil",
+                "player_name": "Neymar",
+                "reason": "hamstring",
+            }
+        ]
+    ).to_csv(events_path, index=False)
+
+    events = load_player_events(events_path)
+
+    assert events.loc[0, "event_category"] == "injury"
+    assert events.loc[0, "injury_event"] == 1
+    assert events.loc[0, "reason"] == "hamstring"
+
+
+def test_load_player_events_normalizes_mixed_goal_and_injury_rows(tmp_path) -> None:
+    events_path = tmp_path / "mixed_events.csv"
+    pd.DataFrame(
+        [
+            {
+                "date": "2024-01-10",
+                "team": "France",
+                "scorer": "Mbappé",
+                "own_goal": False,
+                "penalty": True,
+            },
+            {
+                "date": "2024-01-10",
+                "team": "Brazil",
+                "player_name": "Neymar",
+                "reason": "hamstring",
+            },
+        ]
+    ).to_csv(events_path, index=False)
+
+    events = load_player_events(events_path)
+
+    assert len(events) == 2
+    assert events.loc[0, "event_category"] == "goal"
+    assert events.loc[0, "goal_event"] == 1
+    assert events.loc[1, "event_category"] == "injury"
+    assert events.loc[1, "injury_event"] == 1
+
+
+def test_build_teams_from_matches_merges_latest_fifa_rankings() -> None:
+    matches = pd.DataFrame(
+        [
+            {
+                "date": "2024-01-10",
+                "team_a": "France",
+                "team_b": "Brazil",
+                "team_a_score": 2,
+                "team_b_score": 1,
+                "tournament": "Friendly",
+                "neutral": 1,
+                "stage": "friendly",
+                "country": "France",
+                "city": "Paris",
+            }
+        ]
+    )
+    rankings = pd.DataFrame(
+        [
+            {"date": "2024-01-01", "team": "France", "rank": 4, "points": 1800},
+            {"date": "2024-01-05", "team": "Brazil", "rank": 1, "points": 1850},
+        ]
+    )
+
+    teams = build_teams_from_matches(matches, fifa_rankings=rankings)
+
+    france_row = teams.loc[teams["team"] == "France"].iloc[0]
+    brazil_row = teams.loc[teams["team"] == "Brazil"].iloc[0]
+    assert france_row["fifa_rank"] == 4
+    assert brazil_row["fifa_rank"] == 1
 
 
 def test_international_results_source_normalizes_and_merges_shootouts(tmp_path) -> None:

@@ -5,256 +5,256 @@
       "status": "ok",
       "features": [
         {
-          "feature": "elo_external_diff",
-          "importance": 0.07161607970274085
-        },
-        {
           "feature": "avg_elo_diff",
-          "importance": 0.05694218747957773
+          "importance": 0.07208981540584537
         },
         {
           "feature": "elo_diff",
-          "importance": 0.051864758580102796
+          "importance": 0.05708686089045219
         },
         {
-          "feature": "elo_b",
-          "importance": 0.026034441227162797
-        },
-        {
-          "feature": "elo_a",
-          "importance": 0.025500396135549414
-        },
-        {
-          "feature": "goal_diff_form_diff",
-          "importance": 0.024932448636048776
-        },
-        {
-          "feature": "avg_elo_last_5_a",
-          "importance": 0.024777407390100932
-        },
-        {
-          "feature": "max_elo_last_10_b",
-          "importance": 0.024634761103721352
+          "feature": "elo_external_diff",
+          "importance": 0.056287812162235024
         },
         {
           "feature": "competitive_goal_diff_diff",
-          "importance": 0.02446710471349625
+          "importance": 0.02585367698205228
         },
         {
-          "feature": "avg_elo_last_5_b",
-          "importance": 0.024381107686798725
+          "feature": "elo_a",
+          "importance": 0.023745860963416767
         },
         {
-          "feature": "elo_trend_5_matches_a",
-          "importance": 0.023782180934827018
+          "feature": "elo_b",
+          "importance": 0.023197200938588864
         },
         {
-          "feature": "opponent_adjusted_form_diff",
-          "importance": 0.023542080677731045
-        },
-        {
-          "feature": "elo_external_b",
-          "importance": 0.023475758784607583
+          "feature": "max_elo_last_10_b",
+          "importance": 0.022884756359331692
         },
         {
           "feature": "elo_volatility_diff",
-          "importance": 0.02313220676866655
+          "importance": 0.02242271724656449
+        },
+        {
+          "feature": "avg_elo_last_5_a",
+          "importance": 0.022367588113485822
         },
         {
           "feature": "elo_volatility_10_matches_a",
-          "importance": 0.023104420042654023
+          "importance": 0.022367469795634237
+        },
+        {
+          "feature": "avg_elo_last_5_b",
+          "importance": 0.021840923747621113
+        },
+        {
+          "feature": "opponent_adjusted_form_diff",
+          "importance": 0.021781704845098355
+        },
+        {
+          "feature": "elo_trend_5_matches_a",
+          "importance": 0.02155282246886351
         },
         {
           "feature": "max_elo_last_10_a",
-          "importance": 0.02295238057645811
-        },
-        {
-          "feature": "elo_external_a",
-          "importance": 0.022655274895937043
+          "importance": 0.021544938453231702
         },
         {
           "feature": "elo_volatility_10_matches_b",
-          "importance": 0.02260075675199704
+          "importance": 0.02132318946582383
+        },
+        {
+          "feature": "elo_external_b",
+          "importance": 0.02075487870479741
         },
         {
           "feature": "elo_trend_5_matches_b",
-          "importance": 0.021703887613512537
+          "importance": 0.020735722408454265
         },
         {
           "feature": "elo_trend_diff",
-          "importance": 0.02150354218239552
+          "importance": 0.02058668538321771
         },
         {
-          "feature": "opponent_adjusted_form_a",
-          "importance": 0.02043734672086111
+          "feature": "goal_diff_form_diff",
+          "importance": 0.020527337632156493
         },
         {
-          "feature": "opponent_adjusted_form_b",
-          "importance": 0.020186029691864803
+          "feature": "elo_external_a",
+          "importance": 0.02002667588267441
         },
         {
           "feature": "weighted_goal_diff_last_5_a",
-          "importance": 0.020076040389576562
+          "importance": 0.018704902665905198
         },
         {
-          "feature": "weighted_goal_diff_last_5_b",
-          "importance": 0.01928312941197421
+          "feature": "opponent_adjusted_form_b",
+          "importance": 0.018489048689660018
         },
         {
           "feature": "weighted_form_diff",
-          "importance": 0.018442851886464863
+          "importance": 0.018436696243143997
         },
         {
-          "feature": "competitive_form_diff",
-          "importance": 0.016417643839418485
+          "feature": "opponent_adjusted_form_a",
+          "importance": 0.018163657654739034
         },
         {
-          "feature": "days_since_last_match_b",
-          "importance": 0.016186572706117022
-        },
-        {
-          "feature": "days_since_last_match_a",
-          "importance": 0.01606773139591422
-        },
-        {
-          "feature": "weighted_form_last_5_b",
-          "importance": 0.015456861135049996
-        },
-        {
-          "feature": "weighted_form_last_5_a",
-          "importance": 0.01535911679367467
-        },
-        {
-          "feature": "team_a_competitive_goal_diff_last_5",
-          "importance": 0.015330443687630679
-        },
-        {
-          "feature": "team_b_competitive_goal_diff_last_5",
-          "importance": 0.014738747084121852
-        },
-        {
-          "feature": "team_a_goal_diff_last_5",
-          "importance": 0.014372067289882441
-        },
-        {
-          "feature": "team_a_goals_conceded_last_5",
-          "importance": 0.014109855483046637
-        },
-        {
-          "feature": "recent_form_diff",
-          "importance": 0.013651615531891792
-        },
-        {
-          "feature": "team_b_goals_conceded_last_5",
-          "importance": 0.013493773764074023
-        },
-        {
-          "feature": "team_b_goal_diff_last_5",
-          "importance": 0.013438387831516546
-        },
-        {
-          "feature": "team_b_goals_scored_last_5",
-          "importance": 0.013125716909039034
-        },
-        {
-          "feature": "rest_days_diff",
-          "importance": 0.012705201145151937
-        },
-        {
-          "feature": "team_a_goals_scored_last_5",
-          "importance": 0.0122463236350822
-        },
-        {
-          "feature": "team_b_competitive_form_last_5",
-          "importance": 0.011762706328937444
-        },
-        {
-          "feature": "team_a_competitive_form_last_5",
-          "importance": 0.011681927711326529
-        },
-        {
-          "feature": "matches_last_90_days_a",
-          "importance": 0.010794831825114159
-        },
-        {
-          "feature": "matches_last_90_days_b",
-          "importance": 0.010227700015382825
-        },
-        {
-          "feature": "team_b_recent_form",
-          "importance": 0.009389849752687118
-        },
-        {
-          "feature": "team_a_recent_form",
-          "importance": 0.009125984836978204
-        },
-        {
-          "feature": "matches_last_30_days_a",
-          "importance": 0.005969089841256761
-        },
-        {
-          "feature": "tournament_importance",
-          "importance": 0.005953368264044158
-        },
-        {
-          "feature": "matches_last_30_days_b",
-          "importance": 0.005659670858857682
-        },
-        {
-          "feature": "home_advantage_flag",
-          "importance": 0.00339959520496766
-        },
-        {
-          "feature": "neutral",
-          "importance": 0.0031990689766082814
-        },
-        {
-          "feature": "is_friendly",
-          "importance": 0.003111588842447291
-        },
-        {
-          "feature": "host_country_advantage_flag",
-          "importance": 0.0030021131848140805
-        },
-        {
-          "feature": "is_qualifier",
-          "importance": 0.002986465706926204
-        },
-        {
-          "feature": "stage_encoded",
-          "importance": 0.0025697389960962925
-        },
-        {
-          "feature": "is_continental_tournament",
-          "importance": 0.002148402715510899
-        },
-        {
-          "feature": "is_world_cup",
-          "importance": 0.00028925872160542003
-        },
-        {
-          "feature": "fifa_rank_a",
-          "importance": 0.0
-        },
-        {
-          "feature": "fifa_rank_b",
-          "importance": 0.0
+          "feature": "weighted_goal_diff_last_5_b",
+          "importance": 0.01758943284527091
         },
         {
           "feature": "rank_diff",
-          "importance": 0.0
+          "importance": 0.0163147999594074
         },
         {
-          "feature": "fifa_rank_external_a",
-          "importance": 0.0
+          "feature": "competitive_form_diff",
+          "importance": 0.015301778696826966
         },
         {
-          "feature": "fifa_rank_external_b",
-          "importance": 0.0
+          "feature": "days_since_last_match_a",
+          "importance": 0.015234734347869018
+        },
+        {
+          "feature": "weighted_form_last_5_a",
+          "importance": 0.014391501346966156
+        },
+        {
+          "feature": "team_a_competitive_goal_diff_last_5",
+          "importance": 0.01417664509143088
+        },
+        {
+          "feature": "team_b_competitive_goal_diff_last_5",
+          "importance": 0.013977510250899359
+        },
+        {
+          "feature": "days_since_last_match_b",
+          "importance": 0.013837543647421898
+        },
+        {
+          "feature": "weighted_form_last_5_b",
+          "importance": 0.01363214666225811
+        },
+        {
+          "feature": "team_b_goals_conceded_last_5",
+          "importance": 0.013523773661726282
+        },
+        {
+          "feature": "team_a_goal_diff_last_5",
+          "importance": 0.01343715710665874
+        },
+        {
+          "feature": "team_b_goal_diff_last_5",
+          "importance": 0.012913339778511801
+        },
+        {
+          "feature": "team_a_goals_conceded_last_5",
+          "importance": 0.012719805832499233
+        },
+        {
+          "feature": "team_b_goals_scored_last_5",
+          "importance": 0.012453754751566664
+        },
+        {
+          "feature": "rest_days_diff",
+          "importance": 0.012431375460376258
+        },
+        {
+          "feature": "team_a_goals_scored_last_5",
+          "importance": 0.012141966284774734
         },
         {
           "feature": "fifa_rank_external_diff",
-          "importance": 0.0
+          "importance": 0.011940261392538466
+        },
+        {
+          "feature": "recent_form_diff",
+          "importance": 0.011059373351951804
+        },
+        {
+          "feature": "team_a_competitive_form_last_5",
+          "importance": 0.011058267397937761
+        },
+        {
+          "feature": "team_b_competitive_form_last_5",
+          "importance": 0.011037414884256537
+        },
+        {
+          "feature": "matches_last_90_days_b",
+          "importance": 0.009993980780492068
+        },
+        {
+          "feature": "matches_last_90_days_a",
+          "importance": 0.00956661219507753
+        },
+        {
+          "feature": "team_a_recent_form",
+          "importance": 0.008853485120040657
+        },
+        {
+          "feature": "team_b_recent_form",
+          "importance": 0.00820735980868315
+        },
+        {
+          "feature": "fifa_rank_external_a",
+          "importance": 0.006677132613407811
+        },
+        {
+          "feature": "fifa_rank_a",
+          "importance": 0.006598702750028126
+        },
+        {
+          "feature": "tournament_importance",
+          "importance": 0.005812432758424175
+        },
+        {
+          "feature": "matches_last_30_days_a",
+          "importance": 0.005712633777960316
+        },
+        {
+          "feature": "fifa_rank_external_b",
+          "importance": 0.005692023487497594
+        },
+        {
+          "feature": "matches_last_30_days_b",
+          "importance": 0.005566881212395832
+        },
+        {
+          "feature": "fifa_rank_b",
+          "importance": 0.005346752919994284
+        },
+        {
+          "feature": "neutral",
+          "importance": 0.0034941538747916955
+        },
+        {
+          "feature": "is_friendly",
+          "importance": 0.003250778124476086
+        },
+        {
+          "feature": "home_advantage_flag",
+          "importance": 0.003117913568153509
+        },
+        {
+          "feature": "host_country_advantage_flag",
+          "importance": 0.003013235771865894
+        },
+        {
+          "feature": "is_qualifier",
+          "importance": 0.0026060587635900476
+        },
+        {
+          "feature": "stage_encoded",
+          "importance": 0.0025501575365127617
+        },
+        {
+          "feature": "is_continental_tournament",
+          "importance": 0.001737760554111291
+        },
+        {
+          "feature": "is_world_cup",
+          "importance": 0.000256418528354397
         },
         {
           "feature": "fifa_points_a",
@@ -266,6 +266,30 @@
         },
         {
           "feature": "fifa_points_diff",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_a",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_b",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_diff",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_a",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_b",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_diff",
           "importance": 0.0
         },
         {
@@ -284,227 +308,239 @@
       "features": [
         {
           "feature": "elo_diff",
-          "importance": 0.46757596987107586
-        },
-        {
-          "feature": "elo_external_diff",
-          "importance": 0.2642023463600274
+          "importance": 0.7038551301156366
         },
         {
           "feature": "avg_elo_diff",
-          "importance": 0.12346120946662109
+          "importance": 0.09728417578327464
+        },
+        {
+          "feature": "elo_external_diff",
+          "importance": 0.04101383287629865
         },
         {
           "feature": "home_advantage_flag",
-          "importance": 0.012693391280667453
-        },
-        {
-          "feature": "team_b_goals_conceded_last_5",
-          "importance": 0.01129461726331651
+          "importance": 0.01202346420428111
         },
         {
           "feature": "team_a_goals_conceded_last_5",
-          "importance": 0.011202175241586025
+          "importance": 0.011464185844444842
         },
         {
-          "feature": "goal_diff_form_diff",
-          "importance": 0.008921784347827264
-        },
-        {
-          "feature": "neutral",
-          "importance": 0.008474307075875888
-        },
-        {
-          "feature": "weighted_goal_diff_last_5_a",
-          "importance": 0.007308824507639401
-        },
-        {
-          "feature": "competitive_goal_diff_diff",
-          "importance": 0.006957893754789894
-        },
-        {
-          "feature": "elo_b",
-          "importance": 0.004340163974062114
-        },
-        {
-          "feature": "avg_elo_last_5_b",
-          "importance": 0.004334839133284414
-        },
-        {
-          "feature": "weighted_goal_diff_last_5_b",
-          "importance": 0.004285981196451696
-        },
-        {
-          "feature": "max_elo_last_10_b",
-          "importance": 0.004112070683509882
-        },
-        {
-          "feature": "elo_trend_diff",
-          "importance": 0.003900148726985201
-        },
-        {
-          "feature": "rest_days_diff",
-          "importance": 0.003890038653683432
-        },
-        {
-          "feature": "elo_volatility_10_matches_a",
-          "importance": 0.0029427251479603868
-        },
-        {
-          "feature": "is_continental_tournament",
-          "importance": 0.0028066156234283586
-        },
-        {
-          "feature": "opponent_adjusted_form_diff",
-          "importance": 0.002789232126935062
-        },
-        {
-          "feature": "elo_volatility_10_matches_b",
-          "importance": 0.0026890144840911877
-        },
-        {
-          "feature": "competitive_form_diff",
-          "importance": 0.002654041642068268
-        },
-        {
-          "feature": "team_a_goals_scored_last_5",
-          "importance": 0.0024969518102127878
-        },
-        {
-          "feature": "tournament_importance",
-          "importance": 0.002479484851204974
-        },
-        {
-          "feature": "avg_elo_last_5_a",
-          "importance": 0.002271154765954437
-        },
-        {
-          "feature": "is_friendly",
-          "importance": 0.002086164053916071
-        },
-        {
-          "feature": "elo_a",
-          "importance": 0.0019470972761045265
-        },
-        {
-          "feature": "elo_trend_5_matches_a",
-          "importance": 0.0019223002011955952
-        },
-        {
-          "feature": "elo_volatility_diff",
-          "importance": 0.001842727859207596
-        },
-        {
-          "feature": "recent_form_diff",
-          "importance": 0.0018061700662713538
-        },
-        {
-          "feature": "weighted_form_diff",
-          "importance": 0.001692190947998385
-        },
-        {
-          "feature": "days_since_last_match_b",
-          "importance": 0.0016473284930320394
-        },
-        {
-          "feature": "opponent_adjusted_form_b",
-          "importance": 0.0016316799645380417
-        },
-        {
-          "feature": "stage_encoded",
-          "importance": 0.00163134268225413
-        },
-        {
-          "feature": "team_a_competitive_goal_diff_last_5",
-          "importance": 0.0016297403787190025
-        },
-        {
-          "feature": "matches_last_90_days_b",
-          "importance": 0.0014967371534591039
-        },
-        {
-          "feature": "team_b_competitive_form_last_5",
-          "importance": 0.0014860715605639918
-        },
-        {
-          "feature": "host_country_advantage_flag",
-          "importance": 0.0012472490018465981
-        },
-        {
-          "feature": "team_b_goals_scored_last_5",
-          "importance": 0.0012172131908864566
-        },
-        {
-          "feature": "opponent_adjusted_form_a",
-          "importance": 0.0011262570876070612
-        },
-        {
-          "feature": "elo_trend_5_matches_b",
-          "importance": 0.0010075415241970935
-        },
-        {
-          "feature": "team_b_competitive_goal_diff_last_5",
-          "importance": 0.0008588736975831537
-        },
-        {
-          "feature": "elo_external_a",
-          "importance": 0.0008579271472669267
-        },
-        {
-          "feature": "matches_last_30_days_b",
-          "importance": 0.0006081423903704054
-        },
-        {
-          "feature": "elo_external_b",
-          "importance": 0.0006077744533027673
-        },
-        {
-          "feature": "team_a_goal_diff_last_5",
-          "importance": 0.0005949085652006004
-        },
-        {
-          "feature": "days_since_last_match_a",
-          "importance": 0.00053405700919726
-        },
-        {
-          "feature": "team_a_recent_form",
-          "importance": 0.0005180341910766888
-        },
-        {
-          "feature": "weighted_form_last_5_b",
-          "importance": 0.000486174228686438
-        },
-        {
-          "feature": "max_elo_last_10_a",
-          "importance": 0.0003834359183034062
-        },
-        {
-          "feature": "team_b_goal_diff_last_5",
-          "importance": 0.0003503067736681629
-        },
-        {
-          "feature": "matches_last_30_days_a",
-          "importance": 0.0002928323276878038
-        },
-        {
-          "feature": "is_qualifier",
-          "importance": 0.00025809248110055346
-        },
-        {
-          "feature": "matches_last_90_days_a",
-          "importance": 0.00014664738549981268
-        },
-        {
-          "feature": "fifa_rank_a",
-          "importance": 0.0
-        },
-        {
-          "feature": "fifa_rank_b",
-          "importance": 0.0
+          "feature": "team_b_goals_conceded_last_5",
+          "importance": 0.011182638637807519
         },
         {
           "feature": "rank_diff",
-          "importance": 0.0
+          "importance": 0.010665485231484124
+        },
+        {
+          "feature": "neutral",
+          "importance": 0.009521384868522139
+        },
+        {
+          "feature": "goal_diff_form_diff",
+          "importance": 0.008621062849145902
+        },
+        {
+          "feature": "elo_external_b",
+          "importance": 0.007342230568818317
+        },
+        {
+          "feature": "competitive_goal_diff_diff",
+          "importance": 0.007237792574890085
+        },
+        {
+          "feature": "weighted_goal_diff_last_5_a",
+          "importance": 0.005586490445330347
+        },
+        {
+          "feature": "elo_trend_diff",
+          "importance": 0.005228269637972666
+        },
+        {
+          "feature": "elo_external_a",
+          "importance": 0.0044175610420055245
+        },
+        {
+          "feature": "rest_days_diff",
+          "importance": 0.003800871153465274
+        },
+        {
+          "feature": "elo_volatility_10_matches_a",
+          "importance": 0.0030903148499204654
+        },
+        {
+          "feature": "weighted_goal_diff_last_5_b",
+          "importance": 0.0029051488360538644
+        },
+        {
+          "feature": "elo_volatility_10_matches_b",
+          "importance": 0.002829844501964788
+        },
+        {
+          "feature": "elo_b",
+          "importance": 0.002613595768374025
+        },
+        {
+          "feature": "team_a_goals_scored_last_5",
+          "importance": 0.002515364760843837
+        },
+        {
+          "feature": "is_continental_tournament",
+          "importance": 0.0023818497488605084
+        },
+        {
+          "feature": "opponent_adjusted_form_diff",
+          "importance": 0.002355700594793252
+        },
+        {
+          "feature": "fifa_rank_b",
+          "importance": 0.0023228622428328217
+        },
+        {
+          "feature": "avg_elo_last_5_b",
+          "importance": 0.0022650324766153255
+        },
+        {
+          "feature": "competitive_form_diff",
+          "importance": 0.0022212884175797413
+        },
+        {
+          "feature": "team_a_competitive_goal_diff_last_5",
+          "importance": 0.001918902855977507
+        },
+        {
+          "feature": "weighted_form_diff",
+          "importance": 0.0017704377942550625
+        },
+        {
+          "feature": "tournament_importance",
+          "importance": 0.001769563942587236
+        },
+        {
+          "feature": "fifa_rank_external_b",
+          "importance": 0.0017648172950096
+        },
+        {
+          "feature": "is_friendly",
+          "importance": 0.0017073439782668259
+        },
+        {
+          "feature": "elo_a",
+          "importance": 0.001700852288972961
+        },
+        {
+          "feature": "fifa_rank_external_diff",
+          "importance": 0.0016752198907232408
+        },
+        {
+          "feature": "is_qualifier",
+          "importance": 0.001581678428687264
+        },
+        {
+          "feature": "elo_volatility_diff",
+          "importance": 0.0015325535721340544
+        },
+        {
+          "feature": "opponent_adjusted_form_b",
+          "importance": 0.001435918315568587
+        },
+        {
+          "feature": "max_elo_last_10_b",
+          "importance": 0.0014095022030160386
+        },
+        {
+          "feature": "days_since_last_match_b",
+          "importance": 0.0014030993717502112
+        },
+        {
+          "feature": "team_a_goal_diff_last_5",
+          "importance": 0.0013693840314475715
+        },
+        {
+          "feature": "host_country_advantage_flag",
+          "importance": 0.0013352939573201144
+        },
+        {
+          "feature": "matches_last_90_days_b",
+          "importance": 0.0013348436668036623
+        },
+        {
+          "feature": "elo_trend_5_matches_a",
+          "importance": 0.0012851846845729443
+        },
+        {
+          "feature": "team_b_competitive_form_last_5",
+          "importance": 0.0009421508309069682
+        },
+        {
+          "feature": "recent_form_diff",
+          "importance": 0.0008665088661748116
+        },
+        {
+          "feature": "avg_elo_last_5_a",
+          "importance": 0.0008647351411728792
+        },
+        {
+          "feature": "team_b_goals_scored_last_5",
+          "importance": 0.0008300671450786002
+        },
+        {
+          "feature": "days_since_last_match_a",
+          "importance": 0.0007985873262267838
+        },
+        {
+          "feature": "elo_trend_5_matches_b",
+          "importance": 0.0007842152154053406
+        },
+        {
+          "feature": "opponent_adjusted_form_a",
+          "importance": 0.0007446130007859984
+        },
+        {
+          "feature": "matches_last_30_days_b",
+          "importance": 0.0006477036983159816
+        },
+        {
+          "feature": "team_b_goal_diff_last_5",
+          "importance": 0.0006238559692872405
+        },
+        {
+          "feature": "max_elo_last_10_a",
+          "importance": 0.0006217315865522031
+        },
+        {
+          "feature": "fifa_rank_a",
+          "importance": 0.0005299340139930907
+        },
+        {
+          "feature": "weighted_form_last_5_b",
+          "importance": 0.0004713551504190467
+        },
+        {
+          "feature": "team_a_recent_form",
+          "importance": 0.0004642903183441972
+        },
+        {
+          "feature": "matches_last_30_days_a",
+          "importance": 0.00029393860883432355
+        },
+        {
+          "feature": "fifa_rank_external_a",
+          "importance": 0.0002812958204792928
+        },
+        {
+          "feature": "team_b_competitive_goal_diff_last_5",
+          "importance": 0.00019916606212266134
+        },
+        {
+          "feature": "weighted_form_last_5_a",
+          "importance": 0.00016582429971817537
+        },
+        {
+          "feature": "matches_last_90_days_a",
+          "importance": 0.00012985263787315291
         },
         {
           "feature": "team_b_recent_form",
@@ -515,15 +551,7 @@
           "importance": 0.0
         },
         {
-          "feature": "fifa_rank_external_a",
-          "importance": 0.0
-        },
-        {
-          "feature": "fifa_rank_external_b",
-          "importance": 0.0
-        },
-        {
-          "feature": "fifa_rank_external_diff",
+          "feature": "stage_encoded",
           "importance": 0.0
         },
         {
@@ -539,7 +567,27 @@
           "importance": 0.0
         },
         {
-          "feature": "weighted_form_last_5_a",
+          "feature": "goal_events_last_90_days_a",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_b",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_diff",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_a",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_b",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_diff",
           "importance": 0.0
         },
         {
@@ -562,255 +610,255 @@
       "features": [
         {
           "feature": "elo_diff",
-          "importance": 0.36821403741854875
-        },
-        {
-          "feature": "elo_external_diff",
-          "importance": 0.36821403741854875
-        },
-        {
-          "feature": "avg_elo_diff",
-          "importance": 0.30988691623057485
+          "importance": 0.663980411638357
         },
         {
           "feature": "elo_a",
-          "importance": 0.24510038131886233
-        },
-        {
-          "feature": "elo_external_a",
-          "importance": 0.24510038131886233
-        },
-        {
-          "feature": "max_elo_last_10_b",
-          "importance": 0.2248709607638734
-        },
-        {
-          "feature": "avg_elo_last_5_b",
-          "importance": 0.17544244248391969
-        },
-        {
-          "feature": "avg_elo_last_5_a",
-          "importance": 0.16414375373229104
-        },
-        {
-          "feature": "weighted_goal_diff_last_5_b",
-          "importance": 0.16359788451014076
-        },
-        {
-          "feature": "max_elo_last_10_a",
-          "importance": 0.16183148477339443
-        },
-        {
-          "feature": "team_a_recent_form",
-          "importance": 0.13757334196724993
-        },
-        {
-          "feature": "elo_b",
-          "importance": 0.1204517570692221
-        },
-        {
-          "feature": "elo_external_b",
-          "importance": 0.1204517570692221
-        },
-        {
-          "feature": "weighted_goal_diff_last_5_a",
-          "importance": 0.10849846741503233
-        },
-        {
-          "feature": "weighted_form_last_5_b",
-          "importance": 0.10615421547252558
-        },
-        {
-          "feature": "weighted_form_diff",
-          "importance": 0.09545461030069352
-        },
-        {
-          "feature": "neutral",
-          "importance": 0.08031468922924866
-        },
-        {
-          "feature": "home_advantage_flag",
-          "importance": 0.08031468922924866
-        },
-        {
-          "feature": "host_country_advantage_flag",
-          "importance": 0.07483458181927098
-        },
-        {
-          "feature": "opponent_adjusted_form_a",
-          "importance": 0.068697470145634
-        },
-        {
-          "feature": "recent_form_diff",
-          "importance": 0.0657952722321808
-        },
-        {
-          "feature": "team_a_goals_conceded_last_5",
-          "importance": 0.06389543002302624
-        },
-        {
-          "feature": "team_b_goals_conceded_last_5",
-          "importance": 0.0638089345424054
-        },
-        {
-          "feature": "team_a_competitive_form_last_5",
-          "importance": 0.05373048335038108
-        },
-        {
-          "feature": "team_b_recent_form",
-          "importance": 0.052157289251713396
-        },
-        {
-          "feature": "weighted_form_last_5_a",
-          "importance": 0.04427671163953641
-        },
-        {
-          "feature": "opponent_adjusted_form_diff",
-          "importance": 0.03983233054897206
-        },
-        {
-          "feature": "is_friendly",
-          "importance": 0.039056060524532234
-        },
-        {
-          "feature": "team_a_goals_scored_last_5",
-          "importance": 0.03828413193440075
-        },
-        {
-          "feature": "team_b_competitive_form_last_5",
-          "importance": 0.03721245825097517
-        },
-        {
-          "feature": "is_continental_tournament",
-          "importance": 0.03556826061653324
-        },
-        {
-          "feature": "team_b_goal_diff_last_5",
-          "importance": 0.033128441575481865
-        },
-        {
-          "feature": "matches_last_30_days_b",
-          "importance": 0.02836690291520892
-        },
-        {
-          "feature": "team_b_goals_scored_last_5",
-          "importance": 0.025658562638086458
-        },
-        {
-          "feature": "elo_trend_diff",
-          "importance": 0.025636067801603806
-        },
-        {
-          "feature": "matches_last_30_days_a",
-          "importance": 0.02302837705186019
-        },
-        {
-          "feature": "opponent_adjusted_form_b",
-          "importance": 0.022407122939447074
-        },
-        {
-          "feature": "stage_encoded",
-          "importance": 0.020700550429083354
-        },
-        {
-          "feature": "is_qualifier",
-          "importance": 0.020700550429083354
-        },
-        {
-          "feature": "rest_days_diff",
-          "importance": 0.018796101666274212
-        },
-        {
-          "feature": "elo_trend_5_matches_a",
-          "importance": 0.01879327441437269
-        },
-        {
-          "feature": "matches_last_90_days_a",
-          "importance": 0.01861762698898962
-        },
-        {
-          "feature": "team_a_goal_diff_last_5",
-          "importance": 0.018507950373050017
-        },
-        {
-          "feature": "days_since_last_match_b",
-          "importance": 0.018198220140440053
-        },
-        {
-          "feature": "elo_trend_5_matches_b",
-          "importance": 0.017450452565246386
-        },
-        {
-          "feature": "is_world_cup",
-          "importance": 0.016589917863940373
-        },
-        {
-          "feature": "competitive_form_diff",
-          "importance": 0.01650488244651284
-        },
-        {
-          "feature": "matches_last_90_days_b",
-          "importance": 0.016005796997842797
-        },
-        {
-          "feature": "goal_diff_form_diff",
-          "importance": 0.013941833048177902
-        },
-        {
-          "feature": "team_a_competitive_goal_diff_last_5",
-          "importance": 0.012215146779417563
-        },
-        {
-          "feature": "tournament_importance",
-          "importance": 0.010060897240481195
-        },
-        {
-          "feature": "team_b_competitive_goal_diff_last_5",
-          "importance": 0.009629115550325007
-        },
-        {
-          "feature": "elo_volatility_10_matches_b",
-          "importance": 0.009191330093022115
-        },
-        {
-          "feature": "days_since_last_match_a",
-          "importance": 0.005235917697571211
-        },
-        {
-          "feature": "elo_volatility_diff",
-          "importance": 0.004432176258425812
-        },
-        {
-          "feature": "elo_volatility_10_matches_a",
-          "importance": 0.0038581729355519714
-        },
-        {
-          "feature": "competitive_goal_diff_diff",
-          "importance": 0.0024885247249335023
-        },
-        {
-          "feature": "fifa_rank_a",
-          "importance": 0.0
-        },
-        {
-          "feature": "fifa_rank_b",
-          "importance": 0.0
+          "importance": 0.4321257724938529
         },
         {
           "feature": "rank_diff",
-          "importance": 0.0
-        },
-        {
-          "feature": "fifa_rank_external_a",
-          "importance": 0.0
-        },
-        {
-          "feature": "fifa_rank_external_b",
-          "importance": 0.0
+          "importance": 0.39468124947990807
         },
         {
           "feature": "fifa_rank_external_diff",
-          "importance": 0.0
+          "importance": 0.359730653494503
+        },
+        {
+          "feature": "max_elo_last_10_b",
+          "importance": 0.3294964760408266
+        },
+        {
+          "feature": "fifa_rank_a",
+          "importance": 0.2810439868060048
+        },
+        {
+          "feature": "avg_elo_diff",
+          "importance": 0.26159759642546915
+        },
+        {
+          "feature": "fifa_rank_external_a",
+          "importance": 0.24824492111729615
+        },
+        {
+          "feature": "elo_b",
+          "importance": 0.22726347868930172
+        },
+        {
+          "feature": "max_elo_last_10_a",
+          "importance": 0.22259074916722885
+        },
+        {
+          "feature": "fifa_rank_b",
+          "importance": 0.18502624659373323
+        },
+        {
+          "feature": "fifa_rank_external_b",
+          "importance": 0.17675854543400507
+        },
+        {
+          "feature": "avg_elo_last_5_b",
+          "importance": 0.17632135744211763
+        },
+        {
+          "feature": "weighted_goal_diff_last_5_b",
+          "importance": 0.16120251514890513
+        },
+        {
+          "feature": "team_a_recent_form",
+          "importance": 0.14481774335097863
+        },
+        {
+          "feature": "elo_external_b",
+          "importance": 0.1333248554554798
+        },
+        {
+          "feature": "avg_elo_last_5_a",
+          "importance": 0.11489031067326212
+        },
+        {
+          "feature": "elo_external_a",
+          "importance": 0.11469148299095511
+        },
+        {
+          "feature": "weighted_goal_diff_last_5_a",
+          "importance": 0.10473910968405276
+        },
+        {
+          "feature": "weighted_form_last_5_b",
+          "importance": 0.10368926358651372
+        },
+        {
+          "feature": "weighted_form_diff",
+          "importance": 0.09044446153667168
+        },
+        {
+          "feature": "neutral",
+          "importance": 0.0823817900095609
+        },
+        {
+          "feature": "home_advantage_flag",
+          "importance": 0.0823817900095609
+        },
+        {
+          "feature": "host_country_advantage_flag",
+          "importance": 0.07925698559277074
+        },
+        {
+          "feature": "opponent_adjusted_form_a",
+          "importance": 0.07591309033580905
+        },
+        {
+          "feature": "recent_form_diff",
+          "importance": 0.07209191363987046
+        },
+        {
+          "feature": "team_b_goals_conceded_last_5",
+          "importance": 0.06848443427677166
+        },
+        {
+          "feature": "team_a_goals_conceded_last_5",
+          "importance": 0.06513597352889068
+        },
+        {
+          "feature": "team_a_competitive_form_last_5",
+          "importance": 0.055574838068970345
+        },
+        {
+          "feature": "opponent_adjusted_form_diff",
+          "importance": 0.053136683080386486
+        },
+        {
+          "feature": "team_b_recent_form",
+          "importance": 0.05221782656303431
+        },
+        {
+          "feature": "elo_external_diff",
+          "importance": 0.051788073157287146
+        },
+        {
+          "feature": "weighted_form_last_5_a",
+          "importance": 0.04451893532775291
+        },
+        {
+          "feature": "is_friendly",
+          "importance": 0.03853198432148624
+        },
+        {
+          "feature": "team_b_competitive_form_last_5",
+          "importance": 0.03819357131935992
+        },
+        {
+          "feature": "team_a_goals_scored_last_5",
+          "importance": 0.03760912133143725
+        },
+        {
+          "feature": "is_continental_tournament",
+          "importance": 0.03703205674201402
+        },
+        {
+          "feature": "team_b_goal_diff_last_5",
+          "importance": 0.036279144236716965
+        },
+        {
+          "feature": "elo_trend_diff",
+          "importance": 0.02906304814816375
+        },
+        {
+          "feature": "matches_last_30_days_b",
+          "importance": 0.028633331943413526
+        },
+        {
+          "feature": "team_b_goals_scored_last_5",
+          "importance": 0.026491130789415507
+        },
+        {
+          "feature": "matches_last_30_days_a",
+          "importance": 0.024004732743633836
+        },
+        {
+          "feature": "elo_trend_5_matches_a",
+          "importance": 0.02250827774754817
+        },
+        {
+          "feature": "stage_encoded",
+          "importance": 0.02042193353388209
+        },
+        {
+          "feature": "is_qualifier",
+          "importance": 0.02042193353388209
+        },
+        {
+          "feature": "team_a_goal_diff_last_5",
+          "importance": 0.019702173243115628
+        },
+        {
+          "feature": "is_world_cup",
+          "importance": 0.019228914832777413
+        },
+        {
+          "feature": "elo_trend_5_matches_b",
+          "importance": 0.018584975108466722
+        },
+        {
+          "feature": "matches_last_90_days_a",
+          "importance": 0.01818504198564518
+        },
+        {
+          "feature": "rest_days_diff",
+          "importance": 0.018115155896157
+        },
+        {
+          "feature": "days_since_last_match_b",
+          "importance": 0.017764938069849533
+        },
+        {
+          "feature": "matches_last_90_days_b",
+          "importance": 0.016983660934231124
+        },
+        {
+          "feature": "goal_diff_form_diff",
+          "importance": 0.016127928396099504
+        },
+        {
+          "feature": "opponent_adjusted_form_b",
+          "importance": 0.01580251696364161
+        },
+        {
+          "feature": "competitive_form_diff",
+          "importance": 0.01577941837622819
+        },
+        {
+          "feature": "team_a_competitive_goal_diff_last_5",
+          "importance": 0.012708029657983719
+        },
+        {
+          "feature": "team_b_competitive_goal_diff_last_5",
+          "importance": 0.011114805247087642
+        },
+        {
+          "feature": "elo_volatility_10_matches_b",
+          "importance": 0.008502186186017155
+        },
+        {
+          "feature": "days_since_last_match_a",
+          "importance": 0.005329432432836442
+        },
+        {
+          "feature": "tournament_importance",
+          "importance": 0.005194988668618891
+        },
+        {
+          "feature": "elo_volatility_10_matches_a",
+          "importance": 0.00482866478271987
+        },
+        {
+          "feature": "elo_volatility_diff",
+          "importance": 0.0036732687026080797
+        },
+        {
+          "feature": "competitive_goal_diff_diff",
+          "importance": 0.0019340174282087806
         },
         {
           "feature": "fifa_points_a",
@@ -822,6 +870,30 @@
         },
         {
           "feature": "fifa_points_diff",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_a",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_b",
+          "importance": 0.0
+        },
+        {
+          "feature": "goal_events_last_90_days_diff",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_a",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_b",
+          "importance": 0.0
+        },
+        {
+          "feature": "injury_events_last_30_days_diff",
           "importance": 0.0
         },
         {

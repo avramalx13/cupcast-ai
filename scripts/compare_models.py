@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import warnings
 from pathlib import Path
 
 from cupcast.prediction_engine.compare import compare_models
@@ -20,11 +21,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--source", default=None)
     parser.add_argument("--elo", default=None, help="Optional local Elo snapshot CSV")
     parser.add_argument("--fifa", default=None, help="Optional local FIFA ranking snapshot CSV")
+    parser.add_argument("--models", nargs="+", default=None, help="Optional model names to compare")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    warnings.filterwarnings(
+        "ignore",
+        message="`sklearn.utils.parallel.delayed` should be used with `sklearn.utils.parallel.Parallel`.*",
+    )
     result = compare_models(
         config_path=args.config,
         train_before=args.train_before,
@@ -37,6 +43,7 @@ def main() -> None:
         shootouts_path=args.shootouts,
         elo_ratings_path=args.elo,
         fifa_rankings_path=args.fifa,
+        model_names=args.models,
     )
     print(json.dumps(result, indent=2))
     print(f"output={args.output}")

@@ -143,7 +143,10 @@ def run_real_data_pipeline(
 
     raw_shootouts = pd.read_csv(resolved_shootouts) if resolved_shootouts else None
     normalized_matches = normalize_international_results(completed_matches, shootouts=raw_shootouts)
-    generated_teams = build_teams_from_matches(normalized_matches)
+    external_fifa_rankings = (
+        LocalFifaRankingSource(resolved_fifa_rankings).load() if resolved_fifa_rankings else None
+    )
+    generated_teams = build_teams_from_matches(normalized_matches, fifa_rankings=external_fifa_rankings)
     generated_teams.to_csv(outputs.teams, index=False)
 
     matches, teams = load_dataset(
@@ -158,7 +161,7 @@ def run_real_data_pipeline(
         recent_window=recent_window,
         elo_k=elo_k,
         external_elo_ratings=LocalEloRatingSource(resolved_elo_ratings).load() if resolved_elo_ratings else None,
-        external_fifa_rankings=LocalFifaRankingSource(resolved_fifa_rankings).load() if resolved_fifa_rankings else None,
+        external_fifa_rankings=external_fifa_rankings,
         feature_flags={
             "external_ratings": True,
             "schedule": True,

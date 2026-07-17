@@ -9,6 +9,8 @@ import pandas as pd
 
 from cupcast.shared.constants import DEFAULT_MATCHES_PATH, DEFAULT_TEAMS_PATH
 
+from .rating_sources import normalize_fifa_rankings
+
 
 MATCH_REQUIRED_COLUMNS = {"date", "team_a", "team_b", "team_a_score", "team_b_score"}
 MATCH_OUTPUT_COLUMNS = [
@@ -59,6 +61,36 @@ TEAM_ALIASES = {
     "initial_elo": ["initial_elo", "elo", "rating", "elo_rating"],
     "fifa_rank": ["fifa_rank", "rank", "fifa_ranking"],
 }
+
+PLAYER_EVENT_GOALSCORER_ALIASES = {
+    "date": ["date", "match_date", "fixture_date"],
+    "team": ["team", "team_name", "home_team", "away_team"],
+    "player": ["scorer", "player", "player_name"],
+    "own_goal": ["own_goal", "owngoal", "own_goal?"],
+    "penalty": ["penalty", "penalty_goal", "penalty?"],
+    "minute": ["minute", "min"],
+}
+
+PLAYER_EVENT_INJURY_ALIASES = {
+    "date": ["date", "fixture_date", "match_date"],
+    "team": ["team", "team_name", "home_team", "away_team"],
+    "player": ["player_name", "player"],
+    "player_type": ["player_type"],
+    "reason": ["reason", "injury_reason"],
+    "fixture_id": ["fixture_id"],
+}
+
+PLAYER_EVENT_OUTPUT_COLUMNS = [
+    "date",
+    "team",
+    "event_category",
+    "player",
+    "goal_event",
+    "own_goal",
+    "penalty",
+    "injury_event",
+    "reason",
+]
 
 
 @dataclass
@@ -247,6 +279,132 @@ def load_and_validate_dataset(
     return matches, report
 
 
+def load_player_events(events_path: str | Path | None) -> pd.DataFrame:
+    if events_path is None:
+        return pd.DataFrame(columns=PLAYER_EVENT_OUTPUT_COLUMNS)
+    events_csv = Path(events_path)
+    if not events_csv.exists():
+        raise FileNotFoundError(f"Player events CSV not found: {events_csv}")
+    raw_events = pd.read_csv(events_csv)
+    return normalize_player_events(raw_events)
+
+
+def normalize_player_events(raw_events: pd.DataFrame) -> pd.DataFrame:
+    if raw_events.empty:
+        return pd.DataFrame(columns=PLAYER_EVENT_OUTPUT_COLUMNS)
+
+    frame = raw_events.copy()
+    goal_aliases = {alias for aliases in PLAYER_EVENT_GOALSCORER_ALIASES.values() for alias in aliases}
+    injury_aliases = {alias for aliases in PLAYER_EVENT_INJURY_ALIASES.values() for alias in aliases}
+    normalized_columns = {column.lower().strip() for column in frame.columns}
+    has_goal_columns = bool(goal_aliases & normalized_columns)
+    has_injury_columns = bool(injury_aliases & normalized_columns)
+
+    if has_goal_columns and has_injury_columns:
+        return _normalize_mixed_player_events(frame)
+    if has_goal_columns:
+        return _normalize_goalscorer_events(frame)
+    if has_injury_columns:
+        return _normalize_injury_events(frame)
+    if "event_category" in frame.columns:
+        return _normalize_mixed_player_events(frame)
+    raise ValueError(
+        "Player events CSV could not be normalized: missing goal scorer or injury event columns"
+    )
+
+
+def _normalize_goalscorer_events(raw_events: pd.DataFrame) -> pd.DataFrame:
+    frame = _rename_aliases(raw_events, PLAYER_EVENT_GOALSCORER_ALIASES).copy()
+    for column in ["date", "team", "player", "own_goal", "penalty"]:
+        if column not in frame.columns:
+            frame[column] = pd.NA
+    frame["date"] = pd.to_datetime(frame["date"], errors="coerce")
+    frame["team"] = frame["team"].astype("string").str.strip()
+    frame["player"] = frame["player"].astype("string").str.strip()
+    frame["own_goal"] = frame["own_goal"].map(_parse_boolish)
+    frame["penalty"] = frame["penalty"].map(_parse_boolish)
+
+    normalized = frame[["date", "team", "player", "own_goal", "penalty"]].copy()
+    normalized["event_category"] = "goal"
+    normalized["goal_event"] = 1
+    normalized["injury_event"] = 0
+    normalized["reason"] = ""
+    return normalized[PLAYER_EVENT_OUTPUT_COLUMNS]
+
+
+def _normalize_injury_events(raw_events: pd.DataFrame) -> pd.DataFrame:
+    frame = _rename_aliases(raw_events, PLAYER_EVENT_INJURY_ALIASES).copy()
+    for column in ["date", "team", "player", "reason"]:
+        if column not in frame.columns:
+            frame[column] = pd.NA
+    frame["date"] = pd.to_datetime(frame["date"], errors="coerce")
+    frame["team"] = frame["team"].astype("string").str.strip()
+    frame["player"] = frame["player"].astype("string").str.strip()
+    frame["reason"] = frame["reason"].fillna("").astype(str).str.strip()
+
+    normalized = frame[["date", "team", "player", "reason"]].copy()
+    normalized["event_category"] = "injury"
+    normalized["goal_event"] = 0
+    normalized["own_goal"] = 0
+    normalized["penalty"] = 0
+    normalized["injury_event"] = 1
+    return normalized[PLAYER_EVENT_OUTPUT_COLUMNS]
+
+
+def _normalize_mixed_player_events(raw_events: pd.DataFrame) -> pd.DataFrame:
+    frame = raw_events.copy()
+    goal_rows = _player_event_rows(frame, event_type="goal")
+    injury_rows = _player_event_rows(frame, event_type="injury")
+
+    results: list[pd.DataFrame] = []
+    if goal_rows.any():
+        results.append(_normalize_goalscorer_events(frame.loc[goal_rows].reset_index(drop=True)))
+    if injury_rows.any():
+        results.append(_normalize_injury_events(frame.loc[injury_rows].reset_index(drop=True)))
+    if not results:
+        raise ValueError("Mixed player events could not be normalized: no valid event rows found")
+    return pd.concat(results, ignore_index=True)
+
+
+def _player_event_rows(frame: pd.DataFrame, event_type: str) -> pd.Series:
+    normalized_columns = {column.lower().strip(): column for column in frame.columns}
+    row_flags = pd.Series([False] * len(frame), index=frame.index)
+    if "event_category" in normalized_columns:
+        event_values = frame[normalized_columns["event_category"]].astype(str).str.strip().str.lower()
+        row_flags |= event_values == event_type
+        return row_flags
+
+    goal_columns = {
+        _normalize_column(alias)
+        for alias in PLAYER_EVENT_GOALSCORER_ALIASES["player"]
+        + PLAYER_EVENT_GOALSCORER_ALIASES["own_goal"]
+        + PLAYER_EVENT_GOALSCORER_ALIASES["penalty"]
+        + PLAYER_EVENT_GOALSCORER_ALIASES["minute"]
+    }
+    injury_columns = {
+        _normalize_column(alias)
+        for alias in PLAYER_EVENT_INJURY_ALIASES["reason"]
+        + PLAYER_EVENT_INJURY_ALIASES["player_type"]
+        + PLAYER_EVENT_INJURY_ALIASES["fixture_id"]
+    }
+
+    goal_match = pd.Series([False] * len(frame), index=frame.index)
+    injury_match = pd.Series([False] * len(frame), index=frame.index)
+    for raw_col, canonical_col in normalized_columns.items():
+        value = frame[canonical_col]
+        has_value = value.notna() & value.astype(str).str.strip().ne("")
+        if raw_col in goal_columns:
+            goal_match |= has_value
+        if raw_col in injury_columns:
+            injury_match |= has_value
+
+    if event_type == "goal":
+        row_flags = goal_match & ~injury_match
+    else:
+        row_flags = injury_match
+    return row_flags
+
+
 def validate_dataset_files(
     matches_path: str | Path,
     teams_path: str | Path | None = None,
@@ -403,21 +561,43 @@ def normalize_teams(raw_teams: pd.DataFrame, allow_missing_rank: bool = False) -
     return frame[TEAM_OUTPUT_COLUMNS]
 
 
-def build_teams_from_matches(matches: pd.DataFrame) -> pd.DataFrame:
+def build_teams_from_matches(matches: pd.DataFrame, fifa_rankings: pd.DataFrame | None = None) -> pd.DataFrame:
     if matches.empty:
         return pd.DataFrame(columns=TEAM_OUTPUT_COLUMNS)
+    normalized_rankings = None
+    if fifa_rankings is not None and not fifa_rankings.empty:
+        normalized_rankings = normalize_fifa_rankings(fifa_rankings)
     records: list[dict[str, object]] = []
     for team in sorted(set(matches["team_a"].dropna().astype(str)) | set(matches["team_b"].dropna().astype(str))):
         if not team.strip():
             continue
         team_matches = matches.loc[(matches["team_a"] == team) | (matches["team_b"] == team)]
         dates = pd.to_datetime(team_matches["date"], errors="coerce").dropna()
+        last_match_date = dates.max() if not dates.empty else pd.NaT
+        fifa_rank = pd.NA
+        if normalized_rankings is not None and not normalized_rankings.empty:
+            team_rank_rows = normalized_rankings.loc[
+                normalized_rankings["team"].astype(str).str.casefold() == team.strip().casefold()
+            ].copy()
+            if not team_rank_rows.empty:
+                team_rank_rows["date"] = pd.to_datetime(team_rank_rows["date"], errors="coerce")
+                if not pd.isna(last_match_date):
+                    team_rank_rows = team_rank_rows.loc[
+                        team_rank_rows["date"].notna() & (team_rank_rows["date"] <= last_match_date)
+                    ]
+                if team_rank_rows.empty:
+                    team_rank_rows = normalized_rankings.loc[
+                        normalized_rankings["team"].astype(str).str.casefold() == team.strip().casefold()
+                    ].copy()
+                    team_rank_rows["date"] = pd.to_datetime(team_rank_rows["date"], errors="coerce")
+                if not team_rank_rows.empty:
+                    fifa_rank = float(team_rank_rows.sort_values("date").iloc[-1]["rank"])
         records.append(
             {
                 "team": team,
                 "confederation": "UNKNOWN",
                 "initial_elo": 1500,
-                "fifa_rank": pd.NA,
+                "fifa_rank": fifa_rank,
                 "match_count": int(len(team_matches)),
                 "first_match_date": dates.min().date().isoformat() if not dates.empty else "",
                 "last_match_date": dates.max().date().isoformat() if not dates.empty else "",

@@ -7,8 +7,8 @@ from typing import Iterable
 import pandas as pd
 from pandas.testing import assert_series_equal
 
+from .data_sources import normalize_player_events
 from .elo import label_from_score, match_result_for_team_a, update_elo
-from .rating_sources import get_latest_rating_before
 
 
 FEATURE_COLUMNS = [
@@ -57,6 +57,12 @@ FEATURE_COLUMNS = [
     "weighted_form_diff",
     "weighted_goal_diff_last_5_a",
     "weighted_goal_diff_last_5_b",
+    "goal_events_last_90_days_a",
+    "goal_events_last_90_days_b",
+    "goal_events_last_90_days_diff",
+    "injury_events_last_30_days_a",
+    "injury_events_last_30_days_b",
+    "injury_events_last_30_days_diff",
     "opponent_adjusted_form_a",
     "opponent_adjusted_form_b",
     "opponent_adjusted_form_diff",
@@ -114,6 +120,8 @@ class TeamState:
 
 
 TeamStates = dict[str, TeamState]
+RatingLookup = dict[str, pd.DataFrame]
+RatingFrameOrLookup = pd.DataFrame | RatingLookup | None
 
 
 def build_feature_table(
@@ -123,12 +131,16 @@ def build_feature_table(
     elo_k: float = 28.0,
     external_elo_ratings: pd.DataFrame | None = None,
     external_fifa_rankings: pd.DataFrame | None = None,
+    player_events: pd.DataFrame | None = None,
     feature_flags: dict[str, bool] | None = None,
 ) -> pd.DataFrame:
     if recent_window <= 0:
         raise ValueError("recent_window must be positive")
 
     states = initialize_team_states(teams, recent_window=recent_window)
+    external_elo_lookup = _prepare_rating_lookup(external_elo_ratings)
+    external_fifa_lookup = _prepare_rating_lookup(external_fifa_rankings)
+    player_event_lookup = _prepare_player_event_lookup(player_events)
     rows: list[dict[str, object]] = []
 
     for match in matches.sort_values("date").itertuples(index=False):
@@ -146,8 +158,9 @@ def build_feature_table(
             match_date=pd.to_datetime(match.date),
             tournament=str(match.tournament),
             country=str(getattr(match, "country", "") or ""),
-            external_elo_ratings=external_elo_ratings,
-            external_fifa_rankings=external_fifa_rankings,
+            external_elo_ratings=external_elo_lookup,
+            external_fifa_rankings=external_fifa_lookup,
+            player_event_lookup=player_event_lookup,
             feature_flags=feature_flags,
         )
         features.update(
@@ -266,6 +279,7 @@ def features_for_match(
     current_states: TeamStates | None = None,
     external_elo_ratings: pd.DataFrame | None = None,
     external_fifa_rankings: pd.DataFrame | None = None,
+    player_events: pd.DataFrame | None = None,
     feature_flags: dict[str, bool] | None = None,
 ) -> pd.DataFrame:
     if current_states is not None:
@@ -276,6 +290,9 @@ def features_for_match(
         states = initialize_team_states(teams, recent_window=recent_window)
     _ensure_team(states, team_a, teams, recent_window)
     _ensure_team(states, team_b, teams, recent_window)
+    external_elo_lookup = _prepare_rating_lookup(external_elo_ratings)
+    external_fifa_lookup = _prepare_rating_lookup(external_fifa_rankings)
+    player_event_lookup = _prepare_player_event_lookup(player_events)
     return pd.DataFrame(
         [
             features_from_state(
@@ -287,8 +304,9 @@ def features_for_match(
                 match_date=pd.Timestamp.today(),
                 tournament=stage,
                 country="",
-                external_elo_ratings=external_elo_ratings,
-                external_fifa_rankings=external_fifa_rankings,
+                external_elo_ratings=external_elo_lookup,
+                external_fifa_rankings=external_fifa_lookup,
+                player_event_lookup=player_event_lookup,
                 feature_flags=feature_flags,
             )
         ]
@@ -304,8 +322,9 @@ def features_from_state(
     match_date: pd.Timestamp,
     tournament: str = "",
     country: str = "",
-    external_elo_ratings: pd.DataFrame | None = None,
-    external_fifa_rankings: pd.DataFrame | None = None,
+    external_elo_ratings: RatingFrameOrLookup = None,
+    external_fifa_rankings: RatingFrameOrLookup = None,
+    player_event_lookup: dict[str, pd.DataFrame] | None = None,
     feature_flags: dict[str, bool] | None = None,
 ) -> dict[str, float | int]:
     feature_flags = feature_flags or {}
@@ -326,11 +345,21 @@ def features_from_state(
     stage_key = stage.strip().lower().replace(" ", "_")
     match_ts = pd.to_datetime(match_date)
     elo_external_a = _external_value_or_default(
-        get_latest_rating_before(team_a, match_ts, external_elo_ratings if feature_flags.get("external_ratings", True) else None),
+        _latest_rating_value_before(
+            team_a,
+            match_ts,
+            external_elo_ratings if feature_flags.get("external_ratings", True) else None,
+            value_column="elo",
+        ),
         state_a.rating,
     )
     elo_external_b = _external_value_or_default(
-        get_latest_rating_before(team_b, match_ts, external_elo_ratings if feature_flags.get("external_ratings", True) else None),
+        _latest_rating_value_before(
+            team_b,
+            match_ts,
+            external_elo_ratings if feature_flags.get("external_ratings", True) else None,
+            value_column="elo",
+        ),
         state_b.rating,
     )
     fifa_row_a = _latest_rating_row_before(team_a, match_ts, external_fifa_rankings if feature_flags.get("external_ratings", True) else None)
@@ -345,6 +374,34 @@ def features_from_state(
     weighted_form_b = _weighted_form(state_b.recent_points)
     weighted_gd_a = _weighted_average(state_a.goal_diffs, default=0.0)
     weighted_gd_b = _weighted_average(state_b.goal_diffs, default=0.0)
+    goal_events_last_90_days_a = _count_player_events_before(
+        team_a,
+        match_ts,
+        player_event_lookup,
+        "goal",
+        days=90,
+    )
+    goal_events_last_90_days_b = _count_player_events_before(
+        team_b,
+        match_ts,
+        player_event_lookup,
+        "goal",
+        days=90,
+    )
+    injury_events_last_30_days_a = _count_player_events_before(
+        team_a,
+        match_ts,
+        player_event_lookup,
+        "injury",
+        days=30,
+    )
+    injury_events_last_30_days_b = _count_player_events_before(
+        team_b,
+        match_ts,
+        player_event_lookup,
+        "injury",
+        days=30,
+    )
     opponent_form_a = _recent_form(state_a.opponent_adjusted_points)
     opponent_form_b = _recent_form(state_b.opponent_adjusted_points)
     importance = tournament_importance(tournament, stage)
@@ -408,6 +465,12 @@ def features_from_state(
         "weighted_form_diff": weighted_form_a - weighted_form_b,
         "weighted_goal_diff_last_5_a": weighted_gd_a,
         "weighted_goal_diff_last_5_b": weighted_gd_b,
+        "goal_events_last_90_days_a": goal_events_last_90_days_a,
+        "goal_events_last_90_days_b": goal_events_last_90_days_b,
+        "goal_events_last_90_days_diff": goal_events_last_90_days_a - goal_events_last_90_days_b,
+        "injury_events_last_30_days_a": injury_events_last_30_days_a,
+        "injury_events_last_30_days_b": injury_events_last_30_days_b,
+        "injury_events_last_30_days_diff": injury_events_last_30_days_a - injury_events_last_30_days_b,
         "opponent_adjusted_form_a": opponent_form_a,
         "opponent_adjusted_form_b": opponent_form_b,
         "opponent_adjusted_form_diff": opponent_form_a - opponent_form_b,
@@ -715,22 +778,119 @@ def _apply_feature_flags(
         )
 
 
+def _prepare_player_event_lookup(player_events: pd.DataFrame | None) -> dict[str, pd.DataFrame] | None:
+    if player_events is None or player_events.empty:
+        return None
+
+    frame = player_events.copy()
+    if "event_category" not in frame.columns:
+        frame = normalize_player_events(frame)
+    if not all(column in frame.columns for column in ("date", "team", "event_category")):
+        return None
+
+    frame["date"] = pd.to_datetime(frame["date"], errors="coerce")
+    frame["team"] = frame["team"].astype("string").str.strip().str.casefold()
+    frame["event_category"] = frame["event_category"].astype("string").str.strip().str.lower()
+    frame = frame.dropna(subset=["date", "team"])
+
+    lookup: dict[str, pd.DataFrame] = {}
+    for team, rows in frame.groupby("team"):
+        if not team:
+            continue
+        lookup[str(team)] = rows.sort_values("date").reset_index(drop=True)
+    return lookup
+
+
+def _count_player_events_before(
+    team: str,
+    match_date: pd.Timestamp,
+    player_event_lookup: dict[str, pd.DataFrame] | None,
+    event_category: str,
+    days: int,
+) -> int:
+    if player_event_lookup is None:
+        return 0
+    if pd.isna(match_date):
+        return 0
+
+    team_key = str(team).strip().casefold()
+    events = player_event_lookup.get(team_key)
+    if events is None or events.empty:
+        return 0
+
+    match_ts = pd.to_datetime(match_date, errors="coerce")
+    if pd.isna(match_ts):
+        return 0
+
+    cutoff = match_ts - pd.Timedelta(days=days)
+    mask = (
+        (events["date"] < match_ts)
+        & (events["date"] >= cutoff)
+        & (events["event_category"].astype("string").str.lower() == str(event_category).strip().lower())
+    )
+    return int(mask.sum())
+
+
 def _external_value_or_default(value: float | None, default: float) -> float:
     return float(default if value is None else value)
 
 
-def _latest_rating_row_before(team: str, match_date: pd.Timestamp, ratings_df: pd.DataFrame | None) -> dict[str, object] | None:
-    if ratings_df is None or ratings_df.empty or "date" not in ratings_df or "team" not in ratings_df:
+def _prepare_rating_lookup(ratings: RatingFrameOrLookup) -> RatingLookup | None:
+    if ratings is None:
         return None
-    dates = pd.to_datetime(ratings_df["date"], errors="coerce")
-    rows = ratings_df.loc[
-        ratings_df["team"].astype(str).str.casefold().eq(str(team).strip().casefold())
-        & (dates < match_date)
-    ].copy()
-    if rows.empty:
+    if isinstance(ratings, dict):
+        return ratings
+    if ratings.empty or "date" not in ratings or "team" not in ratings:
         return None
-    rows["date"] = pd.to_datetime(rows["date"], errors="coerce")
-    return rows.sort_values("date").iloc[-1].to_dict()
+    cached = ratings.attrs.get("_cupcast_rating_lookup")
+    if isinstance(cached, dict):
+        return cached
+    frame = ratings.copy()
+    frame["date"] = pd.to_datetime(frame["date"], errors="coerce")
+    frame = frame.dropna(subset=["date", "team"])
+    lookup: RatingLookup = {}
+    for team, rows in frame.groupby(frame["team"].astype(str).str.strip().str.casefold()):
+        if not team:
+            continue
+        lookup[str(team)] = rows.sort_values("date").reset_index(drop=True)
+    ratings.attrs["_cupcast_rating_lookup"] = lookup
+    return lookup
+
+
+def _latest_rating_value_before(
+    team: str,
+    match_date: pd.Timestamp,
+    ratings: RatingFrameOrLookup,
+    value_column: str,
+) -> float | None:
+    row = _latest_rating_row_before(team, match_date, ratings)
+    if not row:
+        return None
+    value = pd.to_numeric(row.get(value_column), errors="coerce")
+    if pd.isna(value):
+        return None
+    return float(value)
+
+
+def _latest_rating_row_before(
+    team: str,
+    match_date: pd.Timestamp,
+    ratings: RatingFrameOrLookup,
+) -> dict[str, object] | None:
+    lookup = _prepare_rating_lookup(ratings)
+    if not lookup:
+        return None
+    rows = lookup.get(str(team).strip().casefold())
+    if rows is None or rows.empty:
+        return None
+    match_ts = pd.to_datetime(match_date, errors="coerce")
+    if pd.isna(match_ts):
+        return None
+    dates = pd.to_datetime(rows["date"], errors="coerce")
+    row_index = int(dates.searchsorted(match_ts, side="left")) - 1
+    if row_index < 0:
+        return None
+    return rows.iloc[row_index].to_dict()
 
 
 def _numeric_or_default(value: object, default: float) -> float:

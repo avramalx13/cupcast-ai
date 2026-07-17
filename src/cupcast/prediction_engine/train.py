@@ -7,6 +7,7 @@ from cupcast.shared.config import load_yaml, resolve_project_path
 from cupcast.shared.constants import PROJECT_ROOT
 
 from .data_loader import load_dataset
+from .data_sources import load_player_events
 from .features import build_feature_table
 from .model import save_model, train_prediction_model
 from .rating_sources import LocalEloRatingSource, LocalFifaRankingSource
@@ -41,6 +42,8 @@ def train_from_config(config_path: str | Path) -> Path:
     external_elo_ratings = LocalEloRatingSource(elo_ratings_path).load() if elo_ratings_path else None
     external_fifa_rankings = LocalFifaRankingSource(fifa_rankings_path).load() if fifa_rankings_path else None
     feature_flags = dict(feature_cfg.get("enable_groups", {})) if isinstance(feature_cfg.get("enable_groups"), dict) else {}
+    player_events_path = _optional_path(data_cfg.get("player_events_path") or data_cfg.get("goalscorers_path"))
+    player_events = load_player_events(player_events_path) if player_events_path else None
 
     matches, teams = load_dataset(
         matches_path,
@@ -55,6 +58,7 @@ def train_from_config(config_path: str | Path) -> Path:
         elo_k=elo_k,
         external_elo_ratings=external_elo_ratings,
         external_fifa_rankings=external_fifa_rankings,
+        player_events=player_events,
         feature_flags=feature_flags,
     )
     model = train_prediction_model(

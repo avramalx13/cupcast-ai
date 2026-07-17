@@ -4,43 +4,42 @@
     {
       "source": "elo",
       "path": "data\\real\\elo_ratings.csv",
-      "exists": false,
+      "exists": true,
       "valid": true,
-      "rows": 0,
+      "rows": 960,
       "date_range": {
-        "min": null,
-        "max": null
+        "min": "2014-06-05",
+        "max": "2022-10-06"
       },
-      "teams": 0,
+      "teams": 333,
       "duplicate_team_date_rows": 0,
-      "missing_values": {},
+      "missing_values": {
+        "rank": 960,
+        "points": 960
+      },
       "errors": [],
-      "warnings": [
-        "elo ratings file missing; continuing without external elo features"
-      ]
+      "warnings": []
     },
     {
       "source": "fifa",
       "path": "data\\real\\fifa_rankings.csv",
-      "exists": false,
+      "exists": true,
       "valid": true,
-      "rows": 0,
+      "rows": 96,
       "date_range": {
-        "min": null,
-        "max": null
+        "min": "2014-06-05",
+        "max": "2022-10-06"
       },
-      "teams": 0,
+      "teams": 47,
       "duplicate_team_date_rows": 0,
-      "missing_values": {},
+      "missing_values": {
+        "elo": 96,
+        "points": 96
+      },
       "errors": [],
-      "warnings": [
-        "fifa ratings file missing; continuing without external fifa features"
-      ]
+      "warnings": []
     }
   ],
-  "warnings": [
-    "elo ratings file missing; continuing without external elo features",
-    "fifa ratings file missing; continuing without external fifa features"
-  ],
+  "warnings": [],
   "errors": []
 }

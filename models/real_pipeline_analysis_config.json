@@ -4,8 +4,8 @@
     "matches_path": "data\\processed\\real_completed_matches.csv",
     "shootouts_path": "data\\real\\shootouts.csv",
     "teams_path": "data\\processed\\teams_real.csv",
-    "elo_ratings_path": null,
-    "fifa_rankings_path": null
+    "elo_ratings_path": "data\\real\\elo_ratings.csv",
+    "fifa_rankings_path": "data\\real\\fifa_rankings.csv"
   },
   "features": {
     "recent_window": 5,
