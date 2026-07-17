@@ -33,6 +33,42 @@ def test_feature_engineering_creates_required_columns() -> None:
     assert features.loc[0, "label"] == "A_WIN"
 
 
+def test_feature_engineering_counts_player_events_when_provided() -> None:
+    matches = pd.DataFrame(
+        [
+            {
+                "date": pd.Timestamp("2024-01-01"),
+                "team_a": "France",
+                "team_b": "Brazil",
+                "team_a_score": 2,
+                "team_b_score": 1,
+                "tournament": "Test Cup",
+                "neutral": 1,
+                "stage": "group",
+            }
+        ]
+    )
+    teams = pd.DataFrame(
+        [
+            {"team": "France", "confederation": "UEFA", "initial_elo": 2040, "fifa_rank": 2},
+            {"team": "Brazil", "confederation": "CONMEBOL", "initial_elo": 2050, "fifa_rank": 5},
+        ]
+    )
+    player_events = pd.DataFrame(
+        [
+            {"date": "2023-12-15", "team": "France", "scorer": "Kylian Mbappé", "own_goal": False, "penalty": False},
+            {"date": "2023-12-20", "team": "Brazil", "player_name": "Neymar", "reason": "ankle"},
+        ]
+    )
+
+    features = build_feature_table(matches, teams, player_events=player_events)
+
+    assert features.loc[0, "goal_events_last_90_days_a"] == 1
+    assert features.loc[0, "injury_events_last_30_days_b"] == 1
+    assert features.loc[0, "goal_events_last_90_days_diff"] == 1 - 0
+    assert features.loc[0, "injury_events_last_30_days_diff"] == 0 - 1
+
+
 def test_feature_engineering_uses_pre_match_elo_and_no_future_matches() -> None:
     matches = pd.DataFrame(
         [

@@ -8,7 +8,7 @@ import pandas as pd
 
 from cupcast.analyst.explanation_service import ExplanationService
 from cupcast.prediction_engine.data_loader import load_dataset
-from cupcast.prediction_engine.data_sources import validate_dataset_files
+from cupcast.prediction_engine.data_sources import load_player_events, validate_dataset_files
 from cupcast.prediction_engine.features import build_feature_table
 from cupcast.prediction_engine.model import PredictionModel, load_model, train_prediction_model
 from cupcast.shared.config import load_yaml, resolve_project_path
@@ -83,8 +83,8 @@ def _resolve_data_paths() -> tuple[str, Path, Path | None, Path | None, Path | N
     teams_path = resolve_project_path(teams_value, PROJECT_ROOT) if teams_value else None
     shootouts_value = data_cfg.get("shootouts_path")
     shootouts_path = resolve_project_path(shootouts_value, PROJECT_ROOT) if shootouts_value else None
-    goalscorers_value = data_cfg.get("goalscorers_path")
-    goalscorers_path = resolve_project_path(goalscorers_value, PROJECT_ROOT) if goalscorers_value else None
+    player_events_value = data_cfg.get("player_events_path") or data_cfg.get("goalscorers_path")
+    goalscorers_path = resolve_project_path(player_events_value, PROJECT_ROOT) if player_events_value else None
     source_type = "international-results" if mode in {"real", "international-results"} else "csv"
     return source_type, matches_path, teams_path, shootouts_path, goalscorers_path
 
@@ -129,7 +129,9 @@ def get_prediction_model() -> PredictionModel:
     try:
         return load_model(model_path)
     except FileNotFoundError:
-        features = build_feature_table(get_matches(), get_teams())
+        source_type, _matches_path, _teams_path, _shootouts_path, goalscorers_path = _resolve_data_paths()
+        player_events = load_player_events(goalscorers_path)
+        features = build_feature_table(get_matches(), get_teams(), player_events=player_events)
         return train_prediction_model(features, model_version="api-in-memory")
 
 

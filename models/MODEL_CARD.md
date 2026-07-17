@@ -49,7 +49,7 @@ Calibrated variants are evaluated beside uncalibrated models. The ensemble repor
 ## Real-Data Results Summary
 
 Best comparison model by log loss: `weighted probability ensemble`.
-Accuracy: 0.4688; log loss: 1.0202; Brier score: 0.6060; ECE: 0.1177.
+Accuracy: 0.4844; log loss: 1.0175; Brier score: 0.6042; ECE: 0.1470.
 
 ## Known Limitations
 
